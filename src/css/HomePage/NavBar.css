@@ -3,8 +3,9 @@
     --light-black: #061923;
     --purple: #2a1173;
     --red: #FD151B;
-    --l52: calc(52 /1438);
-    --l24: calc(24/1438);
+    --l52: calc(52 / 1438);
+    --l24: calc(24 / 1438);
+    --l120: calc(120 / 1438)
 }
 /* ABOVE, variables starting with l indicates length relative to the width of the frame used in the ui design */
 .my {
@@ -16,7 +17,7 @@
 }
 
 nav {
-    padding:0 120px;
+    padding:0 calc(100vw * var(--l120));
     height: 88px;
     display: flex;
     align-items: center;
@@ -56,3 +57,12 @@ a {
     padding: 12px calc(100vw * var(--l24));
 }
 
+@media (max-width: 1024px) {
+    .links-at-center, .links-at-end {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    
+}

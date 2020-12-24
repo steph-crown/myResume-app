@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Nav from './NavBar'
+import NavBar from './NavBar'
+import Banner from './Banner'
 
 class index extends Component {
     render() {
         return (
             <div>
-                <Nav />
+                <NavBar />
             </div>
         );
     }

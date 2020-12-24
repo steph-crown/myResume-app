@@ -4,6 +4,12 @@
 
 /* GENERAL STYLES | FONTS, COLORS AND STUFFS */
 
+/* NOTE (Constraints): 
+      Laptop - x > 1024
+      Tablet - 415 <= x <= 1024
+      Mobile - x < 415
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800;900&family=Poppins:wght@400;800;900&display=swap');
 
 /* general selector */
@@ -80,7 +86,7 @@ a {
 }
 
 
-@media (max-width: 924px) {
+@media (max-width: 414px) {
   h1 {
     font-size: 40px;
     line-height: 56px;
