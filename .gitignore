@@ -18,6 +18,9 @@
 .env.test.local
 .env.production.local
 
+#Helps to consistently drop my updates
+Za Updates.docx
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

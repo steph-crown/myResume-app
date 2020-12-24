@@ -1,0 +1,60 @@
+/* GENERAL STYLES | FONTS, COLORS AND STUFFS */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;900&family=Poppins:wght@400;800;900&display=swap');
+
+/* general selector */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* FONT STYLES ALL SIZES*/
+h1, h2, h4, h6, h5 {
+  font-style: normal;
+}
+h1, h4 {
+  font-weight: 900;
+}
+
+h1, h2, h5 {
+  line-height: 88px;
+  font-family: Poppins;
+  font-size: 56px;
+}
+
+h2, h4 {
+  letter-spacing: 0.02em;
+}
+
+h4, h6 {
+  font-family: "Nunito Sans"
+}
+
+h1, h5 {
+  letter-spacing: 0.03em;
+}
+
+h5, h6 {
+  line-height: 48px;
+}
+
+
+h2 {
+  font-weight: 800;
+}
+h3 {
+
+}
+h4 {
+  font-size: 40px;
+  line-height: 56px;
+}
+h5 {
+  font-weight: normal;
+  font-size: 24px;
+}
+h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
