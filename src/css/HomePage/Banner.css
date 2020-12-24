@@ -1,0 +1,84 @@
+.banner {
+    display: flex;
+    padding: 0 0 0 calc(100vw * var(--l120));
+    min-height: calc(100vh - 88px - 88px);
+    align-items: center;
+    width: 100vw;
+}
+
+h1 {
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+b {
+    color: var(--darker-black);
+    display: block;
+    margin-bottom: 48px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.left {
+    width: 44.5%;
+}
+
+.right {
+    width: 55.5%;
+}
+
+.right img {
+    --width: calc(100vw * var(--l736));
+    width: var(--width);
+    height: calc((452 / 736) * var(--width));
+}
+
+.buttons a {
+    background-color: transparent;
+    border: 2px solid var(--red);
+    border-radius: 4px;
+    width: 152px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+}
+
+.buttons a:first-child {
+    background-color: var(--red);
+    margin-right: 32px;
+    color: var(--bg-white);
+}
+
+
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        /* padding-right: calc(100vw * var(--l120)); */
+        min-height: calc(100vh - 88px);
+        justify-content: center;
+    }
+
+    .left {
+        padding: 0 calc(100vw * var(--l120));
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+
+    .right img {
+        width: 100vw;
+        height: calc(0.616 * 100vw);
+        margin-top: 40px;
+    }
+
+    .buttons a {
+        width: 120px;
+    }
+}
