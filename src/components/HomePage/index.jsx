@@ -7,6 +7,7 @@ class index extends Component {
         return (
             <div>
                 <NavBar />
+                <Banner />
             </div>
         );
     }

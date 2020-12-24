@@ -1,6 +1,16 @@
 :root {
   --bg-white: #faf6ff;
+  --light-black: #061923;
+  --purple: #2a1173;
+  --red: #FD151B;
+  --black: #3f3d56;
+  --darker-black: #21202E;
+  --l52: calc(52 / 1438);
+  --l24: calc(24 / 1438);
+  --l120: calc(120 / 1438);
+  --l736: calc(736 / 1438);
 }
+/* ABOVE, variables starting with l indicates length relative to the width of the frame used in the ui design */
 
 /* GENERAL STYLES | FONTS, COLORS AND STUFFS */
 
@@ -10,7 +20,7 @@
       Mobile - x < 415
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800;900&family=Poppins:wght@400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800;900&family=Poppins:wght@400;500;800;900&display=swap');
 
 /* general selector */
 * {
@@ -33,14 +43,14 @@ body {
 }
 
 /* FONT STYLES ALL SIZES*/
-h1, h2, h4, h6, h5, a {
+h1, h2, h4, h6, h5, a, b {
   font-style: normal;
 }
 h1, h4 {
   font-weight: 900;
 }
 
-h1, h2, h5 {
+h1, h2, h5, b {
   line-height: 88px;
   font-family: Poppins;
   font-size: 56px;
@@ -85,6 +95,20 @@ a {
   text-decoration: none;
 }
 
+b {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+}
+
+/* @media (max-width: 1024px) {
+  h1, h2, h5 {
+    font-size: 48px;
+    line-height: 72px;
+  }
+} */
+
 
 @media (max-width: 414px) {
   h1 {
@@ -108,5 +132,15 @@ a {
     font-size: 16px;
     line-height: 40px;
     letter-spacing: 0.04em;
+  }
+
+  a {
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 240px) {
+  a {
+    font-size: 12px;
   }
 }
