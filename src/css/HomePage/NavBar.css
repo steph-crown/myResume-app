@@ -57,9 +57,35 @@ a {
     padding: 12px calc(100vw * var(--l24));
 }
 
+/* MENU ICON STYLES */
+.menu-icon {
+    display: none;
+    /* display: flex; */
+    height: 25px;
+    align-items: flex-end; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-icon div {
+    height: 5px;
+    background-color: var(--purple);
+    width: 28px;
+}
+
+.menu-icon div:nth-child(2) {
+    width: 40px;
+}
+
+
+
+
 @media (max-width: 1024px) {
     .links-at-center, .links-at-end {
         display: none;
+    }
+    .menu-icon {
+        display: flex;
     }
 }
 

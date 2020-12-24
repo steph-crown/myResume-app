@@ -1,5 +1,6 @@
 import React from 'react';
-import './../../css/HomePage/NavBar.css'
+import './../../css/HomePage/NavBar.css';
+
 
 const Nav = () => {
     return (
@@ -17,6 +18,11 @@ const Nav = () => {
             <div className="links-at-end">
                 <a href="#">Sign Up</a>   
                 <a href="#" className="login">Log In</a>
+            </div>
+            <div className="menu-icon">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </nav>
     );
