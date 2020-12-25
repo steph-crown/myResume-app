@@ -48,7 +48,7 @@ let highlights = [
 
 class Highlights extends Component {
     render() {
-        highlights = highlights.map(x => <Box icon={x.icon} header={x.header} text={x.text} />)
+        highlights = highlights.map(x => <Box icon={x.icon} header={x.header} text={x.text} key={x.header} />)
         return (
             <div className="highlights">
                 <div className="tag">Highlights</div>

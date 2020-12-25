@@ -1,9 +1,9 @@
 .highlights {
     padding: 0 calc(100vw * var(--l120));
-    margin-top: 88px;
+    margin-top: 72px;
 }
 
-.highlights h2 {
+h2 {
     text-align: center;
     margin-top: 32px;
     color: var(--black);
@@ -11,7 +11,7 @@
 
 .box-container {
     margin: auto;
-    margin-top: 80px;
+    margin-top: 88px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

@@ -13,7 +13,7 @@
     background-color: #ffffff;
     
     width: var(--width);
-    box-shadow: -4px -4px 50px #E9E1FF, 4px 4px 50px #E9E1FF;
+    box-shadow: -4px -4px 50px #e9e1ffb7, 4px 4px 50px #e9e1ffb7;
     border-radius: 12px;
     padding: calc(var(--lpad) * var(--width));
     margin-bottom: 64px;

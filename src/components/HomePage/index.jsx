@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from './NavBar';
 import Banner from './Banner';
 import Highlights from './Highlights';
+import StepByStep from './StepByStep'
 
 class index extends Component {
     render() {
@@ -10,6 +11,7 @@ class index extends Component {
                 <NavBar />
                 <Banner />
                 <Highlights />
+                <StepByStep />
             </div>
         );
     }

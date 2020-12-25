@@ -1,0 +1,124 @@
+:root {
+    --w1: calc(470.68 / 1438 * 100vw);
+    --h1: calc(296 / 470.26 * var(--w1));
+    --w2: calc(463.3 / 1438 * 100vw);
+    --h2: calc(296 / 463.3 * var(--w2));
+    --w3: calc(334.9 / 1438 * 100vw);
+    --h3: calc(296 / 334.9 * var(--w3));
+}
+/* Width and height of illustrations */
+
+
+.step-by-step {
+    width: 100vw;
+    margin-top: 80px;
+    padding:0 calc(100vw * var(--l120));
+    margin-top: 72px;
+    flex-wrap: wrap;
+}
+
+.steps {
+    margin-top: 88px;
+}
+
+.steps>div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 116px;
+}
+
+.steps>div:first-child {
+    min-height: var(--h1);
+}
+
+.steps>div:nth-child(2) {
+    min-height: var(--h2);
+    flex-direction: row-reverse;
+}
+
+.steps>div:nth-child(2) {
+    min-height: var(--h3);
+}
+
+.illustration, .texts {
+    width: 50%;
+}
+
+.step1 {
+    width: var(--w1);
+    height: var(--h1);
+}
+
+.step2 {
+    width: var(--w2);
+    height: var(--h2);
+}
+
+.step3 {
+    width: var(--w3);
+    height: var(--h3);
+}
+
+
+
+.texts h4 {
+    color: var(--purple);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+h4 {
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.step-by-step a {
+    color: var(--bg-white);
+    background: #FD151B;
+    border-radius: 5px;
+    font-weight: normal;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: calc(300 / 1438 * 100vw);
+    min-width: 200px;
+    margin-bottom: 96px;
+    letter-spacing: 0.03em;
+}
+
+.texts h6 {
+    color: var(--darker-black);
+}
+
+@media (max-width: 800px) {
+    .illustration, .texts {
+        width: 100%;
+    }
+    .steps>div:nth-child(n) {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    .step1, .step2, .step3 {
+        display: block;
+        margin: auto;
+        --width: calc(200 /375 * 100vw);
+        width: var(--width);
+        height: calc(128 / 200 * var(--width));
+    }
+
+    .texts h4 {
+        margin-top: 40px;
+    }
+    
+    .texts h4, .texts h6 {
+        text-align: center;
+    }
+
+    .texts h4 {
+        margin-bottom: 16px;
+    }
+}
