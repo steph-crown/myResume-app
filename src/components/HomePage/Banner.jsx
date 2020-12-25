@@ -2,6 +2,7 @@ import React from 'react';
 import bannerIllustration from './../../assets/man-typing.svg';
 import './../../css/HomePage/Banner.css';
 
+
 const Banner = () => {
     return (
         <div className="banner">

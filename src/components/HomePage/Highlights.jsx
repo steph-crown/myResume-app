@@ -52,7 +52,7 @@ class Highlights extends Component {
         return (
             <div className="highlights">
                 <div className="tag">Highlights</div>
-                <h2>Features You <br /> Love</h2>
+                <h2>Features You Love</h2>
                 <section className="box-container">
                     {highlights}
                 </section>

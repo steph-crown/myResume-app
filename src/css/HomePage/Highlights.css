@@ -2,3 +2,18 @@
     padding: 0 calc(100vw * var(--l120));
     margin-top: 88px;
 }
+
+.highlights h2 {
+    text-align: center;
+    margin-top: 32px;
+    color: var(--black);
+}
+
+.box-container {
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+

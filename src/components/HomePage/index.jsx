@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import NavBar from './NavBar'
-import Banner from './Banner'
+import NavBar from './NavBar';
+import Banner from './Banner';
+import Highlights from './Highlights';
 
 class index extends Component {
     render() {
@@ -8,6 +9,7 @@ class index extends Component {
             <div>
                 <NavBar />
                 <Banner />
+                <Highlights />
             </div>
         );
     }

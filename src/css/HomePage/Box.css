@@ -1,0 +1,63 @@
+:root {
+    --lheight: calc(328 / 304);
+    --lpad: calc(32 / 304);
+    --liconpad: calc(16 / 304);
+    --lppad: calc(32 / 304);
+    --width: calc(100vw * var(--l304));
+    --medwidth: calc(344 / 1024 * 100vw);
+    --pad: calc(100vw * var(--l120));
+    --smallwidth: calc(100vw - var(--pad) - var(--pad));
+}
+
+.box {
+    background-color: #ffffff;
+    
+    width: var(--width);
+    box-shadow: -4px -4px 50px #E9E1FF, 4px 4px 50px #E9E1FF;
+    border-radius: 12px;
+    padding: calc(var(--lpad) * var(--width));
+    margin-bottom: 64px;
+}
+
+.icon, .box h5 {
+    margin-bottom: calc(var(--liconpad) * var(--width));
+}
+
+.box p {
+    margin-bottom: calc(var(--lppad) * var(--width));
+}
+
+h5 {
+    color: var(--purple);
+}
+
+
+@media (max-width: 1024px) {
+    .box {
+        width: var(--medwidth);
+        padding: calc(var(--lpad) * var(--medwidth));       
+    }
+
+    .icon, .box h5 {
+        margin-bottom: calc(var(--liconpad) * var(--medwidth));
+    }
+
+    .box p {
+        margin-bottom: calc(var(--lppad) * var(--medwidth));
+    }
+}
+
+@media (max-width: 454px) {
+    .box {
+        padding: calc(var(--lpad) * var(--smallwidth));  
+        width: var(--smallwidth);
+    }
+
+    .icon, .box h5 {
+        margin-bottom: calc(var(--liconpad) * var(--smallwidth));
+    }
+
+    .box p {
+        margin-bottom: calc(var(--lppad) * var(--smallwidth));
+    }
+}

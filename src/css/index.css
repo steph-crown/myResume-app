@@ -9,6 +9,8 @@
   --l24: calc(24 / 1438);
   --l120: calc(120 / 1438);
   --l736: calc(736 / 1438);
+  --l304: calc(304 / 1438);
+  --l144: calc(144 / 1438);
 }
 /* ABOVE, variables starting with l indicates length relative to the width of the frame used in the ui design */
 
@@ -20,7 +22,7 @@
       Mobile - x < 415
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600;800;900&family=Poppins:wght@400;500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800;900&family=Poppins:wght@400;500;800;900&display=swap');
 
 /* general selector */
 * {
@@ -43,7 +45,7 @@ body {
 }
 
 /* FONT STYLES ALL SIZES*/
-h1, h2, h4, h6, h5, a, b {
+h1, h2, h4, h6, h5, a, b, p, .tag {
   font-style: normal;
 }
 h1, h4 {
@@ -60,21 +62,23 @@ h2, h4 {
   letter-spacing: 0.02em;
 }
 
-h4, h6, a {
+h4, h6, a, p, .tag {
   font-family: "Nunito Sans"
 }
 
-h1, h5 {
+h1, h5, p {
   letter-spacing: 0.03em;
 }
 
 h5, h6, a {
-  line-height: 48px;
+  line-height: 40px;
 }
 
 
 h2 {
   font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
 }
 
 h4 {
@@ -82,7 +86,7 @@ h4 {
   line-height: 56px;
 }
 h5 {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 24px;
 }
 h6, a {
@@ -102,12 +106,31 @@ b {
   letter-spacing: 0.03em;
 }
 
-/* @media (max-width: 1024px) {
-  h1, h2, h5 {
-    font-size: 48px;
-    line-height: 72px;
-  }
-} */
+p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.tag {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  color: var(--red);
+  margin: auto;
+  width: 152px;
+  background: #FFECEC;
+  border: 2px solid var(--red);
+  border-radius: 30px;
+}
+
+
+
 
 
 @media (max-width: 414px) {
@@ -125,13 +148,6 @@ b {
   h4 {
     font-size: 24px;
     line-height: 40px;
-  }
-
-  h5 {
-    font-family: Poppins;
-    font-size: 16px;
-    line-height: 40px;
-    letter-spacing: 0.04em;
   }
 
   a {

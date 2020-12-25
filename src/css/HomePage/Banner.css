@@ -69,11 +69,11 @@ b {
     }
 
     .left, .right {
-        width: 100%;
+        width: 100vw;
     }
 
     .right img {
-        width: 100vw;
+        width: 100%;
         height: calc(0.616 * 100vw);
         margin-top: 40px;
     }
