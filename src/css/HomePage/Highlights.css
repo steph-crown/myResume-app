@@ -1,0 +1,4 @@
+.highlights {
+    padding: 0 calc(100vw * var(--l120));
+    margin-top: 88px;
+}
