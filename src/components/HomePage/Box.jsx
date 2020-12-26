@@ -15,10 +15,10 @@ class Box extends Component {
     render() {
         return (
             <div className="box">
-                <this.props.icon fill={ this.state.hoverState ? "red" : "#2a1173"} className="icon" />
+                <this.props.icon fill={ this.state.hoverState ? "red" : "#0378a6"} className="icon" />
                 <h5>{this.props.header}</h5>
                 <p>{this.props.text}</p>
-                <Arrow />
+                <Arrow fill='#0378a6'/>
             </div>
         );
     }

@@ -43,7 +43,6 @@ a {
 
 .login {
     border: 2px solid var(--red);
-    background-color: #ffecec;
     padding: 12px calc(100vw * var(--l24));
 }
 

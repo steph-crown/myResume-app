@@ -1,10 +1,10 @@
 :root {
   --bg-white: #faf6ff;
   --light-black: #061923;
-  --purple: #2a1173;
-  --red: #FD151B;
-  --black: #3f3d56;
-  --darker-black: #21202E;
+  --purple: #0378a6;
+  --red: #f28b0c;
+  --black: #061c1b;
+  --darker-black: #061015;
   --l52: calc(52 / 1438);
   --l24: calc(24 / 1438);
   --l120: calc(120 / 1438);
