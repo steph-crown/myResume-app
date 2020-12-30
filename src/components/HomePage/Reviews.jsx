@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import './../../css/HomePage/Reviews.css'
-import { ReactComponent as Line } from "./../Svgs/Line.svg";
 import ReviewBox from './ReviewBox';
 
 import reviews from './../../db/reviews';
 import chunkArray from './../../utilities/chunkArray'
 
 // Carousel Component
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonPlay } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import Carousel from './Carousel'
+import { Slide } from "pure-react-carousel";
+
 
 class Reviews extends Component {
     // Different carousel grouping for different screen sizes
@@ -42,28 +42,18 @@ class Reviews extends Component {
                     
                     <div className="writings">
                         <div className="large">
-                            <CarouselProvider
-                                naturalSlideWidth={100}
-                                naturalSlideHeight={40}
-                                totalSlides={this.reviewL.length}
-                                step={1}
-                                className="carousel"
-                             >
-                                <Slider>
-                                    {this.reviewL}
-                                </Slider>
-                                 <ButtonBack className="line-button"><Line stroke="#F28B0C" className="line" strokeWidth={24} /></ButtonBack>
-                                <ButtonNext className="line-button"><Line stroke="#aaaB0C" className="line" strokeWidth={24} /></ButtonNext>
-                             </CarouselProvider>
-                            
+                            <Carousel arr={this.reviewL} height={40} />
                         </div>
                         <div className="med">
-                            {/* {reviewMed} */}
+                        <Carousel arr={this.reviewMed} height={65} />
                         </div>
                         <div className="small">
-                            {/* {reviewSm} */}
+                        <Carousel arr={this.reviewSm} height={80} />
                         </div>
                         
+                        <div className="smallest">
+                        <Carousel arr={this.reviewSm} height={150} />
+                        </div>
                     </div>
                 </section>
             </div>
