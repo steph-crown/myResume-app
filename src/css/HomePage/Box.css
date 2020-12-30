@@ -11,7 +11,6 @@
 
 .box {
     background-color: #ffffff;
-    
     width: var(--width);
     box-shadow: -4px -4px 50px #e9e1ffb7, 4px 4px 50px #e9e1ffb7;
     border-radius: 12px;
@@ -25,6 +24,7 @@
 
 .box p {
     margin-bottom: calc(var(--lppad) * var(--width));
+    font-weight: 500;
 }
 
 h5 {

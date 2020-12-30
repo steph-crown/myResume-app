@@ -3,7 +3,6 @@
     padding: 0 0 0 calc(100vw * var(--l120));
     min-height: calc(100vh - 88px - 88px);
     align-items: center;
-    width: 100vw;
 }
 
 h1 {
@@ -31,8 +30,9 @@ b {
 
 .right img {
     --width: calc(100vw * var(--l736));
-    width: var(--width);
-    height: calc((452 / 736) * var(--width));
+    /* width: var(--width); */
+    width: 100%;
+    /* height: calc((452 / 736) * var(--width)); */
 }
 
 .buttons a {
@@ -69,12 +69,12 @@ b {
     }
 
     .left, .right {
-        width: 100vw;
+        width: 100%;
     }
 
     .right img {
         width: 100%;
-        height: calc(0.616 * 100vw);
+        /* height: calc(0.616 * 100vw); */
         margin-top: 40px;
     }
 

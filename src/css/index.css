@@ -3,7 +3,7 @@
   --light-black: #061923;
   --purple: #0378a6;
   --red: #f28b0c;
-  --black: #061c1b;
+  --black: #0C161B;
   --darker-black: #061015;
   --l52: calc(52 / 1438);
   --l24: calc(24 / 1438);
@@ -22,7 +22,7 @@
       Mobile - x < 415
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800;900&family=Poppins:wght@400;500;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;800;900&family=Poppins:wght@400;500;800;900&display=swap');
 
 /* general selector */
 * {
@@ -129,6 +129,17 @@ p {
   border-radius: 30px;
 }
 
+h3 {
+  font-family: Nunito Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 40px;
+/* identical to box height, or 125% */
+
+letter-spacing: 0.02em;
+
+}
 
 
 
