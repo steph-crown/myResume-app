@@ -32,6 +32,11 @@
   box-sizing: border-box;
 }
 
+.bg-svg {
+  position: absolute;
+  z-index: -10;
+}
+
 body {
   background-color: #faf6ff;
 }

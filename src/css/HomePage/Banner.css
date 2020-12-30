@@ -3,11 +3,17 @@
     padding: 0 0 0 calc(100vw * var(--l120));
     min-height: calc(100vh - 88px - 88px);
     align-items: center;
+    position: relative;
 }
 
 h1 {
     color: var(--black);
     margin-bottom: 8px;
+}
+
+.banner .one {
+    left: calc(0.02 * 100vw);
+    top: calc(0.01 * 100vh);
 }
 
 b {
@@ -55,6 +61,10 @@ b {
 
 
 @media (max-width: 1024px) {
+    .banner .one {
+        width: 180px;
+        /* top: calc(0.005 * 100vw); */
+    }
     .banner {
         flex-direction: column;
         align-items: flex-start;

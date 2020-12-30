@@ -1,11 +1,13 @@
 import React from 'react';
 import bannerIllustration from './../../assets/man-typing.svg';
 import './../../css/HomePage/Banner.css';
+import { ReactComponent as Misc } from "./../Svgs/miscellaneous/misc1.svg";
 
 
 const Banner = () => {
     return (
         <div className="banner">
+            <Misc className="bg-svg one" />
             <section className="left">
                 <h1>Create Your <br /> Resume</h1>
                 <b>By employing the best practices and innovative   tech,
