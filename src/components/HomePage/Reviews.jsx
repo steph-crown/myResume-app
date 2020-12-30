@@ -14,21 +14,21 @@ class Reviews extends Component {
     // Different carousel grouping for different screen sizes
     // >1024
     reviewL = chunkArray(reviews, 3).map((arr, index) => {
-        return (<Slide className="diva" index={index}>
+        return (<Slide className="diva" index={index} key={index.toString()}>
             {arr.map(x => <ReviewBox prop={x} />)}
         </Slide>)
     })
 
     // >600 && <1024
     reviewMed = chunkArray(reviews, 2).map((arr, index) => {
-        return (<Slide className="diva-after" index={index}>
+        return (<Slide className="diva-after" index={index} key={index.toString()}>
                 {arr.map(x => <ReviewBox prop={x} />)}
         </Slide>)
     })
 
     // <600s
     reviewSm = chunkArray(reviews, 1).map((arr, index) => {
-        return (<Slide className="diva" index={index}>
+        return (<Slide className="diva" index={index} key={index.toString()}>
             {arr.map(x => <ReviewBox prop={x} />)}
         </Slide>)
     })
