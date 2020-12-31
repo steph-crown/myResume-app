@@ -57,5 +57,23 @@ export default {
             icon: 'fa fa-github',
             link: "https://github.com/steph-crown"
         },
+    ],
+    col4: [
+        {
+            name: "Home",
+            link: "/"
+        },
+        {
+            name: "Get Started",
+            link: '/new'
+        },
+        {
+            name: "About",
+            link: '/about'
+        },
+        {
+            name: "Help",
+            link: '/help'
+        }
     ]
 }

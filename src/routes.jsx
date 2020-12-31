@@ -1,5 +1,4 @@
 import React from 'react';
-import NavBar from './components/HomePage/NavBar';
 import Homepage from './components/HomePage';
 import SignUpPage from './components/SignUpPage';
 import AboutPage from './components/AboutPage';
@@ -8,7 +7,7 @@ import HelpPage from './components/HelpPage';
 import LoginPage from './components/LoginPage';
 import MobileMenu from './components/MobileMenuPage';
 
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, Router, Switch } from "react-router-dom";
 import history from './utilities/history';
 
 const routes = () => {

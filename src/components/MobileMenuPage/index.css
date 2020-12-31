@@ -13,7 +13,7 @@
     top: calc(100vw * var(--l120));
     right: calc(100vw * var(--l120));
     font-size: 32px;
-    color: var(--bg-white);
+    color: var(--bg-white) !important;
 }
 
 .mobile-menu .a {

@@ -24,7 +24,7 @@ const Footer = () => {
     );
 
     return (
-        <div className="footer">
+        <footer className="footer">
             <Link className="logo" to="/">
                 <span className="my">my</span>
                 <span className="Resume">Resume</span>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className="col2">{col3Links}</div>
             </div>
             <p>Designed and Developed with <i className="fa fa-heart"></i> by <a href="#" style={{color: "var(--red)"}}>Steph Crown</a></p>
-        </div>
+        </footer>
     );
 }
 

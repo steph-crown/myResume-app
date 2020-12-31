@@ -68,12 +68,14 @@
     z-index: 5;
     top: 32%;
     left: 10%;
+    max-width: 30vw;
 }
 
 .reviews-section .seven {
     z-index: 5;
     bottom: 6%;
     right: 10%;
+    max-width: 30vw;
 }
 
 @media (max-width:600px) {
@@ -128,6 +130,8 @@
 
     .reviews-section {
         background: url("./../../components/Svgs/reviews-bg.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 

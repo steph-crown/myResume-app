@@ -1,0 +1,40 @@
+.sign-container {
+    position: relative;
+}
+
+.sign-container .logo, .sign-container .socials, .sign-container .nav {
+    position: fixed;
+}
+
+.sign-container .logo {
+    top: calc(100vw * var(--l60));
+    left: calc(100vw * var(--l60));
+    
+}
+
+.socials {
+    bottom: calc(100vw * var(--l60));
+    left: calc(100vw * var(--l60));
+}
+
+.socials a {
+    display: block;
+}
+
+.sign-container .socials .icons {
+    color: var(--darker-black);
+    margin-top: 32px;
+}
+
+.sign-container .nav {
+    top: calc(100vw * var(--l60));
+    right: calc(100vw * var(--l60));
+}
+
+.sign-container .a {
+    display: block;
+    text-align: right;
+    margin: 0;
+    line-height: 16px;
+    margin-bottom: 32px;
+}
