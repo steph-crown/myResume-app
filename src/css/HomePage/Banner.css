@@ -14,6 +14,7 @@ h1 {
 .banner .one {
     left: calc(0.02 * 100vw);
     top: calc(0.01 * 100vh);
+    
 }
 
 b {
@@ -64,6 +65,7 @@ b {
     .banner .one {
         width: 180px;
         /* top: calc(0.005 * 100vw); */
+        max-width: 70vw;
     }
     .banner {
         flex-direction: column;

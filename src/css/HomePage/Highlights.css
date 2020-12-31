@@ -1,12 +1,25 @@
 .highlights {
     padding: 0 calc(100vw * var(--l120));
     margin-top: 72px;
+    position: relative;
 }
 
 h2 {
     text-align: center;
     margin-top: 32px;
     color: var(--black);
+}
+
+.highlights .one {
+    max-width: 50vw;
+    left: 10px;
+    top: 50px;
+}
+
+.highlights .two {
+    max-width: 40vw;
+    bottom: -100px;
+    right: 0;
 }
 
 .box-container {
