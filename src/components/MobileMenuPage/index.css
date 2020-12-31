@@ -1,0 +1,30 @@
+.mobile-menu {
+    background-color: var(--darker-black);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.x {
+    position: fixed;
+    top: calc(100vw * var(--l120));
+    right: calc(100vw * var(--l120));
+    font-size: 32px;
+    color: var(--bg-white);
+}
+
+.mobile-menu .a {
+    color: var(--bg-white);
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    /* font-weight: 300; */
+    margin: 20px 0;
+}
+
+.mobile-menu .a:hover {
+    color: var(--red);
+}
