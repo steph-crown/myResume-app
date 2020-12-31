@@ -20,11 +20,11 @@ const Nav = () => {
                 <Link to="/signup" className="signup a">Sign Up </Link>  
                 <Link to="/login" className="login a">Log In</Link>
             </div>
-            <div className="menu-icon">
+            <Link className="menu-icon" to="/menu">
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </Link>
         </nav>
     );
 }

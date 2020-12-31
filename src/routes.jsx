@@ -16,7 +16,6 @@ const routes = () => {
         <div>
             <Router history={history}>
                 <div>
-                    <NavBar />
                     <Switch>
                         <Route exact path="/" render={()=><Homepage />} />
                         <Route path="/signup" render={()=><SignUpPage />} />
@@ -24,7 +23,7 @@ const routes = () => {
                         <Route path="/new" render={()=><CreateResumePage />} />
                         <Route path="/help" render={()=><HelpPage />} />
                         <Route path="/login" render={()=><LoginPage />} />
-                        <Route path="#menu" render={()=><MobileMenu />} />
+                        <Route path="/menu" render={()=><MobileMenu />} />
                         
                     </Switch>
                 </div>
