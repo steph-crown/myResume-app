@@ -42,7 +42,7 @@ b {
     /* height: calc((452 / 736) * var(--width)); */
 }
 
-.buttons a {
+.buttons a, .buttons .a {
     background-color: transparent;
     border: 2px solid var(--red);
     border-radius: 4px;
@@ -54,10 +54,15 @@ b {
     color: var(--red);
 }
 
-.buttons a:first-child {
+.buttons a:first-child, .buttons .a:first-child {
     background-color: var(--red);
     margin-right: 32px;
     color: var(--bg-white);
+}
+
+.banner-signup:hover {
+    color: var(--bg-white);
+    background-color: var(--red);
 }
 
 
@@ -90,7 +95,7 @@ b {
         margin-top: 40px;
     }
 
-    .buttons a {
+    .buttons a, .buttons .a {
         width: 120px;
     }
 }

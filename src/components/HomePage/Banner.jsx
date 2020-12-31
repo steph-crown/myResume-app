@@ -2,6 +2,7 @@ import React from 'react';
 import bannerIllustration from './../../assets/man-typing.svg';
 import './../../css/HomePage/Banner.css';
 import { ReactComponent as Misc } from "./../Svgs/miscellaneous/misc1.svg";
+import { Link } from "react-router-dom";
 
 
 const Banner = () => {
@@ -16,8 +17,8 @@ const Banner = () => {
                 {/* Ends */}
                 boosts your chances of landing a better job - completely for free.</b>
                 <div className="buttons">
-                    <a href="#">Get Started</a>
-                    <a href="#">Sign Up</a>
+                    <Link to="/new" className="a">Get Started</Link>
+                    <Link className="a banner-signup" to="signup">Sign Up</Link>
                 </div>
             </section>
             <section className="right">

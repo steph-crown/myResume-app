@@ -76,7 +76,7 @@ h4 {
     margin-bottom: 40px;
 }
 
-.step-by-step a {
+.step-by-step a, .step-by-step .a {
     color: var(--darker-black);
     background: var(--red);
     border-radius: 5px;

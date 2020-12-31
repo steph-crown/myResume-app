@@ -3,23 +3,28 @@ export default {
     col1: [
         {
             name: "Home",
-            icon: "fa fa-home"
+            icon: "fa fa-home",
+            link: "/"
         },
         {
             name: "About Us",
-            icon: "fa fa-info-circle"
+            icon: "fa fa-info-circle",
+            link: "/about"
         },
         {
             name: "Help",
-            icon: "fa fa-question-circle"
+            icon: "fa fa-question-circle",
+            link: "/help"
         },
         {
             name: "Contact Us",
-            icon: "fa fa-phone"
+            icon: "fa fa-phone",
+            link: "contact"
         },
         {
             name: "Review/Feedback",
-            icon: "fa fa-pencil-square-o"
+            icon: "fa fa-pencil-square-o",
+            "link": "review"
         },
         
     ],
@@ -34,19 +39,23 @@ export default {
     col3: [
         {
             name: "Twitter",
-            icon: "fa fa-twitter"
+            icon: "fa fa-twitter",
+            link:"https://twitter.com/stephcrown06"
         },
         {
             name: "Facebook",
-            icon: "fa fa-facebook"
+            icon: "fa fa-facebook",
+            link: "https://facebook.com/profile.php?id=100006437678823&_rdc=1&_rdr"
         },
         {
             name: "Instagram",
-            icon: "fa fa-instagram"
+            icon: "fa fa-instagram",
+            link: "https://instagram.com/stephcrown06"
         },
         {
             name: "Github",
-            icon: 'fa fa-github'
+            icon: 'fa fa-github',
+            link: "https://github.com/steph-crown"
         },
     ]
 }

@@ -1,33 +1,34 @@
 import React from 'react';
 import './../../css/HomePage/Footer.css';
 import links from "./../../db/footer-links";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 
     let col1Links = links.col1.map(link => 
         <div className="link" key={link.name}>
-            <a href="#">{link.name} &nbsp; &nbsp; <i className={link.icon + " icons"} style={{fontSize: "20px"}}></i></a>
+            <Link to={link.link}>{link.name} &nbsp; &nbsp; <i className={link.icon + " icons"} style={{fontSize: "20px"}}></i></Link>
         </div>
     );
 
     let col2Links = links.col2.map(link => 
         <div className="link" key={link}>
-            <a href="#">{link}</a>
+            <Link to="">{link}</Link>
         </div>
     );
 
     let col3Links = links.col3.map(link => 
         <div className="link" key={link.name}>
-            <a href="#">{link.name}&nbsp; &nbsp; <i className={link.icon + " icons"} style={{fontSize: "20px"}}></i></a>
+            <a href={link.link}>{link.name}&nbsp; &nbsp; <i className={link.icon + " icons"} style={{fontSize: "20px"}}></i></a>
         </div>
     );
 
     return (
         <div className="footer">
-            <div className="logo">
+            <Link className="logo" to="/">
                 <span className="my">my</span>
                 <span className="Resume">Resume</span>
-            </div>
+            </Link>
             <div className="linkings">
                 <div className="col1">{col1Links}</div>
                 <div className="col2">{col2Links}</div>

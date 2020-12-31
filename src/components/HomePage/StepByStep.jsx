@@ -4,6 +4,7 @@ import {ReactComponent as Step1} from './../Svgs/Step1-illustration.svg';
 import {ReactComponent as Step2} from './../Svgs/Step2-illustration.svg';
 import {ReactComponent as Step3} from './../Svgs/Step3-illustration.svg';
 import {ReactComponent as Misc} from './../Svgs/miscellaneous/misc1.svg';
+import { Link } from "react-router-dom";
 
 
 
@@ -46,7 +47,7 @@ const StepByStep = () => {
                 </div>
             </section>
             <h4>Woah, This looks interesting</h4>
-            <a href="#">Get Started Already</a>
+            <Link to="/new" className="a">Get Started Already</Link>
         </div>
     );
 }
