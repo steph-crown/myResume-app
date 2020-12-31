@@ -1,5 +1,5 @@
 .reviews-section {
-    background-color: var(--black);
+    background: var(--black);
     padding: 72px calc(100vw * var(--l120));
     position: relative;
 }
@@ -124,6 +124,10 @@
 
     .small {
         display: block;
+    }
+
+    .reviews-section {
+        background: url("./../../components/Svgs/reviews-bg.svg");
     }
 }
 

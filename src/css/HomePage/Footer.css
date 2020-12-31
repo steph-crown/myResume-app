@@ -51,6 +51,9 @@
     justify-content: space-between;
 }
 
+.fa-heart {
+    color: var(--red);
+}
 
 @media (max-width: 600px) {
     .linkings {
