@@ -95,12 +95,12 @@ h5 {
   font-weight: 400;
   font-size: 24px;
 }
-h6, a {
+h6, a, .a {
   font-weight: 600;
   font-size: 20px;
 }
 
-a {
+a, .a {
   font-size: 16px;
   text-decoration: none;
 }
@@ -167,13 +167,13 @@ letter-spacing: 0.02em;
     line-height: 40px;
   }
 
-  a {
+  a, .a {
     line-height: 44px;
   }
 }
 
 @media (max-width: 240px) {
-  a {
+  a, .a {
     font-size: 12px;
   }
 }

@@ -21,23 +21,27 @@ nav {
     margin: auto;
 }
 
-.links-at-center a {
+.links-at-center a, .links-at-center .a {
     margin-right: calc(100vw * var(--l52));
 }
 
-.links-at-center a:last-child {
+.links-at-center a:last-child, .links-at-center .a:last-child {
     margin-right: 0;
 }
 
-a {
+a, .a {
     color: var(--light-black);
 }
 
-.links-at-end a {
+nav a:hover, nav .a:hover {
     color: var(--red);
 }
 
-.links-at-end a:first-child {
+.links-at-end a, .links-at-end .a {
+    color: var(--red);
+}
+
+.links-at-end a:first-child, .links-at-end .a:first-child {
     margin-right: calc(100vw * var(--l52));
 }
 
