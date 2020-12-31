@@ -3,10 +3,15 @@ import './../../css/HomePage/StepByStep.css';
 import {ReactComponent as Step1} from './../Svgs/Step1-illustration.svg';
 import {ReactComponent as Step2} from './../Svgs/Step2-illustration.svg';
 import {ReactComponent as Step3} from './../Svgs/Step3-illustration.svg';
+import {ReactComponent as Misc} from './../Svgs/miscellaneous/misc1.svg';
+
+
 
 const StepByStep = () => {
     return (
         <div className="step-by-step">
+            <Misc className="bg-svg one" />
+            <Misc className="bg-svg two" />
             <div className="tag">Step By Step</div>
             <h2>Just In 3 Ways</h2>
             <section className="steps">

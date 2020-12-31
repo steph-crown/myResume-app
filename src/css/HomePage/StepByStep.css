@@ -15,6 +15,7 @@
     padding:0 calc(100vw * var(--l120));
     margin-top: 72px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .steps {
@@ -94,6 +95,18 @@ h4 {
     color: var(--darker-black);
 }
 
+.step-by-step .one {
+    transform: rotate(-85deg);
+    max-width: 60vw;
+}
+
+.step-by-step .two {
+    bottom: 350px;
+    max-width: 60vw;
+    right: 50px;
+}
+
+
 @media (max-width: 800px) {
     .illustration, .texts {
         width: 100%;
@@ -122,3 +135,4 @@ h4 {
         margin-bottom: 16px;
     }
 }
+
