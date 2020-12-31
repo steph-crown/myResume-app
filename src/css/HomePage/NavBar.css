@@ -70,7 +70,13 @@ nav a:hover, nav .a:hover {
     width: 40px;
 }
 
-
+.links-at-end .signup:hover {
+    color: var(--purple) ;
+}
+.links-at-end .login:hover {
+    color: var(--bg-white);
+    background-color: var(--red);
+}
 
 
 @media (max-width: 1024px) {

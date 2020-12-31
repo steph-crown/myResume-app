@@ -11,14 +11,14 @@ const Nav = () => {
                 <span className="Resume">Resume</span>
             </div>
             <div className="links-at-center">
-                <a href="#">Home</a>
-                <a href="#">Get Started</a>
-                <a href="#">About</a>
-                <a href="#">Help</a>
+                <Link to="/" className="a">Home</Link>
+                <Link to="/new" className="a">Get Started</Link>
+                <Link to="/about" className="a">About</Link>
+                <Link to="/help" className="a">Help</Link>
             </div>
             <div className="links-at-end">
-                <Link to="/signup" className="signup">Sign Up</Link>   
-                <a href="#" className="login">Log In</a>
+                <Link to="/signup" className="signup a">Sign Up </Link>  
+                <Link to="/login" className="login a">Log In</Link>
             </div>
             <div className="menu-icon">
                 <div></div>
