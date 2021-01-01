@@ -1,0 +1,50 @@
+.abs-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+
+.abs-container .logo, .abs-container .socials, .abs-container .nav {
+    position: fixed;
+}
+
+.abs-container .logo {
+    top: calc(100vw * var(--l60));
+    left: calc(100vw * var(--l60));
+    
+}
+
+.socials {
+    bottom: calc(100vw * var(--l60));
+    left: calc(100vw * var(--l60));
+}
+
+.socials a {
+    display: block;
+}
+
+.abs-container .socials .icons {
+    color: var(--darker-black);
+    margin-top: 32px;
+}
+
+.abs-container .nav {
+    top: calc(100vw * var(--l60));
+    right: calc(100vw * var(--l60));
+}
+
+.abs-container .a {
+    display: block;
+    text-align: right;
+    margin: 0;
+    line-height: 16px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+    .abs-container {
+        display: none !important;
+    }
+    
+}

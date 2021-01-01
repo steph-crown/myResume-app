@@ -1,40 +1,74 @@
+.left-part h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    /* font-size: 72px; */
+    /* line-height: 112px; */
+    letter-spacing: 0.03em;
+}
+
+.left-part {
+    width: 50%;
+}
+
 .sign-container {
-    position: relative;
+   
+    padding: 0  calc(100vw * 180 / 1438);
 }
 
-.sign-container .logo, .sign-container .socials, .sign-container .nav {
-    position: fixed;
+.sign-container main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.sign-container .logo {
-    top: calc(100vw * var(--l60));
-    left: calc(100vw * var(--l60));
-    
+.left-part h1 span:first-of-type {
+    color: var(--purple);
 }
 
-.socials {
-    bottom: calc(100vw * var(--l60));
-    left: calc(100vw * var(--l60));
+.left-part h1 span:nth-of-type(2) {
+    color: var(--red);
 }
 
-.socials a {
-    display: block;
+.sign-container {
+    background: #ffffff;
 }
 
-.sign-container .socials .icons {
-    color: var(--darker-black);
-    margin-top: 32px;
+.left-part h5 {
+    color: var(--black);
+    width: 80%;
+    margin-top: 40px;
 }
 
-.sign-container .nav {
-    top: calc(100vw * var(--l60));
-    right: calc(100vw * var(--l60));
+.left-part h5 .a {
+    color: var(--red);
+    font-size: inherit;
 }
 
-.sign-container .a {
-    display: block;
-    text-align: right;
-    margin: 0;
-    line-height: 16px;
-    margin-bottom: 32px;
+.left-part h5 .a:hover {
+    color: var(--purple) !important;
+}
+
+.navbar {
+    display: none;
+}
+
+.form {
+    width: 50%;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        display: block;
+    }
+    .sign-container {
+        padding: 0 0 !important;
+    }
+    .sign-container main {
+        padding: 0 calc(100vw * var(--l120)) !important;
+        flex-direction: column;
+    }
+    .left-part {
+        width: 100%;
+    }
 }

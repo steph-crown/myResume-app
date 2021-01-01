@@ -1,0 +1,30 @@
+form {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+input, button {
+    width: 65%;
+    display: block;
+    margin: 28px auto;
+    background-color: var(--lightest-blue);
+    border-radius: 8px;font-family: Nunito Sans;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    line-height: 32px;
+    padding: 8px 24px;
+    color: var(--purple);
+    /* border: 1px solid var(--purple); */
+}
+
+input {
+    box-shadow:  -4px -4px 20px rgba(0, 0, 0, 0.01), 4px 4px 20px rgba(0, 0, 0, 0.01);
+}
+
+button {
+    background-color: var(--red);
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+}
