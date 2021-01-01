@@ -19,6 +19,10 @@ input, button {
     /* border: 1px solid var(--purple); */
 }
 
+.name input {
+    margin-top: 0;
+}
+
 .line-or {
     width: 70%;
     display: block;
@@ -39,6 +43,7 @@ button {
     color: white;
     font-family: Poppins;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .auth-buttons {
@@ -78,4 +83,11 @@ form button:hover {
 .auth-buttons div h5 {
     font-size: 16px;
     font-weight: 500;
+}
+
+
+@media (max-width: 1024px) {
+    input, button, .line-or, .auth-buttons {
+        width: 100%;
+    }
 }

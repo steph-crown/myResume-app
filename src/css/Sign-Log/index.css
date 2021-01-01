@@ -69,8 +69,29 @@
     .sign-container main {
         padding: 0 calc(100vw * var(--l120)) !important;
         flex-direction: column;
+        justify-content: flex-start;
     }
     .left-part {
         width: 100%;
+        margin-top: 20px;
     }
+    .left-part h5 {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center !important;
+        width: 100%;
+    }
+    .left-part h1 {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+
+    }
+    .form {
+        width: 100%;
+        margin-top: 32px;
+        margin-bottom: calc(100vw * var(--l120));
+    }
+
 }

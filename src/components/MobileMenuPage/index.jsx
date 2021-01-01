@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const index = () => {
     return (
         <div className="mobile-menu">
-            <Link to="/" class="x">&times;</Link>
+            <Link to='/' class="x">&times;</Link>
             <Link to="/" className="a">Home</Link>
             <Link to="/new" className="a">Get Started</Link>
             <Link to="/about" className="a">About</Link>
