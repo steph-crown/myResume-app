@@ -9,8 +9,10 @@ import SignUpForm from './SignUpForm'
 const index = () => {
     return (
         <div className="sign-container">
-            
-            <AbsContainer className="cont" />
+            <div className="cont">
+            <AbsContainer className="" />
+
+            </div>
             <div className="navbar">
                 <NavBar />
             </div>
@@ -26,7 +28,6 @@ const index = () => {
                 </div>
                 <div className="form">
                     <SignUpForm />
-                    kkkk
                 </div>
             </main>
             

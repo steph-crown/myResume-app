@@ -20,6 +20,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 802;
 }
 
 .left-part h1 span:first-of-type {

@@ -1,6 +1,5 @@
 .abs-container {
     position: absolute;
-    width: 100%;
     height: 100%;
     background: transparent;
 }
@@ -27,6 +26,10 @@
 .abs-container .socials .icons {
     color: var(--darker-black);
     margin-top: 32px;
+}
+
+.abs-container .socials .icons:hover , .abs-container .a:hover{
+    color: var(--red);
 }
 
 .abs-container .nav {

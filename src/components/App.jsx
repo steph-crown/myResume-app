@@ -6,6 +6,12 @@ function App() {
   return (
     <div>
       <Routes />
+      {/* <form action="">
+      <div className="name">
+      <input type="text" name="" id=""/>
+      </div>
+      </form> */}
+      
     </div>
   );
 }

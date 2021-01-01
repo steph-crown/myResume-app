@@ -4,18 +4,30 @@ form {
     margin: auto;
 }
 input, button {
-    width: 65%;
+    width: 70%;
     display: block;
-    margin: 28px auto;
+    margin: 30px auto;
     background-color: var(--lightest-blue);
     border-radius: 8px;font-family: Nunito Sans;
     font-weight: 600;
     font-size: 16px;
     border: none;
     line-height: 32px;
-    padding: 8px 24px;
+    padding: 10px 24px;
     color: var(--purple);
+    outline: none;
     /* border: 1px solid var(--purple); */
+}
+
+.line-or {
+    width: 70%;
+    display: block;
+    margin: 30px auto;
+}
+
+input:focus {
+    border: 1px solid var(--purple);
+    background-color: var(--bg-white);
 }
 
 input {
@@ -27,4 +39,43 @@ button {
     color: white;
     font-family: Poppins;
     font-weight: 400;
+}
+
+.auth-buttons {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.auth-buttons div {
+    border: 2px solid var(--purple);
+    display: flex;
+    width: 48%;
+    min-height: 2px;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.auth-buttons div:hover {
+    background-color: var(--lightest-blue);
+    border-width: 1px;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--purple);
+}
+
+.auth-buttons .icon {
+    height: 16px;
+    margin-bottom: 0;
+    margin-right: 8px;
+}
+
+.auth-buttons div h5 {
+    font-size: 16px;
+    font-weight: 500;
 }
