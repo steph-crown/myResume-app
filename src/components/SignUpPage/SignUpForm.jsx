@@ -9,16 +9,25 @@ class SignUpForm extends Component {
     render() {
         return (
             <form action="">
-                <div className="name">
+                <div className="name input">
                     <input type="text" name="" id="" placeholder="Name" />
+                    {/* <div className="input-icon"> */}
+                        <i className="fa fa-user input-icon"></i>
+                    {/* </div> */}
                 </div>
                 
-                <div className="email">
+                <div className="email input">
                     <input type="email" name="" id="" placeholder="Email Address" />
+                    {/* <div className="input-icon"> */}
+                        <i className="fa fa-envelope input-icon"></i>
+                    {/* </div> */}
                 </div>
 
-                <div className="password">
+                <div className="password input">
                     <input type="password" name="" id="" placeholder="Password" />
+                    {/* <div className="input-icon"> */}
+                        <i className="fa fa-eye-slash input-icon"></i>
+                    {/* </div> */}
                 </div>
                 <button>Sign Up</button>
                 <LineOr className="line-or" />

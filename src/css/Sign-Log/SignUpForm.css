@@ -6,11 +6,11 @@ form {
 input, button {
     width: 70%;
     display: block;
-    margin: 30px auto;
+    /* margin: 0 auto; */
     background-color: var(--lightest-blue);
-    border-radius: 8px;font-family: Nunito Sans;
+    border-radius: 8px;
+    font-family: Nunito Sans;
     font-weight: 600;
-    font-size: 16px;
     border: none;
     line-height: 32px;
     padding: 10px 24px;
@@ -19,9 +19,46 @@ input, button {
     /* border: 1px solid var(--purple); */
 }
 
-.name input {
-    margin-top: 0;
+button {
+    margin: 0 auto;
 }
+form>div {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+    margin: 30px auto;
+    width: 70%;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.input {
+    position: relative;
+}
+
+.input-icon {
+    /* background-color: rgb(163, 41, 10); */
+    /* padding: 10px 24px; */
+    /* width: 10%; */
+    /* display: flex; */
+    justify-content: space-between;
+    position: absolute;
+    right: 24px;
+    opacity: 0.8;
+}
+
+.input-icon, input, button {
+    font-size: 16px;
+}
+
+.input-icon {
+    color: var(--red);
+}
+
+/* .name input {
+    margin-top: 0;
+} */
 
 .line-or {
     width: 70%;
@@ -29,13 +66,15 @@ input, button {
     margin: 30px auto;
 }
 
-input:focus {
+input:focus, .input:focus {
     border: 1px solid var(--purple);
     background-color: var(--bg-white);
 }
 
 input {
     box-shadow:  -4px -4px 20px rgba(0, 0, 0, 0.01), 4px 4px 20px rgba(0, 0, 0, 0.01);
+    width: 100%;
+    padding-right: 48px;
 }
 
 button {
@@ -88,6 +127,10 @@ form button:hover {
 
 @media (max-width: 1024px) {
     input, button, .line-or, .auth-buttons {
+        width: 100%;
+    }
+
+    .input {
         width: 100%;
     }
 }

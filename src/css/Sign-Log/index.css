@@ -10,6 +10,8 @@
     width: 50%;
 }
 
+
+
 .sign-container {
    
     padding: 0  calc(100vw * 180 / 1438);
@@ -35,6 +37,7 @@
 .sign-container {
     background: #ffffff;
 }
+
 
 .left-part h5 {
     color: var(--black);
