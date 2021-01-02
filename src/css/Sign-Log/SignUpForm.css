@@ -7,7 +7,7 @@ input, button {
     width: 70%;
     display: block;
     /* margin: 0 auto; */
-    background-color: var(--lightest-blue);
+    /* background-color: var(--lightest-blue); */
     border-radius: 8px;
     font-family: Nunito Sans;
     font-weight: 600;
@@ -62,12 +62,18 @@ form>div {
 
 .line-or {
     width: 70%;
-    display: block;
-    margin: 30px auto;
+    display: flex;
+    margin: 32px auto;
+    justify-content: space-between;
+}
+.line {
+    width: 30%;
+    background-color: var(--thick-blue);
+    height: 1px;
 }
 
 input:focus, .input:focus {
-    border: 1px solid var(--purple);
+    border: 1px solid var(--red);
     background-color: var(--bg-white);
 }
 
@@ -75,10 +81,11 @@ input {
     box-shadow:  -4px -4px 20px rgba(0, 0, 0, 0.01), 4px 4px 20px rgba(0, 0, 0, 0.01);
     width: 100%;
     padding-right: 48px;
+    border: 1px solid var(--thick-blue);
 }
 
 button {
-    background-color: var(--red);
+    background-color: var(--thick-blue);
     color: white;
     font-family: Poppins;
     font-weight: 400;
@@ -93,7 +100,7 @@ button {
 }
 
 .auth-buttons div {
-    border: 2px solid var(--purple);
+    border: 2px solid var(--thick-blue);
     display: flex;
     width: 48%;
     min-height: 2px;
@@ -103,10 +110,13 @@ button {
 }
 
 .auth-buttons div:hover {
-    background-color: var(--lightest-blue);
+    background-color: var(--light-blue);
     border-width: 1px;
     cursor: pointer;
-    cursor: pointer;
+}
+
+.auth-buttons div:hover h5 {
+    color: var(--bg-white);
 }
 
 form button:hover {
@@ -132,5 +142,8 @@ form button:hover {
 
     .input {
         width: 100%;
+    }
+    .line {
+        width: 20%;
     }
 }

@@ -1,10 +1,11 @@
 :root {
   --bg-white: #faf6ff;
   --light-black: #061923;
-  --purple: #0378a6;
+  --purple: #5F0F40;
+  --light: #0c161b;
   --light-blue: #5EC8F2;
   --lightest-blue: #e7f8ff;
-  --red: #c71010;
+  --red:  #02732A;
   --black: #0C161B;
   --darker-black: #061015;
   --l52: calc(52 / 1438);
@@ -14,6 +15,15 @@
   --l736: calc(736 / 1438);
   --l304: calc(304 / 1438);
   --l144: calc(144 / 1438);
+
+
+
+  --thick-blue: #004A8F;
+  --light-blue: #0D57FF;
+  --green: #0DFFD9;
+  --yellow: #F2E205;
+  --red: #E5193B;
+  --lightest-blue: #90FAFF;
 }
 /* ABOVE, variables starting with l indicates length relative to the width of the frame used in the ui design */
 
@@ -122,18 +132,19 @@ p {
 
 .tag {
   font-weight: bold;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 12px;
+  line-height: 24px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
   letter-spacing: 0.04em;
-  color: var(--red);
+  color: var(--light-blue);
   margin: auto;
-  width: 152px;
-  background: #FFECEC;
-  border: 2px solid var(--red);
+  min-width: 32px;
+  max-width: 132px;
+  background: transparent;
+  border: 2px solid var(--light-blue);
   border-radius: 30px;
 }
 

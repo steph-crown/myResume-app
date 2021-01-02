@@ -24,7 +24,11 @@ const LoginForm = () => {
                     {/* </div> */}
                 </div>
                 <button>Log In</button>
-                <LineOr className="line-or" />
+                <div className="line-or">
+                    <div className="line"></div>
+                    <p>Or Log In With</p>
+                    <div className="line"></div>
+                </div>
                 <div className="auth-buttons">
                     <div className="google">
                         <GoogleIcon className="icon" />

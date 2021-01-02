@@ -18,8 +18,8 @@ const Carousel = (props) => {
             <Slider>
                 {props.arr}
             </Slider>
-                <ButtonBack className="line-button"><Line stroke="#F28B0C" className="line" strokeWidth={24} /></ButtonBack>
-                <ButtonNext className="line-button"><Line stroke="#aaaB0C" className="line" strokeWidth={24} /></ButtonNext>
+                <ButtonBack className="line-button"><Line stroke=" #F2E205" className="line" strokeWidth={24} /></ButtonBack>
+                <ButtonNext className="line-button"><Line stroke=" #F2E205" className="line" strokeWidth={24} /></ButtonNext>
         </CarouselProvider>
     );
 }

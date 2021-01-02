@@ -30,7 +30,12 @@ class SignUpForm extends Component {
                     {/* </div> */}
                 </div>
                 <button>Sign Up</button>
-                <LineOr className="line-or" />
+                {/* <LineOr className="line-or" /> */}
+                <div className="line-or">
+                    <div className="line"></div>
+                    <p>Or Sign Up With</p>
+                    <div className="line"></div>
+                </div>
                 <div className="auth-buttons">
                     <div className="google">
                         <GoogleIcon className="icon" />

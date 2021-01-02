@@ -1,9 +1,9 @@
 .my {
-    color: var(--purple);
+    color: var(--light);
 }
 
 .Resume {
-    color: var(--red);
+    color: var(--light-blue);
 }
 
 nav {
@@ -62,7 +62,7 @@ nav a:hover, nav .a:hover {
 
 .menu-icon div {
     height: 5px;
-    background-color: var(--purple);
+    background-color: var(--black);
     width: 28px;
 }
 

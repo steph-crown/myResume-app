@@ -26,14 +26,6 @@
     z-index: 802;
 }
 
-.left-part h1 span:first-of-type {
-    color: var(--purple);
-}
-
-.left-part h1 span:nth-of-type(2) {
-    color: var(--red);
-}
-
 .sign-container {
     background: #ffffff;
 }
