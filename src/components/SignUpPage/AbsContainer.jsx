@@ -6,10 +6,10 @@ import './AbsContainer.css';
 
 const AbsContainer = () => {
     let socials = links.col3.map(link =>
-        <a key={link.icon} href={link.link} className={link.icon + " icons"} style={{fontSize: "24px"}}></a>
+        <a key={link.icon} href={link.link} className={link.icon + " icons"} style={{fontSize: "24px"}}>&nbsp;</a>
     )
     let nav = links.col4.map(link =>
-        <Link to={link.link} className="a">{link.name}</Link>
+        <Link key={link.link} to={link.link} className="a">{link.name}</Link>
     )
 
     return (

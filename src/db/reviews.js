@@ -34,7 +34,6 @@ let review = [
 
 review.map(arr => {
     arr.review = arr.review.length > 152 ? arr.review.slice(0,144) + " . . ." : arr.review;
-    console.log(arr)
     return arr
 })
 
