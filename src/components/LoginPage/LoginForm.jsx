@@ -14,12 +14,12 @@ const LoginForm = () => {
     return (
         <form action="">
                 <div className="email input">
-                    <input type="email" name="" id="" placeholder="Email Address" />
+                    <input type="email" name="loginEmailAddress" id="email" placeholder="Email Address" value={this.props.email} onChange={this.handleChange} />
                     <i className="fa fa-envelope input-icon"></i>
                 </div>
 
                 <div className="password input">
-                    <input type="password" name="" id="" placeholder="Password" />
+                    <input type="password" name="loginPassword" id="password" placeholder="Password" onChange={this.handleChange} value={this.props.password} />
                     <i className="fa fa-eye-slash input-icon"></i>
                 </div>
                 <button>Log In</button>
