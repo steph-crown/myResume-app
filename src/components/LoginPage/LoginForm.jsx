@@ -27,7 +27,7 @@ class LoginForm extends Component {
                     </div>
     
                     <div className="password input">
-                        <input type="password" name="loginPassword" id="password" placeholder="Password" onChange={this.handleChange} value={this.props.password} />
+                        <input type="password" name="loginPassword" id="password" placeholder="Password" onChange={this.handleChange} value={this.props.email} />
                         <i className="fa fa-eye-slash input-icon"></i>
                     </div>
                     <button>Log In</button>
