@@ -5,6 +5,9 @@ import { ReactComponent as GoogleIcon } from './../Svgs/Google-SignIn.svg'
 import { ReactComponent as FacebookIcon } from './../Svgs/Facebook-SignIn.svg'
 import { ReactComponent as LineOr } from './../Svgs/line-or.svg'
 
+// Actions and connect for redux
+import * as ACTIONS from './../../store/actions/actions';
+import { connect } from "react-redux";
 
 
 const LoginForm = () => {
