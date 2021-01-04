@@ -11,7 +11,7 @@ const loginReducer = (state=initialState, action) => {
         case ACTION_TYPES.LOGIN_INPUT:
             return {
                 ...state,
-                [action.tag]: action.payload
+                [action.payload.tag]: action.payload.text
             };
             break;
         default:

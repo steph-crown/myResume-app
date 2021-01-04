@@ -8,5 +8,5 @@ const rootReducer = combineReducers({
     loginReducer: loginReducer,
     signupReducer: signupReducer
 });
-
+ 
 export default rootReducer

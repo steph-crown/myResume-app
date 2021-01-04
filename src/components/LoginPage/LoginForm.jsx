@@ -21,32 +21,32 @@ class LoginForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                    <div className="email input">
-                        <input type="email" name="loginEmailAddress" id="email" placeholder="Email Address" value={this.props.email} onChange={this.handleChange} />
-                        <i className="fa fa-envelope input-icon"></i>
+                <div className="email input">
+                    <input type="email" name="loginEmailAddress" id="email" placeholder="Email Address" value={this.props.emailAddress} onChange={this.handleChange} />
+                    <i className="fa fa-envelope input-icon"></i>
+                </div>
+
+                <div className="password input">
+                    <input type="password" name="loginPassword" id="password" placeholder="Password" onChange={this.handleChange} value={this.props.password} />
+                    <i className="fa fa-eye-slash input-icon"></i>
+                </div>
+                <button>Log In</button>
+                <div className="line-or">
+                    <div className="line"></div>
+                    <p>Or Log In With</p>
+                    <div className="line"></div>
+                </div>
+                <div className="auth-buttons">
+                    <div className="google">
+                        <GoogleIcon className="icon" />
+                        <h5>Google</h5>
                     </div>
-    
-                    <div className="password input">
-                        <input type="password" name="loginPassword" id="password" placeholder="Password" onChange={this.handleChange} value={this.props.email} />
-                        <i className="fa fa-eye-slash input-icon"></i>
+                    <div className="facebook">
+                        <FacebookIcon className="icon" />
+                        <h5>Facebook</h5>
                     </div>
-                    <button>Log In</button>
-                    <div className="line-or">
-                        <div className="line"></div>
-                        <p>Or Log In With</p>
-                        <div className="line"></div>
-                    </div>
-                    <div className="auth-buttons">
-                        <div className="google">
-                            <GoogleIcon className="icon" />
-                            <h5>Google</h5>
-                        </div>
-                        <div className="facebook">
-                            <FacebookIcon className="icon" />
-                            <h5>Facebook</h5>
-                        </div>
-                    </div>
-                </form>
+                </div>
+            </form>
         );
     }
 }
