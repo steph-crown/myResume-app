@@ -13,7 +13,6 @@ const loginReducer = (state=initialState, action) => {
                 ...state,
                 [action.payload.tag]: action.payload.text
             };
-            break;
         default:
             return state;
             break;

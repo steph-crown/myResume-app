@@ -19,3 +19,21 @@ export const login_input = (text, tag) => {
         }
     }
 }
+
+export const get_user_details = (req) => {
+    return {
+        type: ACTION_TYPES.GET_USER_DETAILS,
+        payload: {
+            req
+        }
+    }
+}
+
+export const set_user_details = (userDetails) => {
+    return {
+        type: ACTION_TYPES.SET_USER_DETAILS,
+        payload: {
+            userDetails
+        }
+    }
+}
