@@ -14,23 +14,27 @@ class SignUpForm extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
+        const {name, email, password} = this.props;
+
+        // Signs up
         this.props.signUp('/user/signup', {
-            name: "Emmanuel",
-            email: "emmanuelstephen024@gmail.com",
-            password: "mobols"
+            name,
+            email,
+            password
         })
     }
     render() {
         return (
             <form action="" onSubmit={this.handleSubmit}>
                 {console.log(this.props.userDetails)}
+                {this.props.errMessage}
                 <div className="name input">
                     <input type="text" name="signupName"  placeholder="Name" id="name" value={this.props.name} onChange={this.handleChange} />
                     <i className="fa fa-user input-icon"></i>
                 </div>
                 
                 <div className="email input">
-                    <input type="email" name="signupEmailAddress"  id="emailAddress" placeholder="Email Address" value={this.props.emailAddress} onChange={this.handleChange} />
+                    <input type="email" name="signupEmailAddress"  id="emailAddress" placeholder="Email Address" value={this.props.email} onChange={this.handleChange} />
                     <i className="fa fa-envelope input-icon"></i>
                 </div>
 
@@ -69,9 +73,10 @@ class SignUpForm extends Component {
 function mapStateToProps(state) {
     return {
         name: state.signupReducer.signupName,
-        emailAddress: state.signupReducer.signupEmailAddress,
+        email: state.signupReducer.signupEmailAddress,
         password: state.signupReducer.signupPassword,
-        userDetails: state.userDetailsReducer.userDetails
+        userDetails: state.userDetailsReducer.userDetails,
+        errMessage: state.errorReducer.errMessage
     }
 }
 
