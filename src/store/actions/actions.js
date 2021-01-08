@@ -21,6 +21,13 @@ export const login_input = (text, tag) => {
     }
 }
 
+export const error = (errMessage) => {
+    return {
+        type: ACTION_TYPES.ERROR,
+        errMessage
+    }
+}
+
 export const get_user_details = (url, data) => {
     return {
         type: ACTION_TYPES.GET_USER_DETAILS,

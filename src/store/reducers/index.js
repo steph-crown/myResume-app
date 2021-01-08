@@ -4,13 +4,16 @@ import signupReducer from "./signup_reducer";
 
 import userDetailsReducer from "./user_details.reducer";
 
+import errorReducer from './error'
+
 
 import { combineReducers } from "redux";
 
 const rootReducer = combineReducers({
     loginReducer,
     signupReducer,
-    userDetailsReducer
+    userDetailsReducer,
+    errorReducer
 });
  
 export default rootReducer;

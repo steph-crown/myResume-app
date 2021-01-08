@@ -1,5 +1,5 @@
 import { call, put } from "redux-saga/effects";
-import { set_user_details } from "../../store/actions/actions";
+import { error, set_user_details } from "../../store/actions/actions";
 import { getUserDetails } from "./../requests/user_details";
 
 export function* handleGetUserData(action) {
@@ -9,8 +9,16 @@ export function* handleGetUserData(action) {
 
         // Gets the data gotten from the response gotten
         const {data} = response;
-        // Dispatches a redux action that stores the data in the reducer
-        yield put(set_user_details(data));
+
+        // If there is an error in the data
+        if (data.error) {
+            // Dispatches a redux action that stores the error in the reducer
+            yield put(error(data.error));
+        }else {
+            // Dispatches a redux action that stores the data in the reducer
+            yield put(set_user_details(data));
+        }
+
     }catch(err) {
         console.log(err);
     }
