@@ -13,4 +13,4 @@ const rootReducer = combineReducers({
     userDetailsReducer
 });
  
-export default rootReducer
+export default rootReducer;

@@ -9,7 +9,7 @@ const userDetails_reducer = (state = initialState, action) => {
         case ACTION_TYPES.SET_USER_DETAILS:
             return {
                 ...state,
-                email: action.payload.userDetails
+                userDetails: action.payload.userDetails
             }
             default:
                 return state;

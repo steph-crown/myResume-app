@@ -7,9 +7,16 @@ import reportWebVitals from './reportWebVitals';
 // React-redux
 import { Provider } from "react-redux";
 import rootReducer from "./store/reducers";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
+import { watcherSaga } from './sagas';
 
-let store = createStore(rootReducer);
+const sagaMiddleware = createSagaMiddleware();
+const middlewares = [sagaMiddleware];
+let store = createStore(rootReducer, applyMiddleware(...middlewares));
+
+// Runs in background and listens for any redux action that'll be dispatched
+sagaMiddleware.run(watcherSaga);
 
 ReactDOM.render(
   <React.StrictMode>

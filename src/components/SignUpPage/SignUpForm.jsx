@@ -14,10 +14,16 @@ class SignUpForm extends Component {
     }
     handleSubmit = (event) => {
         event.preventDefault();
+        this.props.signUp('/user/signup', {
+            name: "Emmanuel",
+            email: "emmanuelstephen024@gmail.com",
+            password: "mobols"
+        })
     }
     render() {
         return (
             <form action="" onSubmit={this.handleSubmit}>
+                {console.log(this.props.userDetails)}
                 <div className="name input">
                     <input type="text" name="signupName"  placeholder="Name" id="name" value={this.props.name} onChange={this.handleChange} />
                     <i className="fa fa-user input-icon"></i>
@@ -64,14 +70,16 @@ function mapStateToProps(state) {
     return {
         name: state.signupReducer.signupName,
         emailAddress: state.signupReducer.signupEmailAddress,
-        password: state.signupReducer.signupPassword
+        password: state.signupReducer.signupPassword,
+        userDetails: state.userDetailsReducer.userDetails
     }
 }
 
 // Maps the redux action dispatchers to props object
 function mapDispatchToProps(dispatch) {
     return {
-       updateSignupInput: (text, tag) => dispatch(ACTIONS.signup_input(text, tag)) 
+       updateSignupInput: (text, tag) => dispatch(ACTIONS.signup_input(text, tag)),
+       signUp: (url, data) => dispatch(ACTIONS.get_user_details(url, data))
     }
 }
 

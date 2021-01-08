@@ -10,6 +10,7 @@ export const signup_input = (text, tag) => {
     }
 }
 
+
 export const login_input = (text, tag) => {
     return {
         type: ACTION_TYPES.LOGIN_INPUT,
@@ -20,11 +21,12 @@ export const login_input = (text, tag) => {
     }
 }
 
-export const get_user_details = (req) => {
+export const get_user_details = (url, data) => {
     return {
         type: ACTION_TYPES.GET_USER_DETAILS,
         payload: {
-            req
+            url,
+            data
         }
     }
 }
