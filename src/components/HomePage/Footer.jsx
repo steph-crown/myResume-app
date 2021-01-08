@@ -34,7 +34,7 @@ const Footer = () => {
                 <div className="col2">{col2Links}</div>
                 <div className="col2">{col3Links}</div>
             </div>
-            <p>Designed and Developed with <i className="fa fa-heart"></i> by <a href="#" style={{color: "var(--red)"}}>Steph Crown</a></p>
+            <p>Designed and Developed with <i className="fa fa-heart"></i> by <a href="https://steph-portfolio.vercel.app" style={{color: "var(--red)"}}>Steph Crown</a></p>
         </footer>
     );
 }

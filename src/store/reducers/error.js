@@ -12,11 +12,9 @@ const errorReducer = (state = initialState, action) => {
                 ...state,
                 errMessage: action.errMessage
             }
-            break;
     
         default:
             return state
-            break;
     }
 }
 

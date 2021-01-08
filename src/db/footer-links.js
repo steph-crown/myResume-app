@@ -1,5 +1,5 @@
 // A store of the footer links objects.
-export default {
+let footerLinks = {
     col1: [
         {
             name: "Home",
@@ -77,3 +77,6 @@ export default {
         }
     ]
 }
+
+
+export default footerLinks;

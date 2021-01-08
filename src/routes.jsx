@@ -6,6 +6,7 @@ import CreateResumePage from './components/CreateResumePage';
 import HelpPage from './components/HelpPage';
 import LoginPage from './components/LoginPage';
 import MobileMenu from './components/MobileMenuPage';
+import Profiles from './components/Dashboard/Profiles'
 
 import { Route, Router, Switch } from "react-router-dom";
 import history from './utilities/history';
@@ -23,7 +24,7 @@ const routes = () => {
                         <Route path="/help" render={()=><HelpPage />} />
                         <Route path="/login" render={()=><LoginPage />} />
                         <Route path="/menu" render={()=><MobileMenu />} />
-                        
+                        <Route path="/dashboard" render={() => <Profiles />} />
                     </Switch>
                 </div>
             </Router>

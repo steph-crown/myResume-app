@@ -8,7 +8,7 @@ import { ReactComponent as Template} from '../components/Svgs/Template.svg';
 
 
 
-export default [
+let highlights = [
     {
         icon: Smart,
         header: 'Smart',
@@ -41,3 +41,5 @@ export default [
     },
     
 ]
+
+export default highlights

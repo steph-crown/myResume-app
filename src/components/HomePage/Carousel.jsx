@@ -1,5 +1,5 @@
 import React from 'react';
-import { CarouselProvider, Slider, ButtonBack, ButtonNext, ButtonPlay } from 'pure-react-carousel';
+import { CarouselProvider, Slider, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import { ReactComponent as Line } from "./../Svgs/Line.svg";
 

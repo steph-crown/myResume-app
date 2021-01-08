@@ -15,7 +15,6 @@ const loginReducer = (state=initialState, action) => {
             };
         default:
             return state;
-            break;
     }
 }
 
