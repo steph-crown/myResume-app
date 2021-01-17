@@ -2,6 +2,7 @@ import React from 'react';
 import './../../css/HomePage/Banner.css';
 import { ReactComponent as Misc } from "./../Svgs/miscellaneous/misc1.svg";
 import { Link } from "react-router-dom";
+import Illustrate from './../Svgs/banner-illustration.svg';
 
 
 const Banner = () => {
@@ -21,7 +22,7 @@ const Banner = () => {
                 </div>
             </section>
             <section className="right">
-                <img src="" alt="A man typing."/>
+                <img src={Illustrate} alt="A man typing."/>
             </section>
         </div>
     );
