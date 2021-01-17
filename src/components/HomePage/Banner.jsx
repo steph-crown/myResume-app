@@ -22,7 +22,7 @@ const Banner = () => {
                 </div>
             </section>
             <section className="right">
-                <img src={Illustrate} alt="A man typing."/>
+                <img src={Illustrate} alt="Three Resumes"/>
             </section>
         </div>
     );

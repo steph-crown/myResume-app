@@ -92,6 +92,10 @@ b {
         width: 100%;
     }
 
+    .right {
+        margin-top: 40px;
+    }
+
     .right img {
         width: 100%;
         /* height: calc(0.616 * 100vw); */
