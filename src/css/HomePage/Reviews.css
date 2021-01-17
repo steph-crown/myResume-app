@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.reviews-section .tag {
+    border-color: var(--green);
+    color: var(--green);
+}
+
 .reviews-section h2 {
     color: var(--bg-white);
     margin-bottom: 88px;

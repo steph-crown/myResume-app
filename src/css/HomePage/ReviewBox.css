@@ -31,7 +31,7 @@
 }
 
 .review-box h3 {
-    color: var(--lightest-blue);
+    color: var(--green);
     margin-bottom: calc(8 / 275 * var(--rwidth));
     font-weight: 400;
     font-size: 28px;

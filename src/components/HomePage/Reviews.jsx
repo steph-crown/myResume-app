@@ -41,8 +41,8 @@ class Reviews extends Component {
         return (
             <div className="reviews-section">
                 <Misc5 className="bg-svg five" />
-                <Misc6 className="bg-svg six" />
-                <Misc6 className="bg-svg seven" />
+                <Misc6 className="bg-svg six" fill="#d6d2e0" />
+                <Misc6 className="bg-svg seven" fill="#d6d2e0" />
                 <div className="tag">Reviews</div>
                 <h2>What Our Users Say</h2>
                 <section className="reviews">

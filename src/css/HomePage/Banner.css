@@ -7,7 +7,7 @@
 }
 
 h1 {
-    color: var(--thick-blue);
+    color: var(--purple);
     margin-bottom: 8px;
 }
 
@@ -44,26 +44,28 @@ b {
 
 .buttons a, .buttons .a {
     background-color: transparent;
-    border: 2px solid var(--red);
+    border: 2px solid var(--green);
     border-radius: 4px;
     width: 152px;
     display: block;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--red);
+    color: var(--green);
     padding: 4px 0;
 }
 
+
+
 .buttons a:first-child, .buttons .a:first-child {
-    background-color: var(--red);
+    background-color: var(--green);
     margin-right: 32px;
     color: var(--bg-white);
 }
 
 .banner-signup:hover {
     color: var(--bg-white);
-    background-color: var(--red);
+    background-color: var(--green);
 }
 
 

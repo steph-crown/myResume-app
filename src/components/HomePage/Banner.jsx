@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Banner = () => {
     return (
         <div className="banner">
-            <Misc className="bg-svg one" />
+            <Misc className="bg-svg one" fill="#d6d2e0" />
             <section className="left">
                 <h1>Create Your <br /> Resume</h1>
                 <b>By employing the best practices and innovative   tech,
@@ -22,7 +22,7 @@ const Banner = () => {
                 </div>
             </section>
             <section className="right">
-                <img src={bannerIllustration} alt="A man typing."/>
+                <img src="" alt="A man typing."/>
             </section>
         </div>
     );

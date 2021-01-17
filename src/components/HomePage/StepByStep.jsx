@@ -11,8 +11,8 @@ import { Link } from "react-router-dom";
 const StepByStep = () => {
     return (
         <div className="step-by-step">
-            <Misc className="bg-svg one" />
-            <Misc className="bg-svg two" />
+            <Misc className="bg-svg one" fill="#d6d2e0" />
+            <Misc className="bg-svg two" fill="#d6d2e0" />
             <div className="tag">Step By Step</div>
             <h2>Just In 3 Ways</h2>
             <section className="steps">

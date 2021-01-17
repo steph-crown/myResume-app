@@ -13,8 +13,8 @@ class Highlights extends Component {
         let highlights = highlight.map(x => <Box icon={x.icon} header={x.header} text={x.text} key={x.header} />)
         return (
             <div className="highlights">
-                <Misc className="bg-svg one"/>
-                <Misc2 className="bg-svg two"/>
+                <Misc className="bg-svg one" fill="#d6d2e0" />
+                <Misc2 className="bg-svg two" fill="#d6d2e0" />
                 <div className="tag">Highlights</div>
                 <h2>Features You Love</h2>
                 <section className="box-container">

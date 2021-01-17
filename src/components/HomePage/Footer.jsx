@@ -25,16 +25,19 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <Link className="logo" to="/">
-                <span className="my">my</span>
-                <span className="Resume">Resume</span>
-            </Link>
+            <div className="lo">
+                <Link className="logo" to="/" >
+                    <span className="my">my</span>
+                    <span className="Resume">Resume</span>
+                </Link>
+            </div>
+            
             <div className="linkings">
                 <div className="col1">{col1Links}</div>
                 <div className="col2">{col2Links}</div>
                 <div className="col2">{col3Links}</div>
             </div>
-            <p>Designed and Developed with <i className="fa fa-heart"></i> by <a href="https://steph-portfolio.vercel.app" style={{color: "var(--red)"}}>Steph Crown</a></p>
+            <p>Designed and Developed with <i className="fa fa-heart"></i> by <a href="https://steph-portfolio.vercel.app" style={{color: "var(--green)"}}>Steph Crown</a></p>
         </footer>
     );
 }

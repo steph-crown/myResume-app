@@ -1,9 +1,9 @@
 .my {
-    color: var(--light);
+    color: var(--purple);
 }
 
 .Resume {
-    color: var(--light-blue);
+    color: var(--purple);
 }
 
 nav {
@@ -34,11 +34,11 @@ a, .a {
 }
 
 nav a:hover, nav .a:hover {
-    color: var(--red);
+    color: var(--green);
 }
 
 .links-at-end a, .links-at-end .a {
-    color: var(--red);
+    color: var(--green);
 }
 
 .links-at-end a:first-child, .links-at-end .a:first-child {
@@ -46,7 +46,7 @@ nav a:hover, nav .a:hover {
 }
 
 .login {
-    border: 2px solid var(--red);
+    border: 2px solid var(--green);
     padding: 12px calc(100vw * var(--l24));
 }
 
@@ -75,7 +75,7 @@ nav a:hover, nav .a:hover {
 }
 .links-at-end .login:hover {
     color: var(--bg-white);
-    background-color: var(--red);
+    background-color: var(--green);
 }
 
 

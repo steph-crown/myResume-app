@@ -4,8 +4,8 @@
     padding-bottom: 24px;
 }
 
-.footer .logo {
-    margin-bottom: 24px;
+.footer .logo, .lo {
+    margin-bottom: 40px;
 }
 
 .footer .my {
@@ -20,13 +20,13 @@
 }
 
 .footer a, .footer p {
-    color: var(--lightest-blue);
+    color: var(--bg-white);
     display: inline;
 }
 
 
 .footer.links.icons {
-    color: var(--red);
+    color: var(--green);
 }
 
 .footer-icon {
@@ -34,11 +34,11 @@
 }
 
 .link {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .link a:hover {
-    color: var(--red);
+    color: var(--green);
     transform: translateX(25px);
 }
 
@@ -53,7 +53,11 @@
 }
 
 .fa-heart {
-    color: var(--red);
+    color: var(--green);
+}
+
+.footer .logo .Resume {
+    color: var(--green);
 }
 
 @media (max-width: 600px) {
