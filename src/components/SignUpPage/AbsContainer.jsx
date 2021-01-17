@@ -2,6 +2,7 @@ import React from 'react';
 import links from "./../../db/footer-links";
 import { Link } from "react-router-dom";
 import { ReactComponent as BentLogo } from "./../Svgs/BentLogo.svg";
+
 import './AbsContainer.css';
 
 const AbsContainer = () => {
@@ -15,7 +16,7 @@ const AbsContainer = () => {
     return (
         <div className="abs-container">
             <Link className="logo" to="/">
-                <BentLogo />
+                <BentLogo fill="#2a1173" />
             </Link>
             <div className="socials">
                 {socials}
@@ -23,6 +24,7 @@ const AbsContainer = () => {
             <div className="nav">
                 {nav}
             </div>
+            
         </div>
     );
 }

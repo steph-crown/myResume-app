@@ -10,8 +10,23 @@
     width: 50%;
 }
 
+main .dots-one, main .dots-two {
+    position: absolute;
+    z-index: -3838383;
+}
 
+main .dots-one  {
+    top: 40px;
+    transform: rotate(30deg);
+    left: 60px;
+}
 
+main .dots-two {
+    bottom: 40px;
+    right: 60px;
+    transform: rotate(30deg);
+
+}
 .sign-container {
    
     padding: 0  calc(100vw * 180 / 1438);

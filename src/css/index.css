@@ -3,13 +3,8 @@
   --purple: #2a1173;
   --light-black: #061923;
   --light: #0c161b;
-  --light-blue: #5EC8F2;
   --light-purple: #d6d2e0;
-  --lightest-blue: #e7f8ff;
-  --red:  #02732A;
-  --black: #0C161B;
   --black: #0d0816;
-  --darker-black: #061015;
   --darker-black: #04010c;
   --l52: calc(52 / 1438);
   --l24: calc(24 / 1438);
@@ -18,6 +13,7 @@
   --l736: calc(736 / 1438);
   --l304: calc(304 / 1438);
   --l144: calc(144 / 1438);
+  --h: #aa97d8;
 
 
 
