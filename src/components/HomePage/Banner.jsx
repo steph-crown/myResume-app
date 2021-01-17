@@ -1,5 +1,4 @@
 import React from 'react';
-import bannerIllustration from './../../assets/man-typing.svg';
 import './../../css/HomePage/Banner.css';
 import { ReactComponent as Misc } from "./../Svgs/miscellaneous/misc1.svg";
 import { Link } from "react-router-dom";
