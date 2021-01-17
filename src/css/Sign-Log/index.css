@@ -27,7 +27,7 @@
 }
 
 .sign-container {
-    background: #ffffff;
+    background: var(--bg-white);
 }
 
 
@@ -38,7 +38,7 @@
 }
 
 .left-part h5 .a {
-    color: var(--red);
+    color: var(--green);
     font-size: inherit;
 }
 
