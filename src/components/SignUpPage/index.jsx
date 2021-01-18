@@ -5,7 +5,7 @@ import AbsContainer from './AbsContainer'
 import './../../css/Sign-Log/index.css';
 import NavBar from './../HomePage/NavBar';
 import SignUpForm from './SignUpForm';
-import { ReactComponent as Dots } from "./../Svgs/dot-dot.svg";
+// import { ReactComponent as Dots } from "./../Svgs/dot-dot.svg";
 
 
 const index = () => {
@@ -19,12 +19,12 @@ const index = () => {
                 <NavBar />
             </div>
             <main>
-                <div className="dots-one">
+                {/* <div className="dots-one">
                     <Dots fill="#aa97d8" />
-                </div>
-                <div className="dots-two">
+                </div> */}
+                {/* <div className="dots-two">
                     <Dots fill="#aa97d8" />
-                </div>
+                </div> */}
                 <div className="left-part">
                     <h1>Sign Up for <br /> 
                         <span>my</span>

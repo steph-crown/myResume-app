@@ -131,9 +131,33 @@ form button:hover {
     font-weight: 500;
 }
 
+.err-box {
+    width: 70%;
+    border: 1px solid var(--red);
+    background-color: #ffe0e5a8;
+}
+
+.err-box p {
+    color: var(--red);
+    font-family: "Nunito Sans";
+    font-weight: 300;
+    line-height: 30px;
+    padding: 0 20px;
+}
+.fa-info-circle {
+    color: var(--red);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.loading {
+    display: block;
+    width: 50px;
+    margin: auto;
+}
 
 @media (max-width: 1024px) {
-    input, button, .line-or, .auth-buttons {
+    .err-box, input, button, .line-or, .auth-buttons {
         width: 100%;
     }
 
