@@ -144,7 +144,7 @@ form button:hover {
     line-height: 30px;
     padding: 0 20px;
 }
-.fa-info-circle {
+.err-box .fa-info-circle {
     color: var(--red);
     display: inline-block;
     margin-right: 20px;

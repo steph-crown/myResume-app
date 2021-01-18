@@ -19,19 +19,37 @@ function SignUpForm(props) {
     }
     const history = useHistory()
     const HandleSubmit = (event) => {
+
+        // Client side validations
+        let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         event.preventDefault();
-        // Starts a spinner
-        setLoading(true)
+        if (!props.name) {
+            props.updateError("Name Field Is Empty");
+        }
+        else if (!props.email) {
+            props.updateError("Email Field Is Empty")
+        }
+        else if (!props.password) {
+            props.updateError("Password Field Is Empty")
+        }
+        else if (!emailRegex.test(props.email)) {
+            props.updateError("Invalid Email Address")
+        }
 
-        props.updateError('')
-        // Makes request to api
-        const {name, email, password} = props;
-        props.signUp('/user/signup', {
-            name,
-            email,
-            password
-        });
+        // All validations passed
+        else {
+            // Starts a spinner
+            setLoading(true);
 
+            props.updateError('')
+            // Makes request to api
+            const {name, email, password} = props;
+            props.signUp('/user/signup', {
+                name,
+                email,
+                password
+            });
+        }
     }
 
     

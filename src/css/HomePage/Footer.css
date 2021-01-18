@@ -67,4 +67,7 @@
     .linkings>* {
         margin: 16px 0;
     }
+    .footer {
+        margin-top: -10px;
+    }
 }
