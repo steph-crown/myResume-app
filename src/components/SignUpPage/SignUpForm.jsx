@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import ReactDOM from 'react-dom'
 import './../../css/Sign-Log/SignUpForm.css';
 import { ReactComponent as GoogleIcon } from './../Svgs/Google-SignIn.svg'
 import { ReactComponent as FacebookIcon } from './../Svgs/Facebook-SignIn.svg';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+import { Redirect } from "react-router";
 
 import Loader from './../Loader';
 
@@ -17,7 +19,7 @@ function SignUpForm(props) {
     const handleChange = (event) => {
         props.updateSignupInput(event.target.value, event.target.name)
     }
-    const history = useHistory()
+    // const history = useHistory()
     const HandleSubmit = (event) => {
 
         // Client side validations
@@ -63,7 +65,7 @@ function SignUpForm(props) {
 
             {/* Checks if details is gotten and moves to dashboard */}
             {props.userDetails ? 
-                    history.push('/dashboard') :
+                    <Redirect to="/dashboard" />:
                     null
             }
 
