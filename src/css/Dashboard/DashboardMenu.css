@@ -47,3 +47,6 @@
     color: var(--purple) !important;
 }
 
+.dash-icon {
+    width: 40px;
+}
