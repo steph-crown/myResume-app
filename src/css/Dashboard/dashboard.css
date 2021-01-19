@@ -1,0 +1,24 @@
+.dashboard {
+    background-color: var(--bg-white);
+    
+}
+
+.side-nav {
+    width: 320px;
+    height: 100vh;
+    position: sticky;
+}
+
+
+@media (max-width: 1024px) {
+    .side-nav {
+        display: none;
+    }
+
+    .dashboard {
+        padding: 30px calc(var(--l120) * 100vw);
+    }
+
+    
+
+}

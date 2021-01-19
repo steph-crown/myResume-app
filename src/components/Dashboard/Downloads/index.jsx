@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 const index = () => {
     console.log(dashboard); 
     return (
-        <div className="dashboard profiles">
+        <div className="dashboard downloads">
             <div className="side-nav">
-                <DashboardMenu active="profiles" />
+                <DashboardMenu active="downloads" />
             </div>
             <Link className="menu-icon" to="/menu">
                 <div></div>
