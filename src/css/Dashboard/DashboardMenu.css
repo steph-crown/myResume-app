@@ -8,7 +8,7 @@
 }
 
 .dashboard-menu .logo {
-    padding: 7px 16px;
+    padding: 7px 20px;
 }
 
 
@@ -18,15 +18,32 @@
     font-size: 1.2em;
     color: var(--black);
     box-sizing: border-box;
-    padding: 5px 16px;
+}
+
+.dashboard-menu .nav-text .dash-icon .fa {
+    color: var(--black);
+    font-size: 1.2em;
+    margin-right: 20px;
 }
 
 .nav-text {
     margin: 20px 0;
     border-radius: 50px;
+    display: flex;
+    min-height: 2px;
+    padding: 5px 20px;
+    align-items: center;
 }
 
 .nav-text:hover, .is-active {
     background-color: #e2dafd;
+}
+
+.nav-text:hover h6, .is-active h6 {
+    color: var(--purple);
+}
+
+.nav-text:hover .dash-icon .fa, .is-active .dash-icon .fa {
+    color: var(--purple) !important;
 }
 
