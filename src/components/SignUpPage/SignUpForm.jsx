@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom'
 import './../../css/Sign-Log/SignUpForm.css';
 import { ReactComponent as GoogleIcon } from './../Svgs/Google-SignIn.svg'
 import { ReactComponent as FacebookIcon } from './../Svgs/Facebook-SignIn.svg';
