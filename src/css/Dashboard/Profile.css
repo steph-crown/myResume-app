@@ -1,4 +1,53 @@
 .profile {
-    width: 200px;
-    background-color: red;
+    width: 350px;
+    background-color: #fff;
+    word-break: break-all;
+    padding: 16px 24px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 40px rgba(0,0,0,0.1), -10px -10px 40px rgba(0,0,0,0.1);
+}
+
+.header {
+    display: flex;
+    min-height: 2px;
+    align-items: flex-start;
+}
+
+.profile .photo {
+    height: 40px;
+    width: 40px;
+    margin-right: 24px;
+}
+
+.profile .photo .icon {
+    height: 100%;
+    width: 100%;
+}
+
+.name-and-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 2px;
+    align-items: center;
+}
+
+
+.profile h2 {
+    font-size: 1.4em;
+    line-height: 0;
+}
+
+.profile h3 {
+    font-size: 1.2em;
+    line-height: 1.6em;
+    color: var(--black);
+
+}
+
+.profile h4 {
+    font-size: 1em;
+    color: var(--light-black);
+    line-height: 1.4em;
+    font-weight: 300;
 }
