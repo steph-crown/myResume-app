@@ -26,6 +26,9 @@
         padding: 30px calc(var(--l120) * 100vw);
     }
 
-    
+    .profiles-body {
+        width: 100%;
+        position: initial;
+    }
 
 }

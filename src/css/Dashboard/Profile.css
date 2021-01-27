@@ -47,7 +47,16 @@
 
 .profile h4 {
     font-size: 1em;
-    color: var(--light-black);
+    color: #414141;
     line-height: 1.4em;
     font-weight: 300;
+}
+
+@media (max-width: 1024px) {
+    .profiles-body {
+        padding: 32px 0;
+    }
+    .profile {
+        width: 100%;
+    }
 }
