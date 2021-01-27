@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './../../css/Sign-Log/SignUpForm.css';
 import { ReactComponent as GoogleIcon } from './../Svgs/Google-SignIn.svg'
 import { ReactComponent as FacebookIcon } from './../Svgs/Facebook-SignIn.svg';
-// import { useHistory } from 'react-router-dom';
 import { Redirect } from "react-router";
 
 import Loader from './../Loader';

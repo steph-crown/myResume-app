@@ -37,14 +37,16 @@
 
 .nav-text:hover, .is-active {
     background-color: #e2dafd;
+    background-color: #d6f7da ;
+    ;
 }
 
 .nav-text:hover h6, .is-active h6 {
-    color: var(--purple);
+    color: var(--green);
 }
 
 .nav-text:hover .dash-icon .fa, .is-active .dash-icon .fa {
-    color: var(--purple) !important;
+    color: var(--green) !important;
 }
 
 .dash-icon {

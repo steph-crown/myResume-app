@@ -1,8 +1,12 @@
 let dashboard = {
         "profiles": [
             {
+                "lastUpdated": 'Tue Jan 26 2021 15:53:20 GMT+0100 (West Africa Standard Time)',
                 "personal": {
                     "firstName": "Stephen",
+                    "lastName": "Emmanuel",
+                    "email": "emmanuelstephen024@gmail.com",
+                    profession: "Frontend Developer",
                     "socialLinks": []
                 },
                 "skills": {

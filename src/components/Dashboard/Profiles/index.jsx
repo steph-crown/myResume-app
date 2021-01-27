@@ -3,11 +3,16 @@ import DashboardMenu from '../DashboardMenu';
 import dashboard from './../../../db/dashboard';
 import './../../../css/Dashboard/dashboard.css'
 import { Link } from "react-router-dom";
+import Profile from './Profile';
+
 
 
 
 const index = () => {
-    console.log(dashboard); 
+    let Profiles = dashboard.profiles.map(x => 
+        <Profile key={x._id} id={x._id} {...x} />
+    )
+    // console.log(dashboard);
     return (
         <div className="dashboard profiles">
             <div className="side-nav">
@@ -18,6 +23,11 @@ const index = () => {
                 <div></div>
                 <div></div>
             </Link>
+
+
+            <div className="profiles-body">
+                {Profiles}
+            </div>
         </div>
     );
 }
