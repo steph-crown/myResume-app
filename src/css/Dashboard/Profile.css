@@ -163,7 +163,13 @@
         padding: 32px 0;
     }
     .profile {
-        max-width: 100%;
+        width: 45%;
+    }
+}
+
+@media (max-width: 720px) {
+    .profile {
+        width: 100%;
     }
 }
 
