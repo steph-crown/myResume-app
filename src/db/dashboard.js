@@ -1,7 +1,7 @@
 let dashboard = {
         "profiles": [
             {
-                "lastUpdated": 'Tue Jan 26 2021 15:53:20 GMT+0100 (West Africa Standard Time)',
+                "lastUpdated": new Date(),
                 "personal": {
                     "firstName": "Stephen",
                     "lastName": "Emmanuel",

@@ -2,9 +2,10 @@
     width: 350px;
     background-color: #fff;
     word-break: break-all;
-    padding: 16px 24px;
+    padding: 24px;
     border-radius: 5px;
     box-shadow: 10px 10px 40px rgba(0,0,0,0.1), -10px -10px 40px rgba(0,0,0,0.1);
+    position: relative;
 }
 
 .header {
@@ -24,7 +25,7 @@
     width: 100%;
 }
 
-.name-and-menu {
+.name {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -35,21 +36,124 @@
 
 .profile h2 {
     font-size: 1.4em;
-    line-height: 0;
+    line-height: 1em;
+    text-align: left;
+    margin-top: 1.2em;
 }
 
 .profile h3 {
     font-size: 1.2em;
-    line-height: 1.6em;
+    line-height: 1em;
     color: var(--black);
+}
+
+
+
+.profile h4 {
+    color: #414141;
+    line-height: 2em;
+    font-weight: 300;
+    font-size: 0.8em;
+    text-align: left;
+    font-family: 'Nunito Sans';
+}
+
+.email h4 {
+    line-height: 1em;
+    margin-bottom: 0;
+    margin-top: 0.8em;
+}
+
+.date p, .fa-clock-o {
+    font-size: 0.6em;
+    display: inline-block;
+    margin-right: 0.4em;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    color: var(--green);
+}
+.date p {
+    display: inline;
+    line-height: 0;
+}
+
+.date {
+    text-align: left;
+}
+
+
+.menu {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.menu:hover {
+    background-color: var(--h);
 
 }
 
-.profile h4 {
-    font-size: 1em;
-    color: #414141;
-    line-height: 1.4em;
-    font-weight: 300;
+.profile-buttons {
+    display: flex;
+    margin-top: 2em;
+}
+.button {
+    border: 1px solid var(--green);
+    margin-right: 1em;
+    padding:0.6em 2em;
+    font-size: 0.7em;
+    font-weight: 500;
+    font-family: 'Nunito Sans';
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--green);
+}
+
+.button:first-child {
+    background-color: var(--green);
+    color: white;
+}
+
+.button:first-child:hover {
+    background-color: transparent;
+    color: var(--green);
+}
+
+.button:nth-child(2):hover {
+    background-color: var(--green);
+    color: white;
+}
+
+
+.profile:hover {
+    background-color: var(--purple);
+}
+
+.profile:hover h3 {
+    color: var(--bg-white);
+}
+
+.profile:hover .icon {
+    color: var(--bg-white);
+    fill: currentColor;
+}
+
+.profile:hover .email h4 {
+    color: var(--h);
+}
+
+.profile:hover h2 {
+    color: var(--light-purple);
+}
+.profile:hover .fa-ellipsis-v {
+    color: var(--light-purple);
 }
 
 @media (max-width: 1024px) {
@@ -57,6 +161,15 @@
         padding: 32px 0;
     }
     .profile {
-        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 390px) {
+    .email h4 {
+        font-size: 0.6em;
+    }
+    .profile h2 {
+        font-size: 1em;
     }
 }

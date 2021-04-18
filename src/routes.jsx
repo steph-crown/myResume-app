@@ -18,9 +18,9 @@ const routes = () => {
             <Router history={history}>
                 <div>
                     <Switch>
-                        <Route exact path="/" render={()=><Homepage />} />
-                        <Route path="/signup" render={()=><SignUpPage />} />
-                        <Route path="/about" render={()=><AboutPage />} />
+                        <Route exact path="/" render={()=><Homepage />} /> 
+                        <Route path="/signup" render={()=><SignUpPage />} /> 
+                        <Route path="/about" render={()=><AboutPage />} />  
                         <Route path="/new" render={()=><CreateResumePage />} />
                         <Route path="/help" render={()=><HelpPage />} />
                         <Route path="/login" render={()=><LoginPage />} />

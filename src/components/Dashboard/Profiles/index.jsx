@@ -12,7 +12,6 @@ const index = () => {
     let Profiles = dashboard.profiles.map(x => 
         <Profile key={x._id} id={x._id} {...x} />
     )
-    // console.log(dashboard);
     return (
         <div className="dashboard profiles">
             <div className="side-nav">
