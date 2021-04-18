@@ -1,11 +1,12 @@
 .profile {
-    width: 350px;
+    width: 30%;
     background-color: #fff;
     word-break: break-all;
     padding: 24px;
     border-radius: 5px;
     box-shadow: 10px 10px 40px rgba(0,0,0,0.1), -10px -10px 40px rgba(0,0,0,0.1);
     position: relative;
+    transition:  1s ease;
 }
 
 .header {
@@ -93,6 +94,7 @@
     align-items: center;
     cursor: pointer;
     border-radius: 50%;
+    outline: none;
 }
 
 .menu:hover {

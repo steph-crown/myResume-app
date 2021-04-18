@@ -10,7 +10,7 @@ import Profile from './Profile';
 
 const index = () => {
     let Profiles = dashboard.profiles.map(x => 
-        <Profile key={x._id} id={x._id} {...x} />
+        <Profile key={x._id} id={x._id} {...x} className="indiv" />
     )
     return (
         <div className="dashboard profiles">
