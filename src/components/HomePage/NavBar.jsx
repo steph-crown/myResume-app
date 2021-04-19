@@ -12,7 +12,7 @@ const Nav = () => {
             </Link>
             <div className="links-at-center">
                 <Link to="/" className="a">Home</Link>
-                <Link to="/new" className="a">Get Started</Link>
+                <Link to="/edit/new" className="a">Get Started</Link>
                 <Link to="/about" className="a">About</Link>
                 <Link to="/help" className="a">Help</Link>
             </div>

@@ -1,0 +1,49 @@
+.form-nav {
+    background-color: white;
+    width: 100%;
+    padding: 16px 0; 
+    position: relative;
+    width: calc(100% - 320px);
+    left: 320px;
+}
+
+.pages-md {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.pages-md * {
+    color: var(--h);
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+}
+
+.pages-md>div {
+    margin: 0 0.6em;
+}
+
+.pages-md .current-page {
+    color: var(--green);
+}
+
+.page {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+}
+
+.short-line {
+    width: 2.5em;
+    height: 0.2em;
+    background-color: var(--h);
+    margin-left: 1em;
+
+}
+
+.current-page .short-line {
+    background-color: var(--green);
+}
