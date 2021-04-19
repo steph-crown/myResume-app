@@ -2,9 +2,10 @@ import React from 'react';
 import { ReactComponent as Photo } from "./../../Svgs/Male.svg";
 import './../../../css/Dashboard/Profile.css'
 import prettifyTime from "./../../../utilities/prettifyTime"
+import { Link } from "react-router-dom";
 
 const Profile = (props) => {
-    let { personal } = props
+    let { personal, _id } = props
     return (
         <div className="profile">
             <div className="menu">
@@ -35,7 +36,9 @@ const Profile = (props) => {
             </div>
 
             <div className="profile-buttons">
-                <div className="button">Edit</div>
+                <Link to={`/edit/${_id}`}>
+                    <div className="button">Edit</div>
+                </Link>
                 <div className="button">View CV</div>
             </div>
         </div>

@@ -68,11 +68,11 @@
         width: 100%;
         position: initial;
     }
-    .create-profile {
+    /* .create-profile {
         display: none;
-    }
+    } */
 
-    .bottom-nav {
+    /* .bottom-nav {
         position: fixed;
         bottom: 0;
         left: 0;
@@ -95,5 +95,5 @@
     }
     .bottom-nav *:first-child {
         border-right: 1px solid var(--light-black);
-    }
+    } */
 }

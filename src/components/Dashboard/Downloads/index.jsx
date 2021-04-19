@@ -3,13 +3,12 @@ import DashboardMenu from '../DashboardMenu';
 import dashboard from './../../../db/dashboard';
 import './../../../css/Dashboard/dashboard.css'
 import { Link } from "react-router-dom";
-import Profile from './../Profiles/Profile';
-
+import Download from './Download'
 
 
 const index = () => {
     let Downloads = dashboard.downloads && dashboard.downloads.length > 0 ? dashboard.downloads.map(x => 
-        <Profile key={x._id} id={x._id} {...x} />
+        <Download key={x._id + " download"} id={x._id} {...x} />
     ) : "No Downloads yet, When you download the CV from any profile, it saves here"
     return (
         <div className="dashboard profiles">

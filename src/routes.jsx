@@ -2,7 +2,7 @@ import React from 'react';
 import Homepage from './components/HomePage';
 import SignUpPage from './components/SignUpPage';
 import AboutPage from './components/AboutPage';
-import CreateResumePage from './components/CreateResumePage';
+import ProfileForm from './components/ProfileForm';
 import HelpPage from './components/HelpPage';
 import LoginPage from './components/LoginPage';
 import MobileMenu from './components/MobileMenuPage';
@@ -19,14 +19,16 @@ const routes = () => {
                 <div>
                     <Switch>
                         <Route exact path="/" render={()=><Homepage />} /> 
-                        <Route path="/signup" render={()=><SignUpPage />} /> 
-                        <Route path="/about" render={()=><AboutPage />} />  
-                        <Route path="/new" render={()=><CreateResumePage />} />
-                        <Route path="/help" render={()=><HelpPage />} />
-                        <Route path="/login" render={()=><LoginPage />} />
-                        <Route path="/menu" render={()=><MobileMenu />} />
-                        <Route path="/dashboard" render={() => <Profiles />} />
-                        <Route path="/downloads" render={() => <Downloads />} />
+                        <Route exact path="/signup" render={()=><SignUpPage />} /> 
+                        <Route exact path="/about" render={()=><AboutPage />} />  
+                        <Route path="/edit/:id" component={ProfileForm} />
+                        <Route exact path="/help" render={()=><HelpPage />} />
+                        <Route exact path="/login" render={()=><LoginPage />} />
+                        <Route exact path="/menu" render={()=><MobileMenu />} />
+                        <Route exact path="/dashboard" render={() => <Profiles />} />
+                        <Route exact path="/downloads" render={() => <Downloads />} />
+
+                        
                     </Switch>
                 </div>
             </Router>

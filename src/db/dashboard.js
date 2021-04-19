@@ -6,7 +6,7 @@ let dashboard = {
                 "firstName": "Stephen",
                 "lastName": "Emmanuel",
                 "email": "emmanuelstephen024@gmail.com",
-                profession: "Frontend Developer",
+                "profession": "Frontend Developer",
                 "socialLinks": []
             },
             "skills": {

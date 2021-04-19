@@ -39,10 +39,10 @@ const index = () => {
             <div className="create-profile">
                 +
             </div>
-            <div className="bottom-nav md-flex">
+            {/* <div className="bottom-nav md-flex">
                 <Link to="/dashboard">New Profile</Link>
                 <Link to="/downloads">View Downloads</Link>
-            </div>
+            </div> */}
         </div>
     );
 }
