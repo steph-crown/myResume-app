@@ -8,7 +8,7 @@ import Profile from './Profile';
 
 
 
-const index = () => {
+const index = (props) => {
     let Profiles = dashboard.profiles ? dashboard.profiles.map(x => 
         <Profile key={x._id} id={x._id} {...x} />
     ) : "No Profile yet, Click + New profile to create a profile"

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Contact from './Contact';
 import Work from './Work';
-import Education from './Education'
+import Education from './Education';
+import profileFields from './../../db/ProfileField'
 
 
 export default class ProfileForm extends Component {
@@ -12,11 +13,14 @@ export default class ProfileForm extends Component {
         }
     }
     pages = [Contact, Work, Education]
-
+    id = this.props.match.params.id;
+    
     render() {
+        const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
+
         return (
             <div className="profile-form">
-                {console.log(this.props.match)}
+                
             </div>
         )
     }
