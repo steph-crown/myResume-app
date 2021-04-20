@@ -100,10 +100,10 @@
     }
 
     .form-nav-sm svg {
-        height: 60px;
+        height: 50px;
         position: fixed;
         left: 0.6em;
-        top: 0.5em;
+        top: 0.7em;
         color: var(--green);
         fill: currentColor;
         padding: 0.8em;
