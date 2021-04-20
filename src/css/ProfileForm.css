@@ -80,4 +80,22 @@
     .form-nav-sm * {
         text-align: center;
     }
+
+    .pages-dot-container {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .pages-dot {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: #999999;
+        transition: 1.5s;
+        margin: 10px 0.8em;
+    }
+    .current-page-sm {
+        background-color: var(--green);
+    }
 }

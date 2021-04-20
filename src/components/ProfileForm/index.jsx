@@ -39,7 +39,9 @@ export default class ProfileForm extends Component {
         )
 
         const pagesDotsJSX = this.pagesStr.map((x, index) => 
-        
+            <div className={"pages-dot " + (this.state.currPage === index ? "current-page-sm" : "")} onClick={(e)=> {this.changePage(index)}}>
+
+            </div>
         )
         return (
         <>
@@ -70,6 +72,9 @@ export default class ProfileForm extends Component {
                         <div className="form-nav-sm">
                             <div className="pages-sm">
                                 <h5>{this.pagesStr[this.state.currPage]}</h5>
+                                <div className="pages-dot-container">
+                                    {pagesDotsJSX}
+                                </div>
                             </div>
                         </div>
                 </div>
