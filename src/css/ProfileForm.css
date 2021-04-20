@@ -93,7 +93,7 @@
         border-radius: 50%;
         background-color: #999999;
         transition: 1.5s;
-        margin: 5px 0.8em;
+        margin: 5px 0.4em;
     }
     .current-page-sm {
         background-color: var(--green);
