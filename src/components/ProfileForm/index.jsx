@@ -30,7 +30,7 @@ export default class ProfileForm extends Component {
     
     render() {
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
-
+console.log(initialState);
         const pagesJSX = this.pagesStr.map((x, index) => 
             <div className={"page " + (this.state.currPage === index ? "current-page" : "")} onClick={(e)=> {this.changePage(index)}}>
                 {x}
