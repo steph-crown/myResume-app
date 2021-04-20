@@ -88,8 +88,8 @@
     }
 
     .pages-dot {
-        width: 18px;
-        height: 18px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background-color: #999999;
         transition: 1.5s;
@@ -102,8 +102,8 @@
     .form-nav-sm svg {
         height: 60px;
         position: fixed;
-        left: 1.8em;
-        top: 0.8em;
+        left: 0.6em;
+        top: 0.5em;
         color: var(--green);
         fill: currentColor;
         padding: 0.8em;
