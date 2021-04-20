@@ -21,16 +21,25 @@ export default class ProfileForm extends Component {
     pages = [Contact, Work, Education]
     pagesStr = ["Contact", "Work", "Education", "Volunteer"]
     id = this.props.match.params.id;
+
+    changePage(index) {
+        this.setState({
+            currPage: index
+        })
+    }
     
     render() {
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
 
         const pagesJSX = this.pagesStr.map((x, index) => 
-            <div className={"page " + (this.state.currPage === index ? "current-page" : "")}>
+            <div className={"page " + (this.state.currPage === index ? "current-page" : "")} onClick={(e)=> {this.changePage(index)}}>
                 {x}
-                {console.log(this.state.currPage, index)}
-                <div className="short-line"></div>
+                <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}></div>
             </div>
+        )
+
+        const pagesDotsJSX = this.pagesStr.map((x, index) => 
+        
         )
         return (
         <>
@@ -52,9 +61,15 @@ export default class ProfileForm extends Component {
                     <div className="side-nav">
                         <DashboardMenu active="profiles" />
                     </div>
-                        <div className="form-nav">
+                        <div className="form-nav-md">
                             <div className="pages-md">
                                 {pagesJSX}
+                            </div>
+                        </div>
+
+                        <div className="form-nav-sm">
+                            <div className="pages-sm">
+                                <h5>{this.pagesStr[this.state.currPage]}</h5>
                             </div>
                         </div>
                 </div>

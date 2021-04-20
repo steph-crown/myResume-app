@@ -1,10 +1,12 @@
-.form-nav {
+.form-nav-md {
     background-color: white;
     width: 100%;
     padding: 16px 0; 
     position: relative;
     width: calc(100% - 320px);
     left: 320px;
+    box-shadow: 5px 0px 10px rgb(0 0 0 / 12%);
+
 }
 
 .pages-md {
@@ -14,7 +16,7 @@
 }
 
 .pages-md * {
-    color: var(--h);
+    color: #999999;
     font-family: 'Nunito Sans';
     font-weight: 700;
     font-size: 0.8em;
@@ -34,16 +36,48 @@
     display: flex;
     min-height: 2px;
     align-items: center;
+    cursor: pointer;
+    transition: 1.5s;
 }
 
 .short-line {
     width: 2.5em;
     height: 0.2em;
-    background-color: var(--h);
+    background-color: #999999;
     margin-left: 1em;
+    transition: 1.5s;
 
 }
 
 .current-page .short-line {
     background-color: var(--green);
+}
+
+.form-nav-sm {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .form-nav-md {
+        display: none;
+    }
+
+    .form-nav-sm {
+        display: block;
+        background-color: white;
+        width: 100%;
+        padding: 16px 0; 
+        box-shadow: 5px 0px 10px rgb(0 0 0 / 12%);
+    }
+
+    .profile-form .dashboard {
+        padding: 0;
+    }
+    .profile-form .md-flex {
+        display: none;
+    }
+
+    .form-nav-sm * {
+        text-align: center;
+    }
 }
