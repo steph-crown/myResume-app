@@ -17,7 +17,7 @@ const Banner = () => {
                 {/* Ends */}
                 boosts your chances of landing a better job - completely for free.</b>
                 <div className="buttons">
-                    <Link to="/new" className="a">Get Started</Link>
+                    <Link to="/edit/new" className="a">Get Started</Link>
                     <Link className="a banner-signup" to="signup">Sign Up</Link>
                 </div>
             </section>
