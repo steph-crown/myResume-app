@@ -6,7 +6,11 @@
     width: calc(100% - 320px);
     left: 320px;
     box-shadow: 5px 0px 10px rgb(0 0 0 / 12%);
+}
 
+.the-form {
+    position: relative;
+    left: 320px;
 }
 
 .pages-md {
@@ -112,5 +116,9 @@
 
     .form-nav-sm svg:hover {
         background-color: #d6f7da;
+    }
+
+    .the-form {
+        left: 0;
     }
 }
