@@ -54,7 +54,7 @@ function SignUpForm(props) {
 
     
     return (
-        <form action="" onSubmit={HandleSubmit} noValidate={true}>
+        <form className="sign-log" action="" onSubmit={HandleSubmit} noValidate={true}>
 
             {/* Shows error alerts */}
             {props.errMessage && <div className="err-box" >

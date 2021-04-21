@@ -19,7 +19,7 @@ class LoginForm extends Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="sign-log" onSubmit={this.handleSubmit}>
                 <div className="email input">
                     <input type="email" name="loginEmailAddress" id="email" placeholder="Email Address" value={this.props.emailAddress} onChange={this.handleChange} />
                     <i className="fa fa-envelope input-icon"></i>

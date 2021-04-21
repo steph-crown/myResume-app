@@ -1,9 +1,9 @@
-form {
+form.sign-log {
     width: 100%;
     display: block;
     margin: auto;
 }
-input, button {
+form.sign-log input, form.sign-log button {
     width: 70%;
     display: block;
     border-radius: 8px;
@@ -19,7 +19,7 @@ input, button {
 button {
     margin: 0 auto;
 }
-form>div {
+form.sign-log>div {
     display: flex;
     min-height: 2px;
     align-items: center;
@@ -69,11 +69,11 @@ form>div {
     height: 1px;
 }
 
-input:focus, .input:focus {
+form.sign-log input:focus, .input:focus {
     border: 1px solid var(--green);
 }
 
-input {
+form.sign-log input {
     box-shadow:  -4px -4px 20px rgba(0, 0, 0, 0.01), 4px 4px 20px rgba(0, 0, 0, 0.01);
     width: 100%;
     padding-right: 48px;
@@ -81,7 +81,7 @@ input {
     background: transparent;
 }
 
-button {
+form.sign-log button {
     background-color: var(--green);
     color: white;
     font-family: Poppins;
@@ -116,7 +116,7 @@ button {
     color: var(--bg-white);
 }
 
-form button:hover {
+form.sign-log button:hover {
     background-color: var(--purple);
 }
 
@@ -157,7 +157,7 @@ form button:hover {
 }
 
 @media (max-width: 1024px) {
-    .err-box, input, button, .line-or, .auth-buttons {
+    .err-box, input, form.sign-log button, .line-or, .auth-buttons {
         width: 100%;
     }
 

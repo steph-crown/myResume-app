@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Work extends Component {
-    render() {
-        return (
-            <div>
-                Work
-            </div>
-        )
-    }
+export default function Work(props) {
+    const initialValues = props.initialState
+    return (
+        <div>
+            Work
+            {console.log(initialValues)}
+        </div>
+    )
 }

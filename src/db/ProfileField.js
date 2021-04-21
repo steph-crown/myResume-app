@@ -1,6 +1,6 @@
 let profileField = {
     personal: {
-        firstName: "",
+        firstName: "Steph Crown",
         lastName: "",
         address: "",
         city: "",

@@ -8,8 +8,6 @@ import { Link } from "react-router-dom";
 import { Beforeunload } from 'react-beforeunload';
 import './../../css/ProfileForm.css';
 import Volunteer from './Volunteer'
-// import { useHistory } from "react-router-dom";
-
 
 
 
@@ -34,7 +32,6 @@ export default class ProfileForm extends Component {
     render() {
         const CurrComp = this.pages[this.state.currPage]
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
-console.log(initialState);
         const pagesJSX = this.pagesStr.map((x, index) => 
             <div className={"page " + (this.state.currPage === index ? "current-page" : "")} onClick={(e)=> {this.changePage(index)}}>
                 {x}
@@ -90,7 +87,7 @@ console.log(initialState);
                     </div>
 
                     <div className="the-form">
-                        <CurrComp />
+                        <CurrComp initialState={initialState} />
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class componentName extends Component {
-    render() {
-        return (
-            <div>
-                Education
-            </div>
-        )
-    }
+export default function Education(props) {
+    const initialValues = props.initialState
+    return (
+        <div>
+            Education
+            {console.log(initialValues)}
+        </div>
+    )
 }
