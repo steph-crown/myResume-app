@@ -86,7 +86,7 @@ export default class ProfileForm extends Component {
                         </div>
                     </div>
 
-                    <div className="the-form">
+                    <div className="form-container">
                         <CurrComp initialState={initialState} />
                     </div>
                 </div>
