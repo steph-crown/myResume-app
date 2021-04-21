@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Field, Form, FieldArray, ErrorMessage } from "formik";
+import { Formik, Field, Form } from "formik";
 
 export default function Contact(props) {
     const initialValues = props.initialState
