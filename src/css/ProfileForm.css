@@ -251,6 +251,12 @@
     margin-bottom: 1em;
 }
 
+.form-container h3 {
+    color: var(--light);
+    font-weight: 300;
+    line-height: 2em;
+    margin-bottom: 0.3em;
+}
 
 .next-button {
     margin-right: 0.5em;

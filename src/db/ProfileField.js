@@ -18,7 +18,7 @@ let profileField = {
     },
     work: [
         {
-            title: "",
+            title: "Farmer",
             employer: "",
             city: "",
             country: "",

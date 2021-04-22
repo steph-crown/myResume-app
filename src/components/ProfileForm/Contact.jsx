@@ -1,16 +1,8 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import { Formik, Field, Form, FieldArray } from "formik";
 
 export default function Contact(props) {
     const initialValues = props.initialState
-    
-
-    useEffect(() => {
-        console.log("mounted");
-        return() => {
-            console.log("unmounted");
-        }
-    })
     return (
         <div>
             <Formik
