@@ -61,6 +61,22 @@
     display: none;
 }
 
+.profile-form svg {
+    height: 50px;
+    position: fixed;
+    left: 330px;
+    top: 0.7em;
+    color: var(--green);
+    fill: currentColor;
+    padding: 0.8em;
+    border-radius: 50%;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.profile-form svg:hover {
+    background-color: #d6f7da;
+}
 
 @media (max-width: 1024px) {
     .form-nav-md {
@@ -104,7 +120,7 @@
         background-color: var(--green);
     }
 
-    .form-nav-sm svg {
+    .profile-form svg {
         height: 50px;
         position: fixed;
         left: 0.6em;
@@ -114,9 +130,10 @@
         padding: 0.8em;
         border-radius: 50%;
         z-index: 99999;
+        cursor: pointer;
     }
 
-    .form-nav-sm svg:hover {
+    .profile-form svg:hover {
         background-color: #d6f7da;
     }
 
@@ -152,6 +169,7 @@
     border-radius: 5px;
     border: 1px solid #e4e4e4;
     color: #333;
+    background-color: transparent;
 }
 
 .form-container input:focus {
@@ -211,7 +229,7 @@
     flex-wrap: wrap;
     min-height: 2px;
     align-items: center;
-    margin-top: 1.3em;
+    margin-top: 2em;
 }
 
 .left-group {
@@ -230,6 +248,7 @@
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-bottom: 1em;
 }
 
 
@@ -239,13 +258,19 @@
     color: var(--bg-white);
 }
 
-.button-group .save-button {
+.button-group .save-button, .button-group .view-button {
     border: 1px solid var(--green);
     color: var(--green);
+    background-color: transparent;
 }
 
-.save-button:hover {
+.save-button:hover, .view-button:hover {
     background-color: var(--green);
+    color: var(--bg-white);
+}
+
+.no-display {
+    display: none;
 }
 
 @media (max-width: 1024px) {
