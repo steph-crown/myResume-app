@@ -5,7 +5,6 @@ export default function Work(props) {
     return (
         <div>
             Work
-            {console.log(initialValues)}
         </div>
     )
 }

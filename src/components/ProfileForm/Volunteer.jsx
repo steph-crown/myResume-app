@@ -5,7 +5,6 @@ export default function Volunteer(props) {
     return (
         <div>
             Volunteer
-            {console.log(initialValues)}
         </div>
     )
 }

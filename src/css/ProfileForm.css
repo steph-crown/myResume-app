@@ -61,6 +61,7 @@
     display: none;
 }
 
+
 @media (max-width: 1024px) {
     .form-nav-md {
         display: none;
@@ -112,6 +113,7 @@
         fill: currentColor;
         padding: 0.8em;
         border-radius: 50%;
+        z-index: 99999;
     }
 
     .form-nav-sm svg:hover {
@@ -188,9 +190,74 @@
     width: calc(100% - 320px);
 }
 
+.my-form h6 {
+    font-size: 0.9em;
+    margin-top: 1rem;
+    color: var(--green);
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    cursor: pointer;
+}
+
+.my-form h6:hover {
+    background-color: #d6f7da;
+    display: inline-block;
+}
+
+.profile-form .button-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 2px;
+    align-items: center;
+    margin-top: 1.3em;
+}
+
+.left-group {
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+}
+
+.profile-form button {
+    padding: 0.75em 1.4em;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+    font-size: 0.9em;
+    letter-spacing: 0.6px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.next-button {
+    margin-right: 0.5em;
+    background-color: var(--green);
+    color: var(--bg-white);
+}
+
+.button-group .save-button {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.save-button:hover {
+    background-color: var(--green);
+}
+
 @media (max-width: 1024px) {
     .form-container {
         width: 100%;
     }
+
+    .my-form .f-sm-100 {
+        width: 100%;
+    }
     
+    .my-form .f-sm-49 {
+        width: 49.5%;
+    }
 }

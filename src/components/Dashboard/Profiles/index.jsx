@@ -36,9 +36,9 @@ const index = (props) => {
                 {Profiles}
             </div>
 
-            <div className="create-profile">
+            <Link to="/edit/new/0"><div className="create-profile">
                 +
-            </div>
+            </div></Link>
             {/* <div className="bottom-nav md-flex">
                 <Link to="/dashboard">New Profile</Link>
                 <Link to="/downloads">View Downloads</Link>

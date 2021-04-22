@@ -36,7 +36,7 @@ const Profile = (props) => {
             </div>
 
             <div className="profile-buttons">
-                <Link to={`/edit/${_id}`}>
+                <Link to={`/edit/${_id}/0`}>
                     <div className="button">Edit</div>
                 </Link>
                 <div className="button">View CV</div>

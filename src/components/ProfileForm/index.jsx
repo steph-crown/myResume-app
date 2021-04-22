@@ -15,34 +15,41 @@ export default class ProfileForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            currPage: 0
+            currPage: parseInt(this.props.match.params.page)
         }
     }
     pages = [Contact, Work, Education, Volunteer]
     pagesStr = ["Contact", "Work", "Education", "Volunteer"]
     id = this.props.match.params.id;
 
-    changePage(index) {
-        this.setState({
-            currPage: index
-        })
-    }
-
     
     render() {
-        const CurrComp = this.pages[this.state.currPage]
+        
+        let pageNo = parseInt(this.props.match.params.page)
+        console.log(pageNo);
+        if (pageNo > this.pagesStr.length - 1  ||  pageNo < 0) {
+            return <p>Page Not Found</p>
+        }
+        let pathWithoutPage = this.props.history.location.pathname.slice(0,-1);
+        const CurrComp = this.pages[pageNo]
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
         const pagesJSX = this.pagesStr.map((x, index) => 
-            <div className={"page " + (this.state.currPage === index ? "current-page" : "")} onClick={(e)=> {this.changePage(index)}}>
-                {x}
-                <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}></div>
-            </div>
+            <Link to={pathWithoutPage + index}>
+                <div className={"page " + (pageNo === index ? "current-page" : "")} >
+                    {console.log(this.state.currPage)}
+                    
+                    {x}
+                    <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
+                    </div>
+                </div
+            ></Link>
         )
 
         const pagesDotsJSX = this.pagesStr.map((x, index) => 
-            <div className={"pages-dot " + (this.state.currPage === index ? "current-page-sm" : "")} onClick={(e)=> {this.changePage(index)}}>
-
-            </div>
+            <Link to={pathWithoutPage + index}>
+                <div className={"pages-dot " + (pageNo === index ? "current-page-sm" : "")}>
+                </div>
+            </Link>
         )
 
         const goBack = () => {
@@ -50,6 +57,7 @@ export default class ProfileForm extends Component {
             history.goBack();
         }
         return (
+        
         <>
             <Beforeunload onBeforeunload={(event) => event.preventDefault()} />
             <div className="profile-form" >
@@ -88,7 +96,19 @@ export default class ProfileForm extends Component {
 
                     <div className="form-container">
                         <CurrComp initialState={initialState} />
+                        <div className="button-group">
+                            <div className="left-group">
+                                <button className="next-button">Next: {this.pagesStr[pageNo + 1]}</button>
+                                <button className="save-button">Save</button>
+                            </div>
+                            <div className="right-group">
+                                <button className="view-button">View CV</button>
+                            </div>
+                            
+                        </div>
                     </div>
+
+                    
                 </div>
             </div>
         </>

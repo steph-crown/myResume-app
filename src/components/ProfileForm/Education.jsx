@@ -5,7 +5,6 @@ export default function Education(props) {
     return (
         <div>
             Education
-            {console.log(initialValues)}
         </div>
     )
 }
