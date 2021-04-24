@@ -7,7 +7,7 @@ import DashboardMenu from '../Dashboard/DashboardMenu';
 import { Link } from "react-router-dom";
 import { Beforeunload } from 'react-beforeunload';
 import './../../css/ProfileForm.css';
-import Volunteer from './Volunteer'
+import Volunteer from './Volunteer';
 
 
 
@@ -30,26 +30,22 @@ export default class ProfileForm extends Component {
         if (pageNo > this.pagesStr.length - 1  ||  pageNo < 0) {
             return <p>Page Not Found</p>
         }
-        let pathWithoutPage = this.props.history.location.pathname.slice(0,-1);
+        
         const CurrComp = this.pages[pageNo]
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
         const pagesJSX = this.pagesStr.map((x, index) => 
-            <Link to={pathWithoutPage + index}>
-                <div className={"page " + (pageNo === index ? "current-page" : "")} >
-                    {console.log(this.state.currPage)}
-                    
-                    {x}
-                    <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
-                    </div>
-                </div
-            ></Link>
+            <div className={"page " + (pageNo === index ? "current-page" : "")} >
+                {console.log(this.state.currPage)}
+                
+                {x}
+                <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
+                </div>
+            </div>
         )
 
         const pagesDotsJSX = this.pagesStr.map((x, index) => 
-            <Link to={pathWithoutPage + index}>
-                <div className={"pages-dot " + (pageNo === index ? "current-page-sm" : "")}>
-                </div>
-            </Link>
+            <div className={"pages-dot " + (pageNo === index ? "current-page-sm" : "")}>
+            </div>
         )
 
         const goBack = () => {
@@ -97,20 +93,8 @@ export default class ProfileForm extends Component {
                     </div>
 
                     <div className="form-container">
-                        <CurrComp initialState={initialState} />
-                        <div className="button-group">
-                            <div className="left-group">
-                                <Link to={pathWithoutPage + (pageNo + 1)}>
-                                    <button className={"next-button " + (pageNo === this.pagesStr.length - 1 ? "no-display" : "")}>Next: {this.pagesStr[pageNo + 1]}</button>
-                                </Link>
-                                {console.log(this.pagesStr.length-1)}
-                                <button className="save-button">Save</button>
-                            </div>
-                            <div className="right-group">
-                                <button className="view-button">View CV</button>
-                            </div>
-                            
-                        </div>
+                        <CurrComp initialState={initialState} pagesStr={this.pagesStr} pageNo={pageNo} />
+                        
                     </div>
 
                     

@@ -1,15 +1,27 @@
 import React from 'react';
 import { Formik, Field, Form } from "formik";
+import ButtonGroup from './../ButtonGroup';
+import { useHistory } from "react-router-dom";
+
 
 
 export default function Work(props) {
-    const initialValues = props.initialState
+    const history = useHistory();
+
+    const initialValues = props.initialState;
+    let pathWithoutPage = history.location.pathname.slice(0,-1);
+
     return (
         <div className="my-form">
             <h3>Tell us about your most recent job</h3>
             <PartWork initialValues={initialValues} />
 
-            <h6>+ Add Work</h6>
+            <h6>+ Add Work History</h6>
+            <ButtonGroup 
+                pathWithoutPage={pathWithoutPage} 
+                pageNo={props.pageNo}
+                pagesStr={props.pagesStr}
+            />
         </div>
     )
 }
@@ -46,7 +58,7 @@ const PartWork = (props) => {
                         placeholder="City of the employer" type="text" />
                     </div>
                     <div className="input-group f49 ">
-                        <label htmlFor="workcountry">City</label>
+                        <label htmlFor="workcountry">Country</label>
                         <Field id="workcountry" name="work[0].country" 
                         placeholder="Country of employer" type="text" />
 
@@ -66,6 +78,16 @@ const PartWork = (props) => {
                         <Field id="enddate" name="work[0].end" type="date" placeholder="When it ended" />
                     </div>
                 </div>
+
+                <div className="form-flex">
+                    <div className="input-group f100">
+                        <label htmlFor="details">What You Did Here</label>
+                        <Field id="details" as="textarea" name="work[0].details" 
+                        placeholder="What I did"
+                        type="date" />
+                    </div>
+                </div>
+                
                 
             </Form>
         </Formik>

@@ -1,13 +1,24 @@
 import React from 'react';
 import { Formik, Field, Form } from "formik";
+import ButtonGroup from './../ButtonGroup';
+import { useHistory } from "react-router-dom";
+
 
 
 export default function Education(props) {
-    const initialValues = props.initialState
+    const history = useHistory();
+    const initialValues = props.initialState;
+    let pathWithoutPage = history.location.pathname.slice(0,-1);
+
     return (
-        <div>
-            <h4>Tell us about your most recent job</h4>
+        <div className="my-form">
+            <h3>Tell us about your most recent job</h3>
             <PartEducation initialValues={initialValues} />
+            <ButtonGroup 
+                pathWithoutPage={pathWithoutPage} 
+                pageNo={props.pageNo}
+                pagesStr={props.pagesStr}
+            />
         </div>
     )
 }
