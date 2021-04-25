@@ -1,5 +1,5 @@
 import React from 'react';
-import { Formik, Form } from "formik";
+import { Formik, Form, Field } from "formik";
 import ButtonGroup from './../ButtonGroup';
 import { useHistory } from "react-router-dom";
 import { workValidation } from "./validationSchema";
@@ -82,13 +82,12 @@ export default function Work(props) {
                         </div>
 
                         <div className="form-flex">
-                            <TextInput
-                                name="work[0].details"
-                                label="What You Did Here"
-                                placeholder="What I did"
-                                as="textarea"
-                            />
-                        </div>
+                            <label htmlFor="work-details"
+                            >
+                                What You Did Here
+                            </label>
+                            <Field name="work[0].details" id="work-details" as="textarea" className="form-textarea" placeholder="What I did" />
+                            </div>
                         <CheckBox name="work[0].isCurrentlyWorking">
                             I am still working there
                         </CheckBox>

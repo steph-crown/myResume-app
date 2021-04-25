@@ -284,8 +284,8 @@
     display: none;
 }
 
-textarea {
-    height: 200%;
+.form-container textarea {
+    height: 8em;
 }
 
 
