@@ -284,6 +284,10 @@
     display: none;
 }
 
+textarea {
+    height: 200%;
+}
+
 
 @media (max-width: 1024px) {
     .form-container {
@@ -296,5 +300,8 @@
     
     .my-form .f-sm-49 {
         width: 49.5%;
+    }
+    .my-form .f-sm-33 {
+        width: 32%;
     }
 }

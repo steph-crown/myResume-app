@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Formik, Form} from "formik";
 import { TextInput } from "./FieldList";
 import ButtonGroup from './../ButtonGroup';
-import { validationSchema, personalValidation } from "./validationSchema";
+import { personalValidation } from "./validationSchema";
 
 export default function Contact(props) {
 
@@ -18,9 +18,7 @@ export default function Contact(props) {
                 initialValues={{personal: initialValues.personal}}
                 onSubmit={
                     values => {
-                        // console.log(values);
                         history.push(pathWithoutPage + (props.pageNo + 1))
-                        // console.log(errors);
                     }
                 }  
                 validationSchema={personalValidation}

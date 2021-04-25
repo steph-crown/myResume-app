@@ -70,9 +70,9 @@ const validationSchema = Yup.object().shape({
     education: Yup.array().of(Yup.object({
         institutionName: Yup.string().required('Institution Name is required'),
         city: Yup.string(),
-        qualification: Yup.string(),
         degree: Yup.string(),
         fieldOfStudy: Yup.string(),
+        startDate: Yup.date(),
         graduationDate: Yup.date(),
         description: Yup.string(),
         grade: Yup.string()

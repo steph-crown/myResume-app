@@ -44,9 +44,9 @@ let profileField = {
         {
             institutionName: "",
             city: "",
-            qualification: "",
             degree: "",
             fieldOfStudy: "",
+            startDate: "2005-10-23",
             graduationDate: "",
             description: "",
             grade: ""
