@@ -19,12 +19,12 @@ let profileField = {
     work: [
         {
             title: "Farmer",
-            employer: "",
-            city: "",
-            country: "",
-            start: null,
-            end: null,
-            isCurrentlyWorking: null,
+            employer: "Nuru Farms",
+            city: "Kogi",
+            country: "nigeria",
+            start: "2020-09-22",
+            end: "2020-09-22",
+            isCurrentlyWorking: false,
             details: ""
         }
     ],
@@ -36,7 +36,7 @@ let profileField = {
             country: "",
             start: null,
             end: null,
-            isCurrentlyWorking: null,
+            isCurrentlyWorking: true,
             details: ""
         }
     ],

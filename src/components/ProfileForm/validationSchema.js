@@ -1,5 +1,35 @@
 import * as Yup from 'yup';
 
+const personalValidation = Yup.object().shape({
+    personal: Yup.object().shape({
+        firstName: Yup.string().required('First Name is required'),
+        lastName: Yup.string().required('Last Name is required'),
+        address: Yup.string(),
+        city: Yup.string(),
+        country: Yup.string(),
+        postcode: Yup.string(),
+        phone: Yup.string(),
+        email: Yup.string().email('Invalid Email Address').required('Email Address is required'),
+        profession: Yup.string().required('Profession is required'),
+        socialLinks: Yup.array().of(Yup.object().shape({
+            media: Yup.string(),
+            link: Yup.string().url('Invalid URL')
+        }))
+    })
+});
+
+const workValidation = Yup.object().shape({
+    work: Yup.array().of(Yup.object({
+        title: Yup.string().required('Job Title is required'),
+        employer: Yup.string(),
+        city: Yup.string(),
+        country: Yup.string(),
+        start: Yup.string(),
+        end: Yup.string(),
+        isCurrentlyWorking: Yup.boolean(),
+        details: Yup.string()
+    }))
+});
 
 const validationSchema = Yup.object().shape({
     personal: Yup.object().shape({
@@ -13,8 +43,8 @@ const validationSchema = Yup.object().shape({
         email: Yup.string().email('Invalid Email Address').required('Email Address is required'),
         profession: Yup.string().required('Profession is required'),
         socialLinks: Yup.array().of(Yup.object().shape({
-            media: Yup.string().required('Name of media is required'),
-            link: Yup.string().url('Invalid URL').required('The link is required')
+            media: Yup.string(),
+            link: Yup.string().url('Invalid URL')
         }))
     }),
     work: Yup.array().of(Yup.object({
@@ -91,4 +121,4 @@ const validationSchema = Yup.object().shape({
     additionalInformation: Yup.string()
 })
 
-export {validationSchema};
+export {validationSchema, personalValidation, workValidation};

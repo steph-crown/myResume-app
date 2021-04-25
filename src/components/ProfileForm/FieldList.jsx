@@ -17,12 +17,19 @@ const TextInput = ({label, ...props}) => {
 
 
 
-const CheckBox = () => {
+const CheckBox = ({ children, ...props }) => {
+    const [field, meta] = useField({ ...props, type: 'checkbox' });
     return (
         <div>
-            Check
+        <label className="checkbox-input">
+            <input type="checkbox" {...field} {...props} checked={true} />
+            {children}
+        </label>
+        {meta.touched && meta.error ? (
+            <div className="error">{meta.error}</div>
+        ) : null}
         </div>
-    )
+    );
 }
 
 

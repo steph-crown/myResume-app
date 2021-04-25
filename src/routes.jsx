@@ -22,7 +22,7 @@ const routes = () => {
                         <Route exact path="/" render={()=><Homepage />} /> 
                         <Route exact path="/signup" render={()=><SignUpPage />} /> 
                         <Route exact path="/about" render={()=><AboutPage />} />  
-                        <Route path="/edit/:id/:page" component={ProfileForm} />
+                        <Route exact path="/edit/:id/:page" component={ProfileForm} />
                         <Route exact path="/help" render={()=><HelpPage />} />
                         <Route exact path="/login" render={()=><LoginPage />} />
                         <Route exact path="/menu" render={()=><MobileMenu />} />

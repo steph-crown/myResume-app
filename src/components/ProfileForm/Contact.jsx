@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { Formik, Form} from "formik";
 import { TextInput } from "./FieldList";
 import ButtonGroup from './../ButtonGroup';
-import { validationSchema } from "./validationSchema";
+import { validationSchema, personalValidation } from "./validationSchema";
 
 export default function Contact(props) {
 
@@ -15,11 +15,17 @@ export default function Contact(props) {
         <div className="my-form">
             <h3>How may your employer contact you?</h3>
             <Formik
-                initialValues={initialValues}
-                onSubmit={values => {console.log(values)}}  
-                validationSchema={validationSchema}
+                initialValues={{personal: initialValues.personal}}
+                onSubmit={
+                    values => {
+                        // console.log(values);
+                        history.push(pathWithoutPage + (props.pageNo + 1))
+                        // console.log(errors);
+                    }
+                }  
+                validationSchema={personalValidation}
             >
-                {({isSubmitting}) => (
+                {({isSubmitting, errors}) => (
                     <Form className="my-form contact-form" >
                         <div className="form-flex">
                             <div className="input-group f49">
