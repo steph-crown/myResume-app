@@ -59,7 +59,7 @@ let profileField = {
                 expertLevel: ""
             }
         ],
-        hideExpertLevel: null
+        hideExpertLevel: true
     },
     siteLinks: [
         {
