@@ -284,6 +284,10 @@
     display: none;
 }
 
+.my-form .f33 {
+    width: 32%;
+}
+
 .form-container textarea {
     height: 8em;
 }
@@ -301,7 +305,5 @@
     .my-form .f-sm-49 {
         width: 49.5%;
     }
-    .my-form .f-sm-33 {
-        width: 32%;
-    }
+    
 }

@@ -34,8 +34,8 @@ let profileField = {
             employer: "",
             city: "",
             country: "",
-            start: null,
-            end: null,
+            start: "2020-04-11",
+            end: "2020-09-11",
             isCurrentlyWorking: true,
             details: ""
         }

@@ -8,9 +8,7 @@ export default function ButtonGroup({pageNo, pagesStr, pathWithoutPage}) {
     return (
         <div className="button-group">
             <div className={"left-group " + (pageNo === pagesStr.length - 1 ? "no-next" : "")}>
-                {/* <Link to={pathWithoutPage + (pageNo + 1)}> */}
-                    <button type="submit" className="next-button">Next: {pagesStr[pageNo + 1]}</button>
-                {/* </Link> */}
+                <button type="submit" className="next-button">Next: {pagesStr[pageNo + 1]}</button>
                 <button type="button" className={"save-button "}>Save</button>
             </div>
             <div className="right-group">
@@ -19,4 +17,3 @@ export default function ButtonGroup({pageNo, pagesStr, pathWithoutPage}) {
         </div>
     )
 }
-
