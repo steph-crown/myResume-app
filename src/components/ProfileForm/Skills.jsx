@@ -2,10 +2,9 @@ import React from 'react';
 import StarRating from './../../assets/StarRating';
 import { Formik, Form} from "formik";
 import { useHistory } from "react-router-dom";
-import { TextInput } from "./FieldList";
+import { TextInput, CheckBox } from "./FieldList";
 import { skillsValidation } from "./validationSchema";
 import ButtonGroup from './../ButtonGroup';
-
 
 
 export default function Skills(props) {
@@ -35,17 +34,21 @@ export default function Skills(props) {
                                     name="skills.list[0].name"
                                 />
                             </div>
-                            <div className="input-group f49 f-sm-100">
+                            <div className="input-group f49 f-sm-100 stars">
                                 <StarRating changeRating={(ratingNumber)=> {
                                     values.skills.list[0].expertLevel = ratingNumber;
                                     console.log(values);
                                 }} />
-                                <i className="fa fa-minus-circle"></i>
-                                <div className="skill-circle">
+                               <div className="skill-circle">
                                     <div className="skill-dash">
                                         
                                     </div>
                                 </div>
+                            </div>
+                            <div className="input-group f100">
+                                <CheckBox name="skills.hideExpertLevel">
+                                    Don't Include Skills Level
+                                </CheckBox>
                             </div>
                         </div>
                         <h6>+ Add Skills</h6>
