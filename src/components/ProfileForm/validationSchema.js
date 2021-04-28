@@ -55,6 +55,16 @@ const educationValidation = Yup.object().shape({
         description: Yup.string(),
         grade: Yup.string()
     }))
+});
+
+const skillsValidation = Yup.object().shape({
+    skills: Yup.object({
+        list: Yup.array().of(Yup.object().shape({
+            name: Yup.string(),
+            expertLevel: Yup.number()
+        })),
+        hideExpertLevel: Yup.boolean()
+    })
 })
 
 const validationSchema = Yup.object().shape({
@@ -147,4 +157,4 @@ const validationSchema = Yup.object().shape({
     additionalInformation: Yup.string()
 })
 
-export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation};
+export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation, skillsValidation};

@@ -56,7 +56,7 @@ let profileField = {
         list: [
             {
                 name: "",
-                expertLevel: ""
+                expertLevel: 0
             }
         ],
         hideExpertLevel: true
