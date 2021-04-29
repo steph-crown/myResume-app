@@ -69,7 +69,28 @@ const skillsValidation = Yup.object().shape({
 
 const summaryValidation = Yup.object().shape({
     professionalSummary: Yup.string().required()
-})
+});
+
+const referenceValidation = Yup.object().shape({
+    reference: Yup.array().of(Yup.object().shape({
+        name: Yup.string(),
+        jobTitle: Yup.string(),
+        company: Yup.string(),
+        email: Yup.string().email('Invalid Email Address'),
+        phone: Yup.string()
+    }))
+});
+
+const projectsValidation = Yup.object().shape({
+    projects: Yup.array().of(Yup.object({
+        title: Yup.string(),
+        description: Yup.string(),
+        projectLinks: Yup.array().of(Yup.object({
+            name: Yup.string(),
+            link: Yup.string()
+        }))
+    }))
+});
 
 const validationSchema = Yup.object().shape({
     personal: Yup.object().shape({
@@ -161,4 +182,4 @@ const validationSchema = Yup.object().shape({
     additionalInformation: Yup.string()
 })
 
-export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation, skillsValidation, summaryValidation};
+export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation, skillsValidation, summaryValidation, referenceValidation, projectsValidation};
