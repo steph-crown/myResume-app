@@ -10,7 +10,9 @@ import './../../css/ProfileForm.css';
 import Volunteer from './Volunteer';
 import Skills from './Skills';
 import Summary from './Summary';
-
+import Projects from './Projects';
+import References from './References';
+import Finalize from './Extra';
 
 
 export default class ProfileForm extends Component {
@@ -21,8 +23,8 @@ export default class ProfileForm extends Component {
         }
     }
     pathWithoutPage = this.props.history.location.pathname.slice(0,-1);
-    pages = [Contact, Work, Education, Volunteer, Skills, Summary]
-    pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary"]
+    pages = [Contact, Work, Education, Volunteer, Skills, Summary, Projects, References, Finalize]
+    pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary", "Projects", "References", "Finalize"]
     id = this.props.match.params.id;
     
     render() {

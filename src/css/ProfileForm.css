@@ -17,6 +17,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .pages-md * {
@@ -45,10 +46,10 @@
 }
 
 .short-line {
-    width: 2.5em;
+    width: 2em;
     height: 0.2em;
     background-color: #999999;
-    margin-left: 1em;
+    margin-left: 0.5em;
     transition: 1.5s;
 
 }
@@ -64,7 +65,7 @@
 .profile-form svg {
     height: 50px;
     position: fixed;
-    left: 330px;
+    left: 280px;
     top: 0.7em;
     color: var(--green);
     fill: currentColor;

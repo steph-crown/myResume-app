@@ -5,13 +5,13 @@ import ButtonGroup from './../ButtonGroup';
 import { TextInput } from "./FieldList";
 
 
-export default function Extra() {
+export default function Extra(props) {
     const initialValues = props.initialState;
     return (
         <div className="my-form">
             <h3>Add additional sections to your resume</h3>
             <Formik
-                initialValues={}
+                initialValues={initialValues}
             >
 
             </Formik>
