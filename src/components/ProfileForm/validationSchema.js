@@ -65,6 +65,10 @@ const skillsValidation = Yup.object().shape({
         })),
         hideExpertLevel: Yup.boolean()
     })
+});
+
+const summaryValidation = Yup.object().shape({
+    professionalSummary: Yup.string().required()
 })
 
 const validationSchema = Yup.object().shape({
@@ -157,4 +161,4 @@ const validationSchema = Yup.object().shape({
     additionalInformation: Yup.string()
 })
 
-export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation, skillsValidation};
+export {validationSchema, personalValidation, workValidation, volunteerValidation, educationValidation, skillsValidation, summaryValidation};

@@ -9,6 +9,7 @@ import { Beforeunload } from 'react-beforeunload';
 import './../../css/ProfileForm.css';
 import Volunteer from './Volunteer';
 import Skills from './Skills';
+import Summary from './Summary';
 
 
 
@@ -19,8 +20,8 @@ export default class ProfileForm extends Component {
             currPage: parseInt(this.props.match.params.page)
         }
     }
-    pages = [Contact, Work, Education, Volunteer, Skills]
-    pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills"]
+    pages = [Contact, Work, Education, Volunteer, Skills, Summary]
+    pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary"]
     id = this.props.match.params.id;
 
     

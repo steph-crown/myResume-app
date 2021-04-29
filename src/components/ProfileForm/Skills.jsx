@@ -20,8 +20,7 @@ export default function Skills(props) {
                 initialValues={{skills: initialValues.skills}}
                 onSubmit={
                     values => {
-                        console.log(values);
-                        // history.push(pathWithoutPage + (props.pageNo + 1))
+                        history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
                 validationSchema={skillsValidation}

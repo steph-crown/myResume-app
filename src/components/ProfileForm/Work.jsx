@@ -87,7 +87,8 @@ export default function Work(props) {
                                 What You Did Here
                             </label>
                             <Field name="work[0].details" id="work-details" as="textarea" className="form-textarea" placeholder="What I did" />
-                            </div>
+                            
+                        </div>
                         <CheckBox name="work[0].isCurrentlyWorking">
                             I am still working there
                         </CheckBox>
