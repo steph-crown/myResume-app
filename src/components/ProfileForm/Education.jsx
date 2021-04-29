@@ -11,7 +11,6 @@ export default function Education(props) {
     const history = useHistory();
     const initialValues = props.initialState;
     let pathWithoutPage = history.location.pathname.slice(0,-1);
-    console.log({education: initialValues.education});
     return (
         <div className="my-form">
             <h3>Tell us about your education</h3>

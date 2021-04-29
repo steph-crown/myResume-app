@@ -61,12 +61,6 @@ let profileField = {
         ],
         hideExpertLevel: true
     },
-    siteLinks: [
-        {
-            name: "",
-            link: ""
-        }
-    ],
     reference: [
         {
             name: "",
@@ -90,18 +84,11 @@ let profileField = {
     ],
     customSection: {
         title: "",
-        list: [
-            {
-                title: "",
-                details: ""
-            }
-        ]
+        details: ""
     },
     accomplishments: [],
     languages: [],
     affiliations: [],
-    activities: [],
-    publications: [],
     interests: [],
     certifications: [],
     professionalSummary: "",
