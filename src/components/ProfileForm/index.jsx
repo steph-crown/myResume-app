@@ -20,15 +20,13 @@ export default class ProfileForm extends Component {
             currPage: parseInt(this.props.match.params.page)
         }
     }
+    pathWithoutPage = this.props.history.location.pathname.slice(0,-1);
     pages = [Contact, Work, Education, Volunteer, Skills, Summary]
     pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary"]
     id = this.props.match.params.id;
-
     
     render() {
-        
         let pageNo = parseInt(this.props.match.params.page)
-        console.log(pageNo);
         if (pageNo > this.pagesStr.length - 1  ||  pageNo < 0) {
             return <p>Page Not Found</p>
         }
@@ -37,9 +35,9 @@ export default class ProfileForm extends Component {
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
         const pagesJSX = this.pagesStr.map((x, index) => 
             <div className={"page " + (pageNo === index ? "current-page" : "")} >
-                {console.log(this.state.currPage)}
-                
-                {x}
+                <Link to={this.pathWithoutPage + index}>
+                    {x}
+                </Link>                
                 <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
                 </div>
             </div>

@@ -32,7 +32,7 @@
     margin: 0 0.6em;
 }
 
-.pages-md .current-page {
+.pages-md .current-page * {
     color: var(--green);
 }
 
