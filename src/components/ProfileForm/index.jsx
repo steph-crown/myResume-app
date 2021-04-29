@@ -34,18 +34,36 @@ export default class ProfileForm extends Component {
         const CurrComp = this.pages[pageNo]
         const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
         const pagesJSX = this.pagesStr.map((x, index) => 
-            <div className={"page " + (pageNo === index ? "current-page" : "")} >
-                <Link to={this.pathWithoutPage + index}>
+            <div className={"page " + (pageNo >= index ? "current-page" : "")} >
+                {
+                    pageNo >= index ?
+                        <Link to={this.pathWithoutPage + index}>
                     {x}
-                </Link>                
+                        </Link>
+                    :
+                        <Link>{x}</Link>
+                        
+                }
+                                
                 <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
                 </div>
             </div>
         )
 
         const pagesDotsJSX = this.pagesStr.map((x, index) => 
-            <div className={"pages-dot " + (pageNo === index ? "current-page-sm" : "")}>
-            </div>
+        {
+            return pageNo >= index ?
+            <Link to={this.pathWithoutPage + index}>
+                <div className={"pages-dot " + (pageNo >= index ? "current-page-sm" : "")}>
+                </div>
+            </Link> : 
+            <Link>
+                <div className={"pages-dot " + (pageNo >= index ? "current-page-sm" : "")}>
+                </div>
+            </Link>
+
+        }
+            
         )
 
         const goBack = () => {
