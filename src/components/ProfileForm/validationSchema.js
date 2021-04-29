@@ -85,10 +85,7 @@ const projectsValidation = Yup.object().shape({
     projects: Yup.array().of(Yup.object({
         title: Yup.string(),
         description: Yup.string(),
-        projectLinks: Yup.array().of(Yup.object({
-            name: Yup.string(),
-            link: Yup.string()
-        }))
+        projectLinks: Yup.string().url('Invalid URL')
     }))
 });
 

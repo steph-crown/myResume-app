@@ -43,7 +43,7 @@ export default class ProfileForm extends Component {
                     {x}
                         </Link>
                     :
-                        <Link>{x}</Link>
+                        <Link to={this.props.history.location.pathname}>{x}</Link>
                         
                 }
                                 
@@ -59,7 +59,7 @@ export default class ProfileForm extends Component {
                 <div className={"pages-dot " + (pageNo >= index ? "current-page-sm" : "")}>
                 </div>
             </Link> : 
-            <Link>
+            <Link to={this.props.history.location.pathname}>
                 <div className={"pages-dot " + (pageNo >= index ? "current-page-sm" : "")}>
                 </div>
             </Link>

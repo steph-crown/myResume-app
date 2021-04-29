@@ -74,12 +74,7 @@ let profileField = {
         {
             title: "",
             description: "",
-            projectLinks: [
-                {
-                    name: "",
-                    link: ""
-                }
-            ]
+            projectLinks: ""
         }
     ],
     customSection: {

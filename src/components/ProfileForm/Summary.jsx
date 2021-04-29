@@ -2,7 +2,6 @@ import React from 'react';
 import { Formik, Form, Field} from "formik";
 import { useHistory } from "react-router-dom";
 import ButtonGroup from './../ButtonGroup';
-import { summaryValidation } from "./validationSchema";
 
 
 
@@ -16,22 +15,21 @@ export default function Summary(props) {
         <div className="my-form">
             <h3>GIve us a brief summary about yourself</h3>
             <Formik
-                initialValues={{work: initialValues.work}}
+                initialValues={{professionalSummary: initialValues.professionalSummary}}
                 onSubmit={
                     values => {
                         console.log(values);
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
-                validationSchema={summaryValidation}
             >
                 <Form className="my-form">
                     <div className="form-flex">
-                        <label htmlFor="work-details"
+                        <label htmlFor="professionalSummary"
                         >
                             Summary
                         </label>
-                        <Field name="work[0].details" id="work-details" as="textarea" className="form-textarea" placeholder="Write your summary here" />
+                        <Field name="professionalSummary" id="professionalSummary" as="textarea" className="form-textarea" placeholder="Write your summary here" />
                     </div>
 
                     <ButtonGroup 
