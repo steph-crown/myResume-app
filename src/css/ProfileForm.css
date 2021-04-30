@@ -322,9 +322,14 @@
     background-color: white;
 }
 
+/* Musician crush */
+.avrya-starr{
+    color: var(--green);
+}
 
-
-
+.an-error .avrya-starr {
+    color: var(--red);
+}
 
 @media (max-width: 1024px) {
     .form-container {

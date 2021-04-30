@@ -9,14 +9,51 @@
     color: var(--red);
 }
 
-.my-form input.an-error {
-    border-color: var(--red);
-}
 
 .my-form label.no-error {
     color: var(--green);
+    border: none;
 }
 
+.my-form input.no-error:focus, 
+.my-form input.an-error:focus,
+.my-form input.an-error,
 .my-form input.no-error {
+    /* border-color: var(--green); */
+    border: none;
+}
+
+
+.my-form .input-flexbox {
+    width: 100%;
+    display: flex;
+    min-height: 2px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.my-form div.no-error {
+    width: 8px;
+    height: 16px;
     border-color: var(--green);
+    border-width: 0 3px 3px 0;
+    border-style: solid;
+    margin-right: 10px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.my-form div.an-error {
+    background-color: var(--red);
+    width: 30px;
+    height: 30px;
+}
+
+.my-form #no-error {
+    border: 1px solid var(--green);
+} 
+
+.my-form #an-error {
+    border: 1px solid var(--red);
 }

@@ -31,7 +31,7 @@ export default function Contact(props) {
                                     name="personal.firstName"
                                     label = "First Name"
                                     placeholder="First Name"
-                                    required
+                                    require = "true"
                                 />
                                 
                             </div>
@@ -40,6 +40,7 @@ export default function Contact(props) {
                                     name="personal.lastName"
                                     label="Last Name"
                                     placeholder="Last Name"
+                                    require = "true"
                                 />
                             </div>
                         </div>
@@ -50,6 +51,7 @@ export default function Contact(props) {
                                     name="personal.profession"
                                     label="Profession"
                                     placeholder="Your Profession"
+                                    require = "true"
                                 />
                             </div>
                         </div>
@@ -84,7 +86,7 @@ export default function Contact(props) {
                                     name="personal.phone"
                                     label="Phone"
                                     placeholder="Phone Number"
-                                    type="number"
+                                    
                                 />
                             </div>
                             <div className="input-group f49">
@@ -93,6 +95,7 @@ export default function Contact(props) {
                                     label="Email"
                                     placeholder="Email Address"
                                     type="email"
+                                    require = "true"
                                 />
                             </div>
                         </div>
