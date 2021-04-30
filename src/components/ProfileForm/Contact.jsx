@@ -31,6 +31,7 @@ export default function Contact(props) {
                                     name="personal.firstName"
                                     label = "First Name"
                                     placeholder="First Name"
+                                    required
                                 />
                                 
                             </div>
