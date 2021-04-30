@@ -9,8 +9,8 @@ const TextInput = ({label, ...props}) => {
     const noError = meta.touched && !meta.error;
     return (
         <>
-            <label className={anError ? "an-error" : noError ? "no-error" : ""} htmlFor={props.id || props.name}>{label}</label>
-            <input className={anError ? "an-error" : noError ? "no-error" : ""} {...field} {...props} />
+            <label className={anError ? "an-error" : noError & props.required ? "no-error" : ""} htmlFor={props.id || props.name}>{label}</label>
+            <input className={anError ? "an-error" : noError & props.required ? "no-error" : ""} {...field} {...props} />
             {anError ? (
             <div className="error">{meta.error}</div>
             ) : null}

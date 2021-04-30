@@ -4,3 +4,19 @@
     font-family: 'Nunito Sans';
     font-weight: 300;
 }
+
+.my-form label.an-error {
+    color: var(--red);
+}
+
+.my-form input.an-error {
+    border-color: var(--red);
+}
+
+.my-form label.no-error {
+    color: var(--green);
+}
+
+.my-form input.no-error {
+    border-color: var(--green);
+}
