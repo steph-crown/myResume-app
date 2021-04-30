@@ -1,0 +1,6 @@
+.error {
+    color: var(--red);
+    margin-top: 5px;
+    font-family: 'Nunito Sans';
+    font-weight: 300;
+}

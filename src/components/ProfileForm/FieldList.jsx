@@ -1,14 +1,17 @@
 import React from 'react';
 import { useField } from "formik";
-import './../../css/checkbox.css'
+import './../../css/checkbox.css';
+import './../../css/error-alert.css';
 
 const TextInput = ({label, ...props}) => {
     const [field, meta] = useField(props);
+    const anError = meta.touched && meta.error;
+    const noError = meta.touched && !meta.error;
     return (
         <>
-            <label htmlFor={props.id || props.name}>{label}</label>
-            <input  {...field} {...props} />
-            {meta.touched && meta.error ? (
+            <label className={anError ? "an-error" : noError ? "no-error" : ""} htmlFor={props.id || props.name}>{label}</label>
+            <input className={anError ? "an-error" : noError ? "no-error" : ""} {...field} {...props} />
+            {anError ? (
             <div className="error">{meta.error}</div>
             ) : null}
         </>
