@@ -25,7 +25,7 @@ const CheckBox = ({ children, ...props }) => {
             
             <label className="checkbox-container">
                 {children}
-                <input type="checkbox" {...field} {...props} checked={true} />
+                <input type="checkbox" {...field} {...props}  />
                 <span className="checkmark"></span>
             </label>
             {meta.touched && meta.error ? (
