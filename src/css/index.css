@@ -25,6 +25,8 @@
   --red: #E5193B;
   --lightest-blue: #90FAFF;
 }
+
+
 /* ABOVE, variables starting with l indicates length relative to the width of the frame used in the ui design */
 
 /* GENERAL STYLES | FONTS, COLORS AND STUFFS */
@@ -42,7 +44,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 
 .bg-svg {

@@ -69,6 +69,7 @@ export default function Work(props) {
                                     name="work[0].start"
                                     label="Start Date"
                                     placeholder="When You Started"
+                                    type="date"
                                 />
                             </div>
                             <div className="input-group f49">

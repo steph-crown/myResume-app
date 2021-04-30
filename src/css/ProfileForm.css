@@ -62,7 +62,7 @@
     display: none;
 }
 
-.profile-form svg {
+.profile-form .go-back {
     height: 50px;
     position: fixed;
     left: 280px;
@@ -75,7 +75,7 @@
     cursor: pointer;
 }
 
-.profile-form svg:hover {
+.profile-form .go-back:hover {
     background-color: #d6f7da;
 }
 
@@ -123,7 +123,7 @@
         background-color: var(--green);
     }
 
-    .profile-form svg {
+    .profile-form .go-back {
         height: 50px;
         position: fixed;
         left: 0.6em;
@@ -136,7 +136,7 @@
         cursor: pointer;
     }
 
-    .profile-form svg:hover {
+    .profile-form .go-back:hover {
         background-color: #d6f7da;
     }
 
@@ -154,7 +154,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 2px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .form-container * {
@@ -321,6 +321,10 @@
     height: 4px;
     background-color: white;
 }
+
+
+
+
 
 @media (max-width: 1024px) {
     .form-container {
