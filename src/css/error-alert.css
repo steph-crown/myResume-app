@@ -45,9 +45,10 @@
 }
 
 .my-form div.an-error {
-    background-color: var(--red);
-    width: 30px;
-    height: 30px;
+    color: var(--red);
+    font-size: 1.5em;
+    margin-right: 10px;
+    font-weight: 700;
 }
 
 .my-form #no-error {

@@ -15,8 +15,13 @@ const TextInput = ({label, ...props}) => {
             <label className={classname} htmlFor={props.id || props.name}>{label} <span className="avrya-starr">{(props.require ? " *" : "")}</span></label>
             <div className="input-flexbox" id={classname}>
                 <input className={classname} {...field} {...props} />
-                <div className={"text-check " + classname}>
-                </div>
+                {classname === "an-error" ?
+                    <div className={"text-check " + classname}>&times;
+                    </div> : 
+                    <div className={"text-check " + classname}>
+                    </div>
+                }
+                
             </div>
             
             {anError ? (
