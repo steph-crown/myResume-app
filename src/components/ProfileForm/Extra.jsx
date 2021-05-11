@@ -20,6 +20,14 @@ export default function Extra(props) {
         additionalInfo: false
     }
 
+    const componentChanger = (values) => {
+        values = Object.entries(values).filter(x => x[1])
+        console.log(values);
+        values.length ?
+        changeComponent(1)
+        : changeComponent(2)
+    }
+
     return (
         <div className="my-form">
             <h3>Add additional sections to your resume</h3>
@@ -32,8 +40,8 @@ export default function Extra(props) {
                     }
                 }
             >
-                
-                <Form>
+                {({values}) => (
+                    <Form>
                     {
                         !currentComponent ?
                         <>
@@ -67,19 +75,35 @@ export default function Extra(props) {
                                     Additional Information
                                 </CheckBox>
                             </div>
-                            <button type="button" className="next-button">Next</button>
+                            <button type="button" className="next-button" onClick={()=>{componentChanger(values)}}>Next</button>
                         </>
-                        :
+                        : currentComponent === 1 ?
                         <>
+                            {
+                                Object.entries(values).filter(x => x[1]).map(
+                                    arr => (
+                                        <div className="my-section">
+                                            <h2>{arr[0]}</h2>
+                                            
+                                        </div>
+                                    )
+                                )
+                            }
+                        </>
+                        : currentComponent === 2 ?
+                        <>
+                            2
                             <ButtonGroup 
                                 pathWithoutPage={pathWithoutPage} 
                                 pageNo={props.pageNo}
                                 pagesStr={props.pagesStr}
                             />
-                        </>
+                        </> : null
                     }
                     
                 </Form>
+                )}
+                
             </Formik>
         </div>
     )
