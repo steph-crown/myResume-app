@@ -77,15 +77,11 @@ let profileField = {
             projectLinks: ""
         }
     ],
-    customSection: {
-        title: "",
-        details: ""
-    },
-    accomplishments: [],
-    languages: [],
-    affiliations: [],
-    interests: [],
-    certifications: [],
+    accomplishments: "",
+    languages: "",
+    affiliations: "",
+    interests: "",
+    certifications: "",
     professionalSummary: "",
     additionalInformation: ""
 }
