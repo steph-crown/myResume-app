@@ -56,5 +56,25 @@
 } 
 
 .my-form #an-error {
+    animation-name: shake;
+    animation-duration: 0.2s;
+    animation-iteration-count: 2;
     border: 1px solid var(--red);
 }
+
+/* shake animation */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
