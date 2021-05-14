@@ -29,7 +29,7 @@ export default function CVIsReady() {
                         {sections}
                     </div>
                     <div className="a-short-line"></div>
-                    <h6 className="download">DOWNLOAD</h6>
+                    <button className="download">DOWNLOAD</button>
                 </div>
                 <div className="f74 f-sm-100">
                     <div className="the-pdf" >
