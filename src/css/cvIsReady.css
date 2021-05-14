@@ -95,4 +95,35 @@ button.download:hover {
     .a-ready-cv .sm-none {
         display: none;
     }
+
+    .a-ready-cv .sm-show {
+        display: flex;
+    }
+
+    .change-template h6 {
+        color: var(--green);
+    }
+
+    .change-template {
+        justify-content: flex-end;
+    }
+
+    button.res-sections {
+        background-color: transparent;
+        border: 1px solid var(--green);
+        margin-top: 32px;
+        color: var(--green);
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .a-ready-cv .show-block {
+        display: block;
+    }
+
+    button.save {
+        background-color: var(--green);
+        color: white;
+        margin-top: 0;
+    }
 }

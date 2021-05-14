@@ -32,12 +32,19 @@ export default function CVIsReady() {
                     <button className="download">DOWNLOAD</button>
                 </div>
                 <div className="f74 f-sm-100">
+                    <div className="sm-show change-template">
+                        <h6>CHANGE TEMPLATE</h6>
+                    </div>
                     <div className="the-pdf" >
                         <PDFViewer>
                             <PdfCreator />
                         </PDFViewer>
                     </div>
-                    
+                    <div className="sm-show f-sm-100 show-block">
+                        <button className="res-sections">RESUME SECTIONS</button>
+                        <button className="res-sections save">SAVE RESUME</button>
+                        <button></button>
+                    </div>
                 </div>
             </div>
 
