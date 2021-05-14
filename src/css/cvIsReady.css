@@ -57,7 +57,7 @@ button.download:hover {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--black);
+    background-color: rgb(82,86,89);
     padding: 10 calc(100vw * var(--l120));
     display: flex;
     justify-content: space-between;
