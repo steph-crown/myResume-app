@@ -48,8 +48,8 @@ export default function CVIsReady() {
                 </div>
             </div>
 
-            <footer className="sm-none">
-                <button className="footer-button">
+            <footer>
+                <button className="footer-button sm-none">
                     TEMPLATE
                 </button>
                 <button className="footer-button">
@@ -58,9 +58,8 @@ export default function CVIsReady() {
                 <button className="footer-button">
                     COLOR
                 </button>
-                <button className="footer-button green">SAVE</button>
+                <button className="footer-button green sm-none">SAVE</button>
             </footer>
         </div>
-        
     )
 }
