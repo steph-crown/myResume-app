@@ -25,8 +25,8 @@ export default function CVIsReady() {
 
     sections = sections.map((x, index) => (
         <div className="page" key={x}>
+            <div><i className={x[1] + " fontawesome"}></i></div>
             <Link to={pathWithoutPage + index} >
-                <i className={x[1]}></i>
                 {x[0]}
             </Link>
         </div>

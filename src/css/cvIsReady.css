@@ -91,6 +91,10 @@ button.download:hover {
     opacity: 0.5;
 }
 
+.fontawesome {
+    font-family: 'FontAwesome';
+}
+
 @media (max-width: 1024px) {
     .a-ready-cv .sm-none {
         display: none;
