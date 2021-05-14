@@ -125,5 +125,11 @@ button.download:hover {
         background-color: var(--green);
         color: white;
         margin-top: 0;
+        margin-bottom: 32px;
+    }
+
+    .a-ready-cv footer {
+        position: absolute;
+        margin-top: 24px;
     }
 }

@@ -11,12 +11,23 @@ export default function CVIsReady() {
     const history = useHistory();
     let pathWithoutPage = history.location.pathname.slice(0,-1);
 
-    let sections = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary", "Projects", "References"]
+    let sections = [
+        ["Contact", "fa fa-address-book-o"], 
+        ["Work", "fa fa-user"], 
+        ["Education", "fa fa-graduation-cap"], 
+        ["Volunteer", "fas fa-hand-holding-heart"], 
+        ["Skills","fa fa-list-ol"], 
+        ["Summary", "fa fa-bars"], 
+        ["Projects", "far fa-file-code"], 
+        ["References", "fa fa-check"]
+    ]
+        
 
     sections = sections.map((x, index) => (
         <div className="page" key={x}>
-            <Link to={pathWithoutPage + index}>
-                {x}
+            <Link to={pathWithoutPage + index} >
+                <i className={x[1]}></i>
+                {x[0]}
             </Link>
         </div>
     ))
