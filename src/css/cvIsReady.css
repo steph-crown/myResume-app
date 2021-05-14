@@ -1,0 +1,91 @@
+.a-ready-cv {
+    margin-top: 2em;
+}
+
+.a-ready-cv h6 {
+    color: #777777;
+    cursor: initial;
+    font-size: 0.8em;
+    letter-spacing: 1.3px;
+    margin-top: 0;
+}
+
+.a-ready-cv h6:hover {
+    background-color: transparent;
+}
+
+.a-ready-cv .section-links {
+    margin-left: 0.6em;
+}
+
+.a-ready-cv .section-links a {
+    font-weight: 400;
+    color: #555555;
+}
+
+.a-ready-cv .section-links a:hover {
+    color: var(--green);
+}
+
+.a-short-line {
+    width: 70%;
+    margin: 20px 0;
+    height: 1px;
+    background-color: #777777;
+}
+
+h6.download {
+    color: var(--green);
+    margin-left: 0.6em;
+    cursor: pointer;
+}
+
+h6.download:hover {
+    opacity: 0.6;
+}
+
+.a-ready-cv footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--black);
+    padding: 10 calc(100vw * var(--l120));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 70px;
+    align-items: flex-end;
+}
+
+.a-ready-cv .footer-button {
+    background-color: var(--darker-black);
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: rgba(255, 255, 255, 0.26);
+    /* opacity: 0.2; */
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    /* box-shadow: 7px 7px 11px 0px rgb(255 255 255 / 2%), -7px -7px 11px 0px rgb(255 255 255 / 2%); */
+    /* background-color: red; */
+}
+
+.a-ready-cv .footer-button:hover {
+    color: white;
+}
+
+.a-ready-cv .green {
+    background-color: var(--green);
+    color: white;
+}
+
+.a-ready-cv .green:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    .a-ready-cv .sm-none {
+        display: none;
+    }
+}

@@ -1,0 +1,30 @@
+.a-ready-cv .the-pdf {
+    --aspect-ratio: 16/9;
+}
+
+
+.the-pdf > :first-child {
+    width: 100%;
+}
+.the-pdf > img {  
+    height: auto;
+} 
+@supports (--custom:property) {
+    .the-pdf {
+        position: relative;
+    }
+    .the-pdf::before {
+        content: "";
+        display: block;
+        padding-bottom: calc(100% / (var(--aspect-ratio)));
+    }  
+    .the-pdf > :first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }  
+}

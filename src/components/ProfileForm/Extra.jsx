@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import { Formik, Form, Field } from "formik";
-import ButtonGroup from './../ButtonGroup';
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { CheckBox } from "./FieldList";
+import CVIsReady from './CVIsReady';
 
 
 export default function Extra(props) {
-    const history = useHistory();
-    let pathWithoutPage = history.location.pathname.slice(0,-1);
+    // const history = useHistory();
+    // let pathWithoutPage = history.location.pathname.slice(0,-1);
     
     const [currentComponent, changeComponent] = useState(0);
 
@@ -129,12 +129,7 @@ export default function Extra(props) {
                         </>
                         : currentComponent === 2 ?
                         <>
-                            2
-                            <ButtonGroup 
-                                pathWithoutPage={pathWithoutPage} 
-                                pageNo={props.pageNo}
-                                pagesStr={props.pagesStr}
-                            />
+                            <CVIsReady />
                         </> : null
                     }
                     
