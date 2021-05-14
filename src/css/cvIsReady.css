@@ -93,6 +93,17 @@ button.download:hover {
 
 .fontawesome {
     font-family: 'FontAwesome';
+    margin-right: 12px;
+    color: #333333;
+    font-size: 0.8em;
+}
+
+.a-ready-cv .page:hover {
+    transform: translateX(3px);
+}
+
+.a-ready-cv .page:hover .fontawesome {
+    color: var(--green);
 }
 
 @media (max-width: 1024px) {
