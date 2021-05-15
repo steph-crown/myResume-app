@@ -112,6 +112,9 @@
     font-weight: 500;
 }
 
+.cv-container b {
+    margin-bottom: initial;
+}
 .cv-container aside h6 {
     line-height: 140%;
     margin-bottom: -6px;
