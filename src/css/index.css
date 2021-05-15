@@ -65,28 +65,28 @@ body {
 }
 
 /* FONT STYLES ALL SIZES*/
-h1, h2, h4, h6, h5, a, b, p, .tag {
+h1.not-template, h2, h4.not-template, h6, h5, a, b, p, .tag {
   font-style: normal;
 }
-h1, h4 {
+h1.not-template, h4.not-template {
   font-weight: 900;
 }
 
-h1, h2, h5, b {
+h1.not-template, h2, h5, b {
   line-height: 88px;
   font-family: Poppins;
   font-size: 56px;
 }
 
-h2, h4 {
+h2, h4.not-template {
   letter-spacing: 0.02em;
 }
 
-h4, h6, a, p, .tag {
+h4.not-template, h6, a, p, .tag {
   font-family: "Nunito Sans"
 }
 
-h1, h5, p {
+h1.not-template, h5, p {
   letter-spacing: 0.03em;
 }
 
@@ -101,7 +101,7 @@ h2 {
   line-height: 64px;
 }
 
-h4 {
+h4.not-template {
   font-size: 40px;
   line-height: 56px;
 }
@@ -166,7 +166,7 @@ letter-spacing: 0.02em;
 
 
 @media (max-width: 414px) {
-  h1 {
+  h1.not-template {
     font-size: 40px;
     line-height: 56px;
     letter-spacing: 0.02em;
@@ -177,7 +177,7 @@ letter-spacing: 0.02em;
     line-height: 40px;
   }
 
-  h4 {
+  h4.not-template {
     font-size: 24px;
     line-height: 40px;
   }

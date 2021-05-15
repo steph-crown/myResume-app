@@ -22,7 +22,7 @@ const Profile = (props) => {
                     </div>
                     
                     <div className="email">
-                        <h4>{personal.email}</h4>
+                        <h4 className="not-template">{personal.email}</h4>
                     </div>
 
                     

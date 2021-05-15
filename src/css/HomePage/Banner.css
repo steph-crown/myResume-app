@@ -6,7 +6,7 @@
     position: relative;
 }
 
-h1 {
+h1.not-template {
     color: var(--purple);
     margin-bottom: 8px;
 }

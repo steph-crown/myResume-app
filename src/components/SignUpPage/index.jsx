@@ -26,7 +26,7 @@ const index = () => {
                     <Dots fill="#aa97d8" />
                 </div> */}
                 <div className="left-part">
-                    <h1>Sign Up for <br /> 
+                    <h1 className="not-template">Sign Up for <br /> 
                         <span>my</span>
                         <span>Resume</span>
                     </h1>

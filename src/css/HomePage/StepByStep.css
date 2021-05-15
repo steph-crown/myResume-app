@@ -64,13 +64,13 @@
 
 
 
-.texts h4 {
+.texts h4.not-template {
     color: var(--purple);
     margin-bottom: 40px;
     text-align: left;
 }
 
-h4 {
+h4.not-template {
     color: var(--purple);
     text-align: center;
     margin-bottom: 40px;
@@ -127,15 +127,15 @@ h4 {
         height: calc(128 / 200 * var(--width));
     }
 
-    .texts h4 {
+    .texts h4.not-template {
         margin-top: 40px;
     }
     
-    .texts h4, .texts h6 {
+    .texts h4.not-template, .texts h6 {
         text-align: center;
     }
 
-    .texts h4 {
+    .texts h4.not-template {
         margin-bottom: 16px;
     }
 }

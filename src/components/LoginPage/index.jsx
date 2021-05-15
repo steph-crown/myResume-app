@@ -17,7 +17,7 @@ const index = () => {
             </div>
             <main>
                 <div className="left-part">
-                    <h1>Welcome <br /> Back
+                    <h1 className="not-template">Welcome <br /> Back
                     </h1>
                     <h5>
                     If you don’t have an account, You can <Link to="/signup" className="a">Sign Up Here</Link>

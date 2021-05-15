@@ -6,7 +6,7 @@ export default function index() {
         <div className="cv-container">
             <div className="cv">
                 <header>
-                    <h1>EMMANUEL STEPHEN</h1>
+                    <h1 >EMMANUEL STEPHEN</h1 >
                     <h4>FRONTEND DEVELOPER</h4>
                 </header>
                 <main>

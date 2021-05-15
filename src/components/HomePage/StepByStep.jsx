@@ -21,7 +21,7 @@ const StepByStep = () => {
                         <Step1 className="step1"/>
                     </div>
                     <div className="texts">
-                        <h4>Supply your details</h4>
+                        <h4 className="not-template">Supply your details</h4>
                         <h6>Fill the form correctly with details about you and your work experience. We provide you with examples to make sure you use best industry practices.</h6>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const StepByStep = () => {
                         <Step2 className="step2"/>
                     </div>
                     <div className="texts">
-                        <h4>Choose a template</h4>
+                        <h4 className="not-template">Choose a template</h4>
                         <h6>Make your selection from a full list of resume templates to build your amazing resume.</h6>
                     </div>
                 </div>
@@ -41,12 +41,12 @@ const StepByStep = () => {
                         <Step3 className="step3"/>
                     </div>
                     <div className="texts">
-                        <h4>Download</h4>
+                        <h4 className="not-template">Download</h4>
                         <h6>And in less than 5 minutes!, you have successfully created your mind-blowing resume. You can now download it.</h6>
                     </div>
                 </div>
             </section>
-            <h4>Woah, This looks interesting</h4>
+            <h4 className="not-template">Woah, This looks interesting</h4>
             <Link to="/new" className="a">Get Started Already</Link>
         </div>
     );

@@ -10,7 +10,7 @@ const Banner = () => {
         <div className="banner">
             <Misc className="bg-svg one" fill="#d6d2e0" />
             <section className="left">
-                <h1>Create Your <br /> Resume</h1>
+                <h1 className="not-template">Create Your <br /> Resume</h1>
                 <b>By employing the best practices and innovative   tech,
                 {/* myResume logo starts */}
                 <span className="my"> my</span><span className="Resume">Resume </span> 

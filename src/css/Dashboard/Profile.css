@@ -50,7 +50,7 @@
 
 
 
-.profile h4 {
+.profile h4.not-template {
     color: #414141;
     line-height: 2em;
     font-weight: 300;
@@ -59,7 +59,7 @@
     font-family: 'Nunito Sans';
 }
 
-.email h4 {
+.email h4.not-template {
     line-height: 1em;
     margin-bottom: 0;
     margin-top: 0.8em;
@@ -149,7 +149,7 @@
     fill: currentColor;
 }
 
-.profile:hover .email h4 {
+.profile:hover .email h4.not-template {
     color: var(--h);
 }
 
@@ -186,7 +186,7 @@
 }
 
 @media (max-width: 390px) {
-    .email h4 {
+    .email h4.not-template {
         font-size: 0.6em;
     }
     .profile h2 {
