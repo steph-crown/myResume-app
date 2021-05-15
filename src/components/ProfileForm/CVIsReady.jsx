@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './../../css/cvIsReady.css';
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -11,6 +11,16 @@ import { Template1, Template2 } from "./../../Templates";
 export default function CVIsReady() {
     const history = useHistory();
     let pathWithoutPage = history.location.pathname.slice(0,-1);
+    const [formatVisible, setFormatVisible] = useState("");
+    const [colorVisible, setColorVisible] = useState("");
+
+    const setFormatVisibility = () => {
+        setFormatVisible(formatVisible === "" || formatVisible === "hide" ? "show" : "hide")
+    }
+
+    const setColorVisibility = () => {
+        setColorVisible(colorVisible === "" || colorVisible === "hide" ? "show" : "hide")
+    }
 
     let sections = [
         ["Contact", "fa fa-address-book-o"], 
@@ -58,15 +68,25 @@ export default function CVIsReady() {
                 </div>
             </div>
 
+            <div className="format-box">
+                
+            </div>
+
+            <div className="color-box">
+
+            </div>
+
             <footer>
                 <button className="footer-button sm-none">
                     TEMPLATE
                 </button>
-                <button className="footer-button">
+                <button className={"footer-button " + (formatVisible === "" || formatVisible === "hide" ? "" : "visible")} type="button" onClick={setFormatVisibility}>
                     FORMATTING
+                    <i className={"fontawesome fa " + (formatVisible === "" || formatVisible === "hide" ? "fa-caret-down" : "fa-caret-up")}></i>
                 </button>
-                <button className="footer-button">
+                <button className={"footer-button " + (colorVisible === "" || colorVisible === "hide" ? "" : "visible")} type="button" onClick={setColorVisibility}>
                     COLOR
+                    <i className={"fontawesome fa " + (colorVisible === "" || colorVisible === "hide" ? "fa-caret-down" : "fa-caret-up")}></i>
                 </button>
                 <button className="footer-button green sm-none">SAVE</button>
             </footer>

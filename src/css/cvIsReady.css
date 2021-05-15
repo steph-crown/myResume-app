@@ -74,13 +74,18 @@ button.download:hover {
     color: rgba(255, 255, 255, 0.26);
     /* opacity: 0.2; */
     font-weight: 600;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    display: flex;
+    min-height: 2px;
+    align-items: center;
     letter-spacing: 2.4px;
     /* box-shadow: 7px 7px 11px 0px rgb(255 255 255 / 2%), -7px -7px 11px 0px rgb(255 255 255 / 2%); */
     /* background-color: red; */
 }
 
-.a-ready-cv .footer-button:hover {
+.a-ready-cv .footer-button:hover, .a-ready-cv .visible,
+.a-ready-cv .footer-button:hover .fontawesome,
+.a-ready-cv .visible .fontawesome {
     color: white;
 }
 
@@ -98,6 +103,12 @@ button.download:hover {
     margin-right: 12px;
     color: #333333;
     font-size: 0.8em;
+}
+
+.a-ready-cv footer .fontawesome {
+    font-size: 1.6em;
+    margin-right: 0;
+    margin-left: 16px;
 }
 
 .a-ready-cv .page:hover {
