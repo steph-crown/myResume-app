@@ -1,5 +1,5 @@
 .a-ready-cv .the-pdf {
-    --aspect-ratio: 16/9;
+    --aspect-ratio: 4 / 3;
 }
 
 
@@ -33,15 +33,18 @@
 
     .the-pdf > :first-child::-webkit-scrollbar {
         width: 2px;
+        height: 2px;
     }
 
     .the-pdf > :first-child::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        /* box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+        background-color: transparent;
+        width: 1px;
       }
        
       .the-pdf > :first-child::-webkit-scrollbar-thumb {
-        background-color: darkgrey;
-        outline: 1px solid slategrey;
+        background-color: var(--green);
+        /* outline: 1px solid slategrey; */
       }
 }
 
