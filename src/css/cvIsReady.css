@@ -58,22 +58,23 @@ button.download:hover {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: var(--darker-black);
-    padding: 10 calc(100vw * var(--l120));
+    background-color: #0f0c16;
+    padding: 1px calc(100vw * var(--l120));
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 70px;
+    min-height: 56px;
     align-items: flex-end;
 }
 
 .a-ready-cv .footer-button {
-    background-color: #0f0e11;
+    background-color: var(--darker-black);
     border-radius: 5px;
-    padding: 10px 30px;
+    padding: 8px 30px;
     color: rgba(255, 255, 255, 0.26);
     /* opacity: 0.2; */
-    font-weight: 700;
+    font-weight: 600;
+    font-size: 0.7em;
     letter-spacing: 2.4px;
     /* box-shadow: 7px 7px 11px 0px rgb(255 255 255 / 2%), -7px -7px 11px 0px rgb(255 255 255 / 2%); */
     /* background-color: red; */
