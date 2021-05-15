@@ -57,7 +57,7 @@ button.download:hover {
     left: 0;
     right: 0;
     width: 100%;
-    background-color: rgb(82,86,89);
+    background-color: var(--darker-black);
     padding: 10 calc(100vw * var(--l120));
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ button.download:hover {
 }
 
 .a-ready-cv .footer-button {
-    background-color: var(--darker-black);
+    background-color: #0f0e11;
     border-radius: 5px;
     padding: 10px 30px;
     color: rgba(255, 255, 255, 0.26);
@@ -105,6 +105,8 @@ button.download:hover {
 .a-ready-cv .page:hover .fontawesome {
     color: var(--green);
 }
+
+
 
 @media (max-width: 1024px) {
     .a-ready-cv .sm-none {

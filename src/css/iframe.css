@@ -19,6 +19,7 @@
         padding-bottom: calc(100% / (var(--aspect-ratio)));
     }  
     .the-pdf > :first-child {
+        overflow: scroll;
         position: absolute;
         top: 0;
         left: 0;
@@ -29,6 +30,19 @@
         box-shadow: 5px 5px 20px rgba(0,0,0,0.15), -5px -5px 20px rgba(0,0,0,0.15);
         border-radius: 5px;
     }  
+
+    .the-pdf > :first-child::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .the-pdf > :first-child::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      .the-pdf > :first-child::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
 }
 
 

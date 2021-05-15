@@ -2,9 +2,10 @@ import React from 'react';
 import './../../css/cvIsReady.css';
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-import PdfCreator from './../PdfCreator';
-import { PDFViewer } from '@react-pdf/renderer';
-import './../../css/iframe.css'
+// import PdfCreator from './../PdfCreator';
+// import { PDFViewer } from '@react-pdf/renderer';
+import './../../css/iframe.css';
+import { Template1, Template2 } from "./../../Templates";
 
 
 export default function CVIsReady() {
@@ -47,9 +48,7 @@ export default function CVIsReady() {
                         <h6>CHANGE TEMPLATE</h6>
                     </div>
                     <div className="the-pdf" >
-                        <PDFViewer>
-                            <PdfCreator />
-                        </PDFViewer>
+                        <Template1 />
                     </div>
                     <div className="sm-show f-sm-100 show-block">
                         <button className="res-sections">RESUME SECTIONS</button>
