@@ -48,3 +48,9 @@
       }
 }
 
+@media (max-width: 1024px) {
+    .a-ready-cv .the-pdf {
+        --aspect-ratio: 3 / 4;
+    }
+    
+}

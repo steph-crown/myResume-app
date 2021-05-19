@@ -63,14 +63,14 @@ button.download:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-height: 56px;
+    height: 56px;
     align-items: flex-end;
 }
 
 .a-ready-cv .footer-button {
     background-color: var(--darker-black);
     border-radius: 5px;
-    padding: 8px 30px;
+    padding: 12px 30px;
     color: rgba(255, 255, 255, 0.26);
     /* opacity: 0.2; */
     font-weight: 600;
@@ -119,6 +119,67 @@ button.download:hover {
     color: var(--green);
 }
 
+.color-box-container .color-box {
+    display: none;
+    background-color: var(--black);
+    width: 200px;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: -84px;
+    max-width: 95%;
+    margin: auto;
+    border-radius: 5px 5px 0 0 ;
+    box-shadow: 8px 9px 20px 0px #0000002b, -8px -9px 20px #0000002b;
+    animation-fill-mode: forwards;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+}
+
+.a-ready-cv .show .color-box {
+    animation-name: boxGoUp;
+    display: flex;
+}
+
+@keyframes boxGoUp {
+    0% {bottom: -84px;}
+    5% {bottom: -77px;}
+    10% {bottom: -70px;}
+    15% {bottom: -63px;}
+    20% {bottom: -56px;}
+    25% {bottom: -49px;}
+    30% {bottom: -42px;}
+    35% {bottom: -35px;}
+    40% {bottom: -28px;}
+    45% {bottom: -21px;}
+    50% {bottom: -14px;}
+    55% {bottom: -7px;}
+    60% {bottom: 0px;}
+    65% {bottom: 7px;}
+    70% {bottom: 14px;}
+    75% {bottom: 21px;}
+    80% {bottom: 28px;}
+    85% {bottom: 35px;}
+    90% {bottom: 42px;}
+    95% {bottom: 49px;}
+    100% {bottom: 56px;}
+}
+
+.a-ready-cv .hide .color-box {
+    display: none;
+}
+
+
+.color-box-container .color {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.15), -10px -10px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
 
 
 @media (max-width: 1024px) {
@@ -159,7 +220,7 @@ button.download:hover {
     }
 
     .a-ready-cv footer {
-        position: absolute;
+        position: fixed;
         margin-top: 24px;
     }
 }

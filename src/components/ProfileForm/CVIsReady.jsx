@@ -2,25 +2,27 @@ import React, {useState} from 'react';
 import './../../css/cvIsReady.css';
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import PdfCreator from './../PdfCreator';
-// import { PDFViewer } from '@react-pdf/renderer';
 import './../../css/iframe.css';
 import { Template1, Template2 } from "./../../Templates";
+import ColorBox from './../ColorBox';
+
 
 
 export default function CVIsReady() {
     const history = useHistory();
     let pathWithoutPage = history.location.pathname.slice(0,-1);
-    const [formatVisible, setFormatVisible] = useState("");
     const [colorVisible, setColorVisible] = useState("");
-
-    const setFormatVisibility = () => {
-        setFormatVisible(formatVisible === "" || formatVisible === "hide" ? "show" : "hide")
-    }
 
     const setColorVisibility = () => {
         setColorVisible(colorVisible === "" || colorVisible === "hide" ? "show" : "hide")
     }
+
+    const handleColorChange = (color) => {
+        console.log(color);
+        setColorVisible("hide")
+    }
+
+
 
     let sections = [
         ["Contact", "fa fa-address-book-o"], 
@@ -33,6 +35,7 @@ export default function CVIsReady() {
         ["References", "fa fa-check"]
     ]
         
+    const ref = React.createRef();
 
     sections = sections.map((x, index) => (
         <div className="page" key={x}>
@@ -51,7 +54,11 @@ export default function CVIsReady() {
                         {sections}
                     </div>
                     <div className="a-short-line"></div>
-                    <button className="download">DOWNLOAD</button>
+                    <button className="download" type="button">
+                        DOWNLOAD   
+                    </button>
+
+
                 </div>
                 <div className="f74 f-sm-100">
                     <div className="sm-show change-template">
@@ -61,29 +68,29 @@ export default function CVIsReady() {
                         <Template1 />
                     </div>
                     <div className="sm-show f-sm-100 show-block">
-                        <button className="res-sections">RESUME SECTIONS</button>
+                        <button className="res-sections">DOWNLOAD</button>
+
+
+
+
+
+
+
                         <button className="res-sections save">SAVE RESUME</button>
                         <button></button>
                     </div>
                 </div>
             </div>
 
-            <div className="format-box">
-                
-            </div>
-
-            <div className="color-box">
-
+            <div className={"color-box-container " + colorVisible}>
+                <ColorBox changeColor={handleColorChange} />
             </div>
 
             <footer>
                 <button className="footer-button sm-none">
                     TEMPLATE
                 </button>
-                <button className={"footer-button " + (formatVisible === "" || formatVisible === "hide" ? "" : "visible")} type="button" onClick={setFormatVisibility}>
-                    FORMATTING
-                    <i className={"fontawesome fa " + (formatVisible === "" || formatVisible === "hide" ? "fa-caret-down" : "fa-caret-up")}></i>
-                </button>
+                
                 <button className={"footer-button " + (colorVisible === "" || colorVisible === "hide" ? "" : "visible")} type="button" onClick={setColorVisibility}>
                     COLOR
                     <i className={"fontawesome fa " + (colorVisible === "" || colorVisible === "hide" ? "fa-caret-down" : "fa-caret-up")}></i>
