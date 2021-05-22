@@ -29,41 +29,47 @@ export default class ProfileForm extends Component {
     pagesStr = ["Contact", "Work", "Education", "Volunteer", "Skills", "Summary", "Projects", "References", "Finalize"]
     id = this.props.match.params.id;
 
-    componentDidMount = () => {
-        let resumeData = window.localStorage.getItem('resumeData'), stringData;
+    render() {
+        let resumeData = window.localStorage.getItem('resumeData'), stringData, initialData;
         if (resumeData !== null) {
-            console.log(resumeData);
             let parsedData = JSON.parse(resumeData);
             if (parsedData.id === this.id) {
-                this.setState({parsedData})
+                initialData = parsedData;
             } else {
-                stringData = JSON.stringify(profileFields);
-                this.setState({parsedData: profileFields})
+                console.log('I am hereeee');
+                let profileFieldsId = {
+                    ...profileFields,
+                    id: this.id
+                }
+                stringData = JSON.stringify(profileFieldsId);
+                window.localStorage.setItem('resumeData', stringData);
+                initialData = profileFieldsId;
                 if (this.props.match.params.page > 0) {
-                    console.log("this is greater")
+                    this.props.history.push(this.pathWithoutPage + '0')
                 }
             }
         } else {
-            stringData = JSON.stringify(profileFields);
+            // Gets profile data from backend
+            let profileFieldsId = {
+                ...profileFields,
+                id: this.id
+            }
+            stringData = JSON.stringify(profileFieldsId);
             window.localStorage.setItem('resumeData', stringData);
-            this.setState({parsedData: profileFields})
+            initialData = profileFieldsId;
             if (this.props.match.params.page > 0) {
                 this.props.history.push(this.pathWithoutPage + '0')
-                console.log("this is greater")
             }
         }
-    }
-    
-    
-    render() {
+
+
+
         let pageNo = parseInt(this.props.match.params.page)
         if (pageNo > this.pagesStr.length - 1  ||  pageNo < 0) {
             return <p>Page Not Found</p>
         }
-        // console.log(this.state.parsedData)
-        
+
         const CurrComp = this.pages[pageNo]
-        const initialState = this.id === "new" ? profileFields : "Use id to get data from backend";
         const pagesJSX = this.pagesStr.map((x, index) => 
             <div className={"page " + (pageNo >= index ? "current-page" : "")} >
                 {
@@ -72,8 +78,7 @@ export default class ProfileForm extends Component {
                     {x}
                         </Link>
                     :
-                        <Link to={this.props.history.location.pathname}>{x}</Link>
-                        
+                        <Link to={this.props.history.location.pathname}>{x}</Link>   
                 }
                                 
                 <div className={index !== this.pagesStr.length - 1 ? "short-line" : ""}>
@@ -93,9 +98,7 @@ export default class ProfileForm extends Component {
                 </div>
             </Link>
 
-        }
-            
-        )
+        })
 
         const goBack = () => {
             const history = this.props.history
@@ -141,7 +144,7 @@ export default class ProfileForm extends Component {
                     </div>
 
                     <div className="form-container">
-                        <CurrComp initialState={initialState} pagesStr={this.pagesStr} pageNo={pageNo} />
+                        <CurrComp initialState={initialData} pagesStr={this.pagesStr} pageNo={pageNo} />
                     </div>
                 </div>
             </div>
