@@ -18,7 +18,11 @@ export default function Summary(props) {
                 initialValues={{professionalSummary: initialValues.professionalSummary}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            professionalSummary: values.professionalSummary
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  

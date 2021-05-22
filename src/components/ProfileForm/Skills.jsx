@@ -24,7 +24,7 @@ export default function Skills(props) {
                         JSON.stringify({
                             ...initialValues, 
                             skills: values.skills
-                        }))
+                        }));
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
