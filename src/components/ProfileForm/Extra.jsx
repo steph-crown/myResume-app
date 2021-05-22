@@ -8,7 +8,17 @@ import CVIsReady from './CVIsReady';
 export default function Extra(props) {
     // const history = useHistory();
     // let pathWithoutPage = history.location.pathname.slice(0,-1);
-    
+    const initialData = JSON.parse(window.localStorage.getItem("resumeData"))
+
+    // Get these stuffs from initial data
+    const {
+        accomplishments, 
+        languages, 
+        affiliations, 
+        interests, 
+        certifications,
+        additionalInformation
+    } = initialData;
     const [currentComponent, changeComponent] = useState(0);
 
     const initialValues = {
@@ -21,12 +31,12 @@ export default function Extra(props) {
             additionalInformation: false
         },
         textVal: {
-            accomplishments: "",
-            languages: "",
-            affiliations: "",
-            interests: "",
-            certifications: "",
-            additionalInformation: ""
+            accomplishments,
+            languages,
+            affiliations,
+            interests,
+            certifications,
+            additionalInformation
         },
         labelValues: {
             accomplishments: "Accomplishments",
@@ -35,17 +45,25 @@ export default function Extra(props) {
             interests: "Interests",
             certifications: "Cerifications",
             additionalInformation: "Additional Information"
-        }
+        },
+
     }
 
     const componentChanger = (values) => {
-        values = Object.entries(values.boolVal).filter(x => x[1])
-        console.log(values);
+        let valuesMod = Object.entries(values.boolVal).filter(x => x[1])
         if (currentComponent === 0) {
-            if (values.length) changeComponent(1);
+            if (valuesMod.length) changeComponent(1);
             else changeComponent(2);
         }
         if (currentComponent === 1) {
+            // Get data from localStorage
+           
+            
+            window.localStorage.setItem("resumeData", JSON.stringify({
+                ...initialData, 
+                ...values.textVal
+            }));
+            
             changeComponent(2)
         }
     }
@@ -70,11 +88,7 @@ export default function Extra(props) {
             
             <Formik
                 initialValues={initialValues}
-                onSubmit={
-                    values => {
-                        console.log(values);
-                    }
-                }
+                   
             >
                 {({values}) => (
                     <Form>

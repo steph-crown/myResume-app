@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './../../css/HomePage/NavBar.css';
 import { Link } from "react-router-dom";
+import MobileMenu from './../MobileMenuPage/index';
 
 
 const Nav = () => {
+    const [isMenuOpen, openMenu] = useState(false);
+
+    const navMenu = () => {
+        openMenu(true)
+    }
+
     return (
         <nav>
             <Link className="logo" to="/">
@@ -20,11 +27,15 @@ const Nav = () => {
                 <Link to="/signup" className="signup a">Sign Up </Link>  
                 <Link to="/login" className="login a">Log In</Link>
             </div>
-            <Link className="menu-icon" to="/menu">
+            <div className="hamburger" onClick={() => {navMenu()}}>
                 <div></div>
                 <div></div>
                 <div></div>
-            </Link>
+            </div>
+
+            <div className={"mobile-menu " + (isMenuOpen ? "open" : "close")} >
+                <MobileMenu />
+            </div>
         </nav>
     );
 }

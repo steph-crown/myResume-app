@@ -35,7 +35,6 @@ export default function CVIsReady() {
         ["References", "fa fa-check"]
     ]
         
-    const ref = React.createRef();
 
     sections = sections.map((x, index) => (
         <div className="page" key={x}>

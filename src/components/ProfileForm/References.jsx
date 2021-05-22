@@ -19,7 +19,11 @@ export default function Projects(props) {
                 initialValues={{reference: initialValues.reference}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            reference: values.reference
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
@@ -63,15 +67,8 @@ export default function Projects(props) {
                             />
                         </div>
                     </div> 
-                    <div className="form-flex">
-                            <label htmlFor="project-description"
-                            >
-                                Project Description
-                            </label>
-                            <Field name="projects[0].description" id="project-description" as="textarea" className="form-textarea" placeholder="Give a brief description of the project" />
-                            
-                        </div>
-                    <h6>+ Add Project Details</h6>
+
+                    <h6>+ Add Reference</h6>
                     <ButtonGroup 
                         pathWithoutPage={pathWithoutPage} 
                         pageNo={props.pageNo}

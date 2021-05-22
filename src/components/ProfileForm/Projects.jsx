@@ -19,7 +19,11 @@ export default function Projects(props) {
                 initialValues={{projects: initialValues.projects}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            projects: values.projects
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
