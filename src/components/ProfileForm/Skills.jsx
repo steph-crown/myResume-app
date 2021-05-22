@@ -20,6 +20,11 @@ export default function Skills(props) {
                 initialValues={{skills: initialValues.skills}}
                 onSubmit={
                     values => {
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            skills: values.skills
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
@@ -34,9 +39,8 @@ export default function Skills(props) {
                                 />
                             </div>
                             <div className="input-group f49 f-sm-100 stars">
-                                <StarRating changeRating={(ratingNumber)=> {
+                                <StarRating rating={values.skills.list[0].expertLevel}changeRating={(ratingNumber)=> {
                                     values.skills.list[0].expertLevel = ratingNumber;
-                                    console.log(values);
                                 }} />
                                <div className="skill-circle">
                                     <div className="skill-dash">

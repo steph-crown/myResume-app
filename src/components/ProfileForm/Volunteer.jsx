@@ -19,7 +19,11 @@ export default function Volunteer(props) {
                 initialValues={{volunteer: initialValues.volunteer}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            volunteer: values.volunteer
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  

@@ -19,7 +19,11 @@ export default function Work(props) {
                 initialValues={{work: initialValues.work}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            work: values.work
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  

@@ -18,7 +18,11 @@ export default function Education(props) {
                 initialValues={{education: initialValues.education}}
                 onSubmit={
                     values => {
-                        console.log(values);
+                        window.localStorage.setItem("resumeData",
+                        JSON.stringify({
+                            ...initialValues, 
+                            education: values.education
+                        }))
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  

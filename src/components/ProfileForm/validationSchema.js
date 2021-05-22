@@ -33,7 +33,7 @@ const workValidation = Yup.object().shape({
 
 const volunteerValidation = Yup.object().shape({
     volunteer: Yup.array().of(Yup.object({
-        title: Yup.string().required('Job Title is required'),
+        title: Yup.string(),
         employer: Yup.string(),
         city: Yup.string(),
         country: Yup.string(),

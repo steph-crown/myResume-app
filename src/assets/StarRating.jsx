@@ -10,6 +10,7 @@ export default function StarRating(props) {
     return (
         <div>
             <ReactStars
+                value={props.rating}
                 count={5}
                 onChange={ratingChanged}
                 size={24}

@@ -22,8 +22,7 @@ export default function Contact(props) {
                         JSON.stringify({
                             ...initialValues, 
                             personal: values.personal
-                        }))
-                        console.log({...initialValues, personal: values.personal});
+                        }));
                         history.push(pathWithoutPage + (props.pageNo + 1))
                     }
                 }  
